@@ -1487,27 +1487,159 @@
         <metadata dim="0" />
       </GroundStation>
     </Object>
+    <Object>
+      <RFLink name="RFLink1" isConstant="false" isGlobal="false">
+        <Name>RFLink1</Name>
+        <Transmitter>
+          <RFLinkComponent name="RFLink1_|Transmitter|" isConstant="false" isGlobal="false">
+            <Name>RFLink1_|Transmitter|</Name>
+            <AntennaDiameter units="m" displayed_units="m">0.1</AntennaDiameter>
+            <Power units="W" displayed_units="W">200</Power>
+            <AntennaEfficiency units="" displayed_units="">0.6</AntennaEfficiency>
+            <LineLoss units="dB" displayed_units="dB">1</LineLoss>
+            <NoiseTemperature units="Deg K" displayed_units="Deg K">1500</NoiseTemperature>
+            <PointingLoss units="dB" displayed_units="dB">2</PointingLoss>
+            <ExtrapolatedGain units="dB" displayed_units="dB">-1e10</ExtrapolatedGain>
+            <GainType>Calculated Uniform Antenna Gain</GainType>
+            <GainType2 />
+            <ReferenceObject>FINCH</ReferenceObject>
+            <metadata dim="0" />
+          </RFLinkComponent>
+        </Transmitter>
+        <Receiver>
+          <RFLinkComponent name="RFLink1_|Receiver|" isConstant="false" isGlobal="false">
+            <Name>RFLink1_|Receiver|</Name>
+            <AntennaDiameter units="m" displayed_units="m">0.1</AntennaDiameter>
+            <Power units="W" displayed_units="W">200</Power>
+            <AntennaEfficiency units="" displayed_units="">0.6</AntennaEfficiency>
+            <LineLoss units="dB" displayed_units="dB">1</LineLoss>
+            <NoiseTemperature units="Deg K" displayed_units="Deg K">1500</NoiseTemperature>
+            <PointingLoss units="dB" displayed_units="dB">2</PointingLoss>
+            <ExtrapolatedGain units="dB" displayed_units="dB">-1e10</ExtrapolatedGain>
+            <GainType>Calculated Uniform Antenna Gain</GainType>
+            <GainType2 />
+            <ReferenceObject>GroundStation1</ReferenceObject>
+            <metadata dim="0" />
+          </RFLinkComponent>
+        </Receiver>
+        <AtmosphericLoss units="dB" displayed_units="dB">2.23</AtmosphericLoss>
+        <PolarizationLoss units="dB" displayed_units="dB">0.25</PolarizationLoss>
+        <Frequency units="MHz" displayed_units="MHz">3100</Frequency>
+        <LinkPowerMargin units="dB" displayed_units="dB">3</LinkPowerMargin>
+        <Bandwidth units="MHz" displayed_units="MHz">40</Bandwidth>
+        <BitRate units="bps" displayed_units="bps">1</BitRate>
+        <ModulationType>BPSK</ModulationType>
+        <metadata dim="0" />
+      </RFLink>
+    </Object>
+    <Object>
+      <GraphicsOverlay name="GraphicsOverlay1" isConstant="false" isGlobal="false">
+        <Name>GraphicsOverlay1</Name>
+        <ReferenceObject>Earth</ReferenceObject>
+        <DefaultColor>16777215</DefaultColor>
+        <Position units="km" displayed_units="km" dim="(3)">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+        </Position>
+        <Orientation units="" displayed_units="" dim="(4)">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>1</value>
+        </Orientation>
+        <Scale units="" displayed_units="" dim="(3)">
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+        </Scale>
+        <Shapes dim="1">
+          <value>
+            <GraphicsOverlayShape name="GraphicsOverlay1_|Shape|1" isConstant="false" isGlobal="false">
+              <Name>GraphicsOverlay1_|Shape|1</Name>
+              <Type>Lines</Type>
+              <Visible>true</Visible>
+              <Opacity units="" displayed_units="">1.0</Opacity>
+              <Position units="km" displayed_units="km" dim="(3)">
+                <value>0</value>
+                <value>0</value>
+                <value>0</value>
+              </Position>
+              <Orientation units="" displayed_units="" dim="(4)">
+                <value>0</value>
+                <value>0</value>
+                <value>0</value>
+                <value>1</value>
+              </Orientation>
+              <Scale units="" displayed_units="" dim="(3)">
+                <value>1.0</value>
+                <value>1.0</value>
+                <value>1.0</value>
+              </Scale>
+              <TickType>None</TickType>
+              <TickWidth units="pixel" displayed_units="pixel">7</TickWidth>
+              <Vertices units="km" displayed_units="km" dim="(0)" />
+              <Colors dim="(0)" />
+              <Annotations dim="(0)" />
+              <LineWidthUnits>1</LineWidthUnits>
+              <LineWidth units="" displayed_units="">1.0</LineWidth>
+              <ShowTextBackDrop>true</ShowTextBackDrop>
+              <AnnotationFont>
+                <ViewFont name="GraphicsOverlay1_|Shape|1_|AnnotationFont|" isConstant="false" isGlobal="false">
+                  <Name>GraphicsOverlay1_|Shape|1_|AnnotationFont|</Name>
+                  <Bold>false</Bold>
+                  <Italic>false</Italic>
+                  <Size units="" displayed_units="">20.0</Size>
+                  <Strikeout>false</Strikeout>
+                  <Typeface>Tahoma</Typeface>
+                  <Underline>false</Underline>
+                  <metadata dim="0" />
+                </ViewFont>
+              </AnnotationFont>
+              <IconFilename></IconFilename>
+              <IconScale units="km" displayed_units="km">1000</IconScale>
+              <IconReferencePoint>Center</IconReferencePoint>
+              <IconRotation units="deg" displayed_units="deg">0.0</IconRotation>
+              <PointWidth units="pixel" displayed_units="pixel">3.0</PointWidth>
+              <metadata dim="0" />
+            </GraphicsOverlayShape>
+          </value>
+        </Shapes>
+        <metadata dim="0" />
+      </GraphicsOverlay>
+    </Object>
   </ProjectObjects>
   <ProjectMissionSequence>
     <ProjectExternals />
     <ProjectCommands>
+      <FreeForm enabled="true">
+        <Label>CreateVisibilitySegment</Label>
+        <Bookmarks />
+        <Breakpoints />
+        <FreeFormScript><![CDATA[VisibilitySegment visSeg();
+visSeg.AddOccultingBody(Earth);
+visSeg.CelestialObjectOccultationModel = 1;
+
+visSeg.SetTarget(FINCH);
+visSeg.SetObserver(GroundStation1);]]></FreeFormScript>
+      </FreeForm>
       <WhileCommand enabled="true" collapsed="false">
-        <While name="Command1" isConstant="false" isGlobal="false">
-          <Name>Command1</Name>
+        <While name="Command2" isConstant="false" isGlobal="false">
+          <Name>Command2</Name>
           <Condition>
-            <LogicalExpression name="Command1_:Condition" isConstant="false" isGlobal="false">
-              <Name>Command1_:Condition</Name>
+            <LogicalExpression name="Command2_:Condition" isConstant="false" isGlobal="false">
+              <Name>Command2_:Condition</Name>
               <LHS xsi:nil="true" />
               <RHS>
-                <LogicalCondition name="Command1_:Condition_:RHS" isConstant="false" isGlobal="false">
-                  <Name>Command1_:Condition_:RHS</Name>
+                <LogicalCondition name="Command2_:Condition_:RHS" isConstant="false" isGlobal="false">
+                  <Name>Command2_:Condition_:RHS</Name>
                   <ConditionType>RelExprDbl</ConditionType>
                   <Condition>
-                    <RelationalExprReal name="Command1_:Condition_:RHS_:Condition" isConstant="false" isGlobal="false">
-                      <Name>Command1_:Condition_:RHS_:Condition</Name>
+                    <RelationalExprReal name="Command2_:Condition_:RHS_:Condition" isConstant="false" isGlobal="false">
+                      <Name>Command2_:Condition_:RHS_:Condition</Name>
                       <LHS>
-                        <EventCall name="Command1_:Condition_:RHS_:Condition_:LHS" isConstant="false" isGlobal="false">
-                          <Name>Command1_:Condition_:RHS_:Condition_:LHS</Name>
+                        <EventCall name="Command2_:Condition_:RHS_:Condition_:LHS" isConstant="false" isGlobal="false">
+                          <Name>Command2_:Condition_:RHS_:Condition_:LHS</Name>
                           <BaseObject>FINCH</BaseObject>
                           <EventName>ElapsedTime</EventName>
                           <Parameters dim="0" />
@@ -1515,8 +1647,8 @@
                         </EventCall>
                       </LHS>
                       <RHS>
-                        <TimeSpanConstant name="Command1_:Condition_:RHS_:Condition_:RHS" isConstant="false" isGlobal="false">
-                          <Name>Command1_:Condition_:RHS_:Condition_:RHS</Name>
+                        <TimeSpanConstant name="Command2_:Condition_:RHS_:Condition_:RHS" isConstant="false" isGlobal="false">
+                          <Name>Command2_:Condition_:RHS_:Condition_:RHS</Name>
                           <value>1</value>
                           <Units>days</Units>
                           <metadata dim="0" />
@@ -1536,34 +1668,9 @@
           <metadata dim="0" />
         </While>
         <ViewCommand enabled="true">
-          <View name="Command2" isConstant="false" isGlobal="false">
-            <Name>Command2</Name>
-            <ViewpointType>view</ViewpointType>
-            <Items dim="2">
-              <value>
-                <EventWithHeight name="Command2_:Items1" isConstant="false" isGlobal="false">
-                  <Name>Command2_:Items1</Name>
-                  <BaseObject>FINCH</BaseObject>
-                  <Height units="km" displayed_units="km">800</Height>
-                  <metadata dim="0" />
-                </EventWithHeight>
-              </value>
-              <value>
-                <EventWithHeight name="Command2_:Items2" isConstant="false" isGlobal="false">
-                  <Name>Command2_:Items2</Name>
-                  <BaseObject>GroundStation1</BaseObject>
-                  <Height units="km" displayed_units="km">800</Height>
-                  <metadata dim="0" />
-                </EventWithHeight>
-              </value>
-            </Items>
-            <metadata dim="0" />
-          </View>
-        </ViewCommand>
-        <ViewCommand enabled="true">
           <View name="Command3" isConstant="false" isGlobal="false">
             <Name>Command3</Name>
-            <ViewpointType>map</ViewpointType>
+            <ViewpointType>view</ViewpointType>
             <Items dim="2">
               <value>
                 <EventWithHeight name="Command3_:Items1" isConstant="false" isGlobal="false">
@@ -1585,16 +1692,41 @@
             <metadata dim="0" />
           </View>
         </ViewCommand>
-        <PlotCommand enabled="true">
-          <Plot name="Command4" isConstant="false" isGlobal="false">
+        <ViewCommand enabled="true">
+          <View name="Command4" isConstant="false" isGlobal="false">
             <Name>Command4</Name>
+            <ViewpointType>map</ViewpointType>
+            <Items dim="2">
+              <value>
+                <EventWithHeight name="Command4_:Items1" isConstant="false" isGlobal="false">
+                  <Name>Command4_:Items1</Name>
+                  <BaseObject>FINCH</BaseObject>
+                  <Height units="km" displayed_units="km">800</Height>
+                  <metadata dim="0" />
+                </EventWithHeight>
+              </value>
+              <value>
+                <EventWithHeight name="Command4_:Items2" isConstant="false" isGlobal="false">
+                  <Name>Command4_:Items2</Name>
+                  <BaseObject>GroundStation1</BaseObject>
+                  <Height units="km" displayed_units="km">800</Height>
+                  <metadata dim="0" />
+                </EventWithHeight>
+              </value>
+            </Items>
+            <metadata dim="0" />
+          </View>
+        </ViewCommand>
+        <PlotCommand enabled="true">
+          <Plot name="Command5" isConstant="false" isGlobal="false">
+            <Name>Command5</Name>
             <PlotType>XYPlot</PlotType>
             <ScrollPlot>0</ScrollPlot>
             <Items>
               <XYPlot>
                 <XAxisItem>
-                  <EventCall name="Command4_:XAxisItem" isConstant="false" isGlobal="false">
-                    <Name>Command4_:XAxisItem</Name>
+                  <EventCall name="Command5_:XAxisItem" isConstant="false" isGlobal="false">
+                    <Name>Command5_:XAxisItem</Name>
                     <BaseObject>FINCH</BaseObject>
                     <EventName>ElapsedTime</EventName>
                     <Parameters dim="0" />
@@ -1603,8 +1735,8 @@
                 </XAxisItem>
                 <YAxisItems dim="1">
                   <value>
-                    <ObjectParameter name="Command4_:YAxisItems1" isConstant="false" isGlobal="false">
-                      <Name>Command4_:YAxisItems1</Name>
+                    <ObjectParameter name="Command5_:YAxisItems1" isConstant="false" isGlobal="false">
+                      <Name>Command5_:YAxisItems1</Name>
                       <BaseObject>FINCH</BaseObject>
                       <Parameter>A</Parameter>
                       <IndexType>NoIndices</IndexType>
@@ -1621,11 +1753,11 @@
           </Plot>
         </PlotCommand>
         <StepCommand enabled="true">
-          <Step name="Command5" isConstant="false" isGlobal="false">
-            <Name>Command5</Name>
+          <Step name="Command6" isConstant="false" isGlobal="false">
+            <Name>Command6</Name>
             <StepObject>
-              <ObjectHolder name="Command5_:StepObject" isConstant="false" isGlobal="false">
-                <Name>Command5_:StepObject</Name>
+              <ObjectHolder name="Command6_:StepObject" isConstant="false" isGlobal="false">
+                <Name>Command6_:StepObject</Name>
                 <BaseObject>FINCH</BaseObject>
                 <metadata dim="0" />
               </ObjectHolder>
@@ -1637,7 +1769,13 @@
       </WhileCommand>
     </ProjectCommands>
   </ProjectMissionSequence>
-  <ProjectScript><![CDATA[While (FINCH.ElapsedTime < TIMESPAN(1 days));
+  <ProjectScript><![CDATA[VisibilitySegment visSeg();
+visSeg.AddOccultingBody(Earth);
+visSeg.CelestialObjectOccultationModel = 1;
+
+visSeg.SetTarget(FINCH);
+visSeg.SetObserver(GroundStation1);
+While (FINCH.ElapsedTime < TIMESPAN(1 days));
 View FINCH, GroundStation1<800>;
 Map FINCH, GroundStation1<800>;
 Plot FINCH.ElapsedTime, FINCH.A;
