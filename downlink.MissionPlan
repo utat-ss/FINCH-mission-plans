@@ -146,7 +146,7 @@
         </PhysicalProperties>
         <Visualization>
           <Color>255</Color>
-          <BodyScale units="" displayed_units="">100000</BodyScale>
+          <BodyScale units="" displayed_units="">0.01</BodyScale>
           <TailLength units="" displayed_units="">100</TailLength>
           <HistoryMode>0</HistoryMode>
           <TickType>None</TickType>
@@ -154,7 +154,7 @@
           <ModelDefinitionType>0</ModelDefinitionType>
           <ModelDefinition>
             <ThreeDModelFilename>
-              <ThreeDModelFile>Internal::globalstar</ThreeDModelFile>
+              <ThreeDModelFile>C:\Users\David\Workbench\FINCH-mission-plans\Satellite.stl</ThreeDModelFile>
             </ThreeDModelFilename>
           </ModelDefinition>
         </Visualization>
@@ -201,7 +201,7 @@
             <Prop>
               <RK89 name="FINCH_Propagator" isConstant="false" isGlobal="false">
                 <Name>FINCH_Propagator</Name>
-                <StepSize units="s" displayed_units="s">100</StepSize>
+                <StepSize units="s" displayed_units="s">60</StepSize>
                 <StepJustTaken units="s" displayed_units="s">300.0</StepJustTaken>
                 <StepToTake units="s" displayed_units="s">300.0</StepToTake>
                 <LargeCurvature units="" displayed_units="">0</LargeCurvature>
@@ -1494,7 +1494,7 @@
           <RFLinkComponent name="RFLinkFINCHToMCC_|Transmitter|" isConstant="false" isGlobal="false">
             <Name>RFLinkFINCHToMCC_|Transmitter|</Name>
             <AntennaDiameter units="m" displayed_units="m">0.1</AntennaDiameter>
-            <Power units="W" displayed_units="W">200</Power>
+            <Power units="W" displayed_units="W">10.8</Power>
             <AntennaEfficiency units="" displayed_units="">0.6</AntennaEfficiency>
             <LineLoss units="dB" displayed_units="dB">1</LineLoss>
             <NoiseTemperature units="Deg K" displayed_units="Deg K">1500</NoiseTemperature>
@@ -1524,7 +1524,7 @@
         </Receiver>
         <AtmosphericLoss units="dB" displayed_units="dB">2.23</AtmosphericLoss>
         <PolarizationLoss units="dB" displayed_units="dB">0.25</PolarizationLoss>
-        <Frequency units="MHz" displayed_units="MHz">3100</Frequency>
+        <Frequency units="MHz" displayed_units="MHz">2200</Frequency>
         <LinkPowerMargin units="dB" displayed_units="dB">3</LinkPowerMargin>
         <Bandwidth units="MHz" displayed_units="MHz">40</Bandwidth>
         <BitRate units="bps" displayed_units="bps">1</BitRate>
@@ -1553,6 +1553,467 @@
         </Visualization>
         <metadata dim="0" />
       </Vector>
+    </Object>
+    <Object>
+      <ViewWindow name="FINCHViewWindow" isConstant="false" isGlobal="false">
+        <Name>FINCHViewWindow</Name>
+        <WindowTitle></WindowTitle>
+        <Viewpoints dim="1">
+          <value>
+            <Viewpoint name="FINCHViewWindow_Default" isConstant="false" isGlobal="false">
+              <Name>FINCHViewWindow_Default</Name>
+              <ViewpointName>Default</ViewpointName>
+              <ViewpointType>view</ViewpointType>
+              <ViewpointParameters>
+                <view>
+                  <ThreeDView>
+                    <ThreeDViewpointOptions name="FINCHViewWindow_Default_|ThreeDView|" isConstant="false" isGlobal="false">
+                      <Name>FINCHViewWindow_Default_|ThreeDView|</Name>
+                      <Source>FINCH</Source>
+                      <Target>FINCH</Target>
+                      <TailReference>Earth</TailReference>
+                      <ReferenceFrame>body fixed</ReferenceFrame>
+                      <Declination units="deg" displayed_units="deg">-150</Declination>
+                      <FieldOfView units="deg" displayed_units="deg">45.0</FieldOfView>
+                      <Radius units="km" displayed_units="km">0.001</Radius>
+                      <RightAscension units="deg" displayed_units="deg">300</RightAscension>
+                      <metadata dim="0" />
+                    </ThreeDViewpointOptions>
+                  </ThreeDView>
+                </view>
+              </ViewpointParameters>
+              <metadata dim="0" />
+            </Viewpoint>
+          </value>
+        </Viewpoints>
+        <UseLighting>true</UseLighting>
+        <UseTextures>true</UseTextures>
+        <ShowLogo>true</ShowLogo>
+        <LogoTextureFilename></LogoTextureFilename>
+        <ShowStatusText>true</ShowStatusText>
+        <ShowTextBackdrops>true</ShowTextBackdrops>
+        <AmbientColor>6710886</AmbientColor>
+        <StatusTextColor>16777215</StatusTextColor>
+        <BackgroundColor>0</BackgroundColor>
+        <ObjectShadowing>0</ObjectShadowing>
+        <StatusTextFont>
+          <ViewFont name="FINCHViewWindow_|StatusTextFont|" isConstant="false" isGlobal="false">
+            <Name>FINCHViewWindow_|StatusTextFont|</Name>
+            <Bold>false</Bold>
+            <Italic>false</Italic>
+            <Size units="" displayed_units="">0</Size>
+            <Strikeout>false</Strikeout>
+            <Typeface>Tahoma</Typeface>
+            <Underline>false</Underline>
+            <metadata dim="0" />
+          </ViewFont>
+        </StatusTextFont>
+        <DefaultObjectLabelFont>
+          <ViewFont name="FINCHViewWindow_|DefaultObjectLabelFont|" isConstant="false" isGlobal="false">
+            <Name>FINCHViewWindow_|DefaultObjectLabelFont|</Name>
+            <Bold>false</Bold>
+            <Italic>false</Italic>
+            <Size units="" displayed_units="">20</Size>
+            <Strikeout>false</Strikeout>
+            <Typeface>Tahoma</Typeface>
+            <Underline>false</Underline>
+            <metadata dim="0" />
+          </ViewFont>
+        </DefaultObjectLabelFont>
+        <Objects dim="15">
+          <value>Mercury</value>
+          <value>Venus</value>
+          <value>Earth</value>
+          <value>Moon</value>
+          <value>Mars</value>
+          <value>Jupiter</value>
+          <value>Saturn</value>
+          <value>Uranus</value>
+          <value>Neptune</value>
+          <value>Pluto</value>
+          <value>Sun</value>
+          <value>Stars</value>
+          <value>FINCH</value>
+          <value>MCC</value>
+          <value>visibilityVector</value>
+        </Objects>
+        <ProjectionHeights units="km" displayed_units="km" dim="15">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>800</value>
+          <value>800</value>
+          <value>800</value>
+        </ProjectionHeights>
+        <ShowObject dim="15">
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+        </ShowObject>
+        <ShowBody dim="15">
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+        </ShowBody>
+        <ShowName dim="15">
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>0</value>
+          <value>1</value>
+          <value>1</value>
+          <value>0</value>
+        </ShowName>
+        <ShowGrid dim="15">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+        </ShowGrid>
+        <ShowAxes dim="15">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+        </ShowAxes>
+        <ShowHistory dim="15">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>1</value>
+          <value>0</value>
+          <value>0</value>
+        </ShowHistory>
+        <ShowIcon dim="15">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+        </ShowIcon>
+        <IconImageFilename dim="15">
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+        </IconImageFilename>
+        <IconSize units="pixel" displayed_units="pixel" dim="15">
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30</value>
+          <value>30</value>
+          <value>30</value>
+        </IconSize>
+        <IconDrawingMode dim="15">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+        </IconDrawingMode>
+        <IconColor dim="15">
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+        </IconColor>
+        <StoreVelocity dim="15">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+        </StoreVelocity>
+        <AxesScaleMode dim="15">
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+        </AxesScaleMode>
+        <AxesSize units="km" displayed_units="km" dim="15">
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+        </AxesSize>
+        <AxesScale units="" displayed_units="" dim="15">
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+        </AxesScale>
+        <TailLength units="" displayed_units="" dim="15">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>100</value>
+          <value>0</value>
+          <value>0</value>
+        </TailLength>
+        <HistoryMode units="" displayed_units="" dim="15">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+        </HistoryMode>
+        <CurrentTailState units="" displayed_units="" dim="15">
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+        </CurrentTailState>
+        <LineWidthUnits units="" displayed_units="" dim="15">
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+        </LineWidthUnits>
+        <LineWidths units="" displayed_units="" dim="15">
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+        </LineWidths>
+        <LabelFonts dim="15">
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+        </LabelFonts>
+        <MouseInteractionEnabled>true</MouseInteractionEnabled>
+        <metadata dim="0" />
+      </ViewWindow>
     </Object>
   </ProjectObjects>
   <ProjectMissionSequence>
@@ -1616,13 +2077,10 @@ visibilityVector.BuildVector(9, FINCH, MCC);]]></FreeFormScript>
           <metadata dim="0" />
         </While>
         <FreeForm enabled="true">
-          <Label>PlotVisibility</Label>
+          <Label>RenderVisibilityVector</Label>
           <Bookmarks />
           <Breakpoints />
-          <FreeFormScript><![CDATA[visibilityVector.Active = visSeg.Visibility(FINCH.Epoch);
-
-Report FINCH.EpochText, visSeg.Visibility(FINCH.Epoch);
-Plot FINCH.EpochText, visSeg.Visibility(FINCH.Epoch);]]></FreeFormScript>
+          <FreeFormScript><![CDATA[visibilityVector.Active = visSeg.Visibility(FINCH.Epoch);]]></FreeFormScript>
         </FreeForm>
         <ViewCommand enabled="true">
           <View name="Command4" isConstant="false" isGlobal="false">
@@ -1690,7 +2148,7 @@ Plot FINCH.EpochText, visSeg.Visibility(FINCH.Epoch);]]></FreeFormScript>
             <metadata dim="0" />
           </View>
         </ViewCommand>
-        <PlotCommand enabled="false">
+        <PlotCommand enabled="true">
           <Plot name="Command6" isConstant="false" isGlobal="false">
             <Name>Command6</Name>
             <PlotType>XYPlot</PlotType>
@@ -1710,8 +2168,8 @@ Plot FINCH.EpochText, visSeg.Visibility(FINCH.Epoch);]]></FreeFormScript>
                   <value>
                     <ObjectParameter name="Command6_:YAxisItems1" isConstant="false" isGlobal="false">
                       <Name>Command6_:YAxisItems1</Name>
-                      <BaseObject>FINCH</BaseObject>
-                      <Parameter>A</Parameter>
+                      <BaseObject>visibilityVector</BaseObject>
+                      <Parameter>Active</Parameter>
                       <IndexType>NoIndices</IndexType>
                       <IndexOptions>
                         <NoIndices />
@@ -1725,12 +2183,19 @@ Plot FINCH.EpochText, visSeg.Visibility(FINCH.Epoch);]]></FreeFormScript>
             <metadata dim="0" />
           </Plot>
         </PlotCommand>
-        <StepCommand enabled="true">
-          <Step name="Command7" isConstant="false" isGlobal="false">
+        <UpdateCommand enabled="true">
+          <Update name="Command7" isConstant="false" isGlobal="false">
             <Name>Command7</Name>
+            <Window>FINCHViewWindow</Window>
+            <metadata dim="0" />
+          </Update>
+        </UpdateCommand>
+        <StepCommand enabled="true">
+          <Step name="Command8" isConstant="false" isGlobal="false">
+            <Name>Command8</Name>
             <StepObject>
-              <ObjectHolder name="Command7_:StepObject" isConstant="false" isGlobal="false">
-                <Name>Command7_:StepObject</Name>
+              <ObjectHolder name="Command8_:StepObject" isConstant="false" isGlobal="false">
+                <Name>Command8_:StepObject</Name>
                 <BaseObject>FINCH</BaseObject>
                 <metadata dim="0" />
               </ObjectHolder>
@@ -1752,12 +2217,10 @@ visSeg.SetObserver(MCC);
 visibilityVector.BuildVector(9, FINCH, MCC);
 While (FINCH.ElapsedTime < TIMESPAN(1 days));
 visibilityVector.Active = visSeg.Visibility(FINCH.Epoch);
-
-Report FINCH.EpochText, visSeg.Visibility(FINCH.Epoch);
-Plot FINCH.EpochText, visSeg.Visibility(FINCH.Epoch);
 View FINCH, MCC<800>, visibilityVector;
 Map FINCH, MCC<800>, visibilityVector;
-// Plot FINCH.ElapsedTime, FINCH.A;
+Plot FINCH.ElapsedTime, visibilityVector.Active;
+Update FINCHViewWindow;
 Step FINCH;
 End;]]></ProjectScript>
   <ProjectNotes></ProjectNotes>
