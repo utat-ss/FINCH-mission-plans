@@ -201,7 +201,7 @@
             <Prop>
               <RK89 name="FINCH_Propagator" isConstant="false" isGlobal="false">
                 <Name>FINCH_Propagator</Name>
-                <StepSize units="s" displayed_units="s">300</StepSize>
+                <StepSize units="s" displayed_units="s">100</StepSize>
                 <StepJustTaken units="s" displayed_units="s">300.0</StepJustTaken>
                 <StepToTake units="s" displayed_units="s">300.0</StepToTake>
                 <LargeCurvature units="" displayed_units="">0</LargeCurvature>
@@ -794,7 +794,7 @@
                     <metadata dim="0" />
                   </GNSSReceiverODProperties>
                 </OD>
-                <AttachedSensors dim="(0)" />
+                <AttachedSensors dim="0" />
                 <metadata dim="0" />
               </GNSSReceiver>
             </value>
@@ -1096,8 +1096,8 @@
       </Spacecraft>
     </Object>
     <Object>
-      <GroundStation name="GroundStation1" isConstant="false" isGlobal="false">
-        <Name>GroundStation1</Name>
+      <GroundStation name="MCC" isConstant="false" isGlobal="false">
+        <Name>MCC</Name>
         <CentralBody>Earth</CentralBody>
         <Location>
           <Latitude units="deg" displayed_units="deg">43.65993</Latitude>
@@ -1181,8 +1181,8 @@
           <DrawMethod>2</DrawMethod>
         </Visualization>
         <Antenna>
-          <GroundAntenna name="GroundStation1_Antenna" isConstant="false" isGlobal="false">
-            <Name>GroundStation1_Antenna</Name>
+          <GroundAntenna name="MCC_Antenna" isConstant="false" isGlobal="false">
+            <Name>MCC_Antenna</Name>
             <ID></ID>
             <TimeTagBias units="s" displayed_units="s">0</TimeTagBias>
             <RangeBias units="km" displayed_units="km">0.0</RangeBias>
@@ -1204,11 +1204,11 @@
             <ApplyTrackingDataConstraintChecks>false</ApplyTrackingDataConstraintChecks>
             <RangeRateAveragingInterval units="s" displayed_units="s">60</RangeRateAveragingInterval>
             <OD>
-              <GroundAntennaODProperties name="GroundStation1_|GroundAntennaODProperties|" isConstant="false" isGlobal="false">
-                <Name>GroundStation1_|GroundAntennaODProperties|</Name>
+              <GroundAntennaODProperties name="MCC_|GroundAntennaODProperties|" isConstant="false" isGlobal="false">
+                <Name>MCC_|GroundAntennaODProperties|</Name>
                 <TimeTagBias>
-                  <EstimableTimeBias name="GroundStation1_|OD_TimeTagBias|" isConstant="false" isGlobal="false">
-                    <Name>GroundStation1_|OD_TimeTagBias|</Name>
+                  <EstimableTimeBias name="MCC_|OD_TimeTagBias|" isConstant="false" isGlobal="false">
+                    <Name>MCC_|OD_TimeTagBias|</Name>
                     <ProcessAction>0</ProcessAction>
                     <Sigma units="s" displayed_units="s">1e-4</Sigma>
                     <ProcessNoise units="s^2" displayed_units="s^2">1e-17</ProcessNoise>
@@ -1216,14 +1216,14 @@
                   </EstimableTimeBias>
                 </TimeTagBias>
                 <GroundObservation>
-                  <GroundObservationMeasurements name="GroundStation1_|OD_GroundObservationMeasurements|" isConstant="false" isGlobal="false">
-                    <Name>GroundStation1_|OD_GroundObservationMeasurements|</Name>
+                  <GroundObservationMeasurements name="MCC_|OD_GroundObservationMeasurements|" isConstant="false" isGlobal="false">
+                    <Name>MCC_|OD_GroundObservationMeasurements|</Name>
                     <Azimuth>
-                      <MeasurementAzimuth name="GroundStation1_|OD_GroundObservationMeasurements|_|Measurements_Azimuth|" isConstant="false" isGlobal="false">
-                        <Name>GroundStation1_|OD_GroundObservationMeasurements|_|Measurements_Azimuth|</Name>
+                      <MeasurementAzimuth name="MCC_|OD_GroundObservationMeasurements|_|Measurements_Azimuth|" isConstant="false" isGlobal="false">
+                        <Name>MCC_|OD_GroundObservationMeasurements|_|Measurements_Azimuth|</Name>
                         <Bias>
-                          <EstimableAngleBias name="GroundStation1_|OD_GroundObservationMeasurements|_|Measurements_Azimuth|_|Measurements|" isConstant="false" isGlobal="false">
-                            <Name>GroundStation1_|OD_GroundObservationMeasurements|_|Measurements_Azimuth|_|Measurements|</Name>
+                          <EstimableAngleBias name="MCC_|OD_GroundObservationMeasurements|_|Measurements_Azimuth|_|Measurements|" isConstant="false" isGlobal="false">
+                            <Name>MCC_|OD_GroundObservationMeasurements|_|Measurements_Azimuth|_|Measurements|</Name>
                             <ProcessAction>0</ProcessAction>
                             <Sigma units="rad" displayed_units="rad">1.7e-8</Sigma>
                             <ProcessNoise units="rad^2" displayed_units="rad^2">1.7e-8</ProcessNoise>
@@ -1237,11 +1237,11 @@
                       </MeasurementAzimuth>
                     </Azimuth>
                     <Elevation>
-                      <MeasurementElevation name="GroundStation1_|OD_GroundObservationMeasurements|_|Measurements_Elevation|" isConstant="false" isGlobal="false">
-                        <Name>GroundStation1_|OD_GroundObservationMeasurements|_|Measurements_Elevation|</Name>
+                      <MeasurementElevation name="MCC_|OD_GroundObservationMeasurements|_|Measurements_Elevation|" isConstant="false" isGlobal="false">
+                        <Name>MCC_|OD_GroundObservationMeasurements|_|Measurements_Elevation|</Name>
                         <Bias>
-                          <EstimableAngleBias name="GroundStation1_|OD_GroundObservationMeasurements|_|Measurements_Elevation|_|Measurements|" isConstant="false" isGlobal="false">
-                            <Name>GroundStation1_|OD_GroundObservationMeasurements|_|Measurements_Elevation|_|Measurements|</Name>
+                          <EstimableAngleBias name="MCC_|OD_GroundObservationMeasurements|_|Measurements_Elevation|_|Measurements|" isConstant="false" isGlobal="false">
+                            <Name>MCC_|OD_GroundObservationMeasurements|_|Measurements_Elevation|_|Measurements|</Name>
                             <ProcessAction>0</ProcessAction>
                             <Sigma units="rad" displayed_units="rad">1.7e-8</Sigma>
                             <ProcessNoise units="rad^2" displayed_units="rad^2">1.7e-8</ProcessNoise>
@@ -1255,11 +1255,11 @@
                       </MeasurementElevation>
                     </Elevation>
                     <RightAscension>
-                      <MeasurementRightAscension name="GroundStation1_|OD_GroundObservationMeasurements|_|Measurements_RightAscension|" isConstant="false" isGlobal="false">
-                        <Name>GroundStation1_|OD_GroundObservationMeasurements|_|Measurements_RightAscension|</Name>
+                      <MeasurementRightAscension name="MCC_|OD_GroundObservationMeasurements|_|Measurements_RightAscension|" isConstant="false" isGlobal="false">
+                        <Name>MCC_|OD_GroundObservationMeasurements|_|Measurements_RightAscension|</Name>
                         <Bias>
-                          <EstimableAngleBias name="GroundStation1_|OD_GroundObservationMeasurements|_|Measurements_RightAscension|_|Measurements|" isConstant="false" isGlobal="false">
-                            <Name>GroundStation1_|OD_GroundObservationMeasurements|_|Measurements_RightAscension|_|Measurements|</Name>
+                          <EstimableAngleBias name="MCC_|OD_GroundObservationMeasurements|_|Measurements_RightAscension|_|Measurements|" isConstant="false" isGlobal="false">
+                            <Name>MCC_|OD_GroundObservationMeasurements|_|Measurements_RightAscension|_|Measurements|</Name>
                             <ProcessAction>0</ProcessAction>
                             <Sigma units="rad" displayed_units="rad">1.7e-8</Sigma>
                             <ProcessNoise units="rad^2" displayed_units="rad^2">1.7e-8</ProcessNoise>
@@ -1273,11 +1273,11 @@
                       </MeasurementRightAscension>
                     </RightAscension>
                     <Declination>
-                      <MeasurementDeclination name="GroundStation1_|OD_GroundObservationMeasurements|_|Measurements_Declination|" isConstant="false" isGlobal="false">
-                        <Name>GroundStation1_|OD_GroundObservationMeasurements|_|Measurements_Declination|</Name>
+                      <MeasurementDeclination name="MCC_|OD_GroundObservationMeasurements|_|Measurements_Declination|" isConstant="false" isGlobal="false">
+                        <Name>MCC_|OD_GroundObservationMeasurements|_|Measurements_Declination|</Name>
                         <Bias>
-                          <EstimableAngleBias name="GroundStation1_|OD_GroundObservationMeasurements|_|Measurements_Declination|_|Measurements|" isConstant="false" isGlobal="false">
-                            <Name>GroundStation1_|OD_GroundObservationMeasurements|_|Measurements_Declination|_|Measurements|</Name>
+                          <EstimableAngleBias name="MCC_|OD_GroundObservationMeasurements|_|Measurements_Declination|_|Measurements|" isConstant="false" isGlobal="false">
+                            <Name>MCC_|OD_GroundObservationMeasurements|_|Measurements_Declination|_|Measurements|</Name>
                             <ProcessAction>0</ProcessAction>
                             <Sigma units="rad" displayed_units="rad">1.7e-8</Sigma>
                             <ProcessNoise units="rad^2" displayed_units="rad^2">1.7e-8</ProcessNoise>
@@ -1291,11 +1291,11 @@
                       </MeasurementDeclination>
                     </Declination>
                     <Range>
-                      <MeasurementRange name="GroundStation1_|OD_GroundObservationMeasurements|_|Measurements_Range|" isConstant="false" isGlobal="false">
-                        <Name>GroundStation1_|OD_GroundObservationMeasurements|_|Measurements_Range|</Name>
+                      <MeasurementRange name="MCC_|OD_GroundObservationMeasurements|_|Measurements_Range|" isConstant="false" isGlobal="false">
+                        <Name>MCC_|OD_GroundObservationMeasurements|_|Measurements_Range|</Name>
                         <Bias>
-                          <EstimableDistanceBias name="GroundStation1_|OD_GroundObservationMeasurements|_|Measurements_Range|_|Measurements|" isConstant="false" isGlobal="false">
-                            <Name>GroundStation1_|OD_GroundObservationMeasurements|_|Measurements_Range|_|Measurements|</Name>
+                          <EstimableDistanceBias name="MCC_|OD_GroundObservationMeasurements|_|Measurements_Range|_|Measurements|" isConstant="false" isGlobal="false">
+                            <Name>MCC_|OD_GroundObservationMeasurements|_|Measurements_Range|_|Measurements|</Name>
                             <ProcessAction>0</ProcessAction>
                             <Sigma units="km" displayed_units="km">1e-6</Sigma>
                             <ProcessNoise units="km^2" displayed_units="km^2">1e-6</ProcessNoise>
@@ -1309,11 +1309,11 @@
                       </MeasurementRange>
                     </Range>
                     <RangeRate>
-                      <MeasurementRangeRate name="GroundStation1_|OD_GroundObservationMeasurements|_|Measurements_RangeRate|" isConstant="false" isGlobal="false">
-                        <Name>GroundStation1_|OD_GroundObservationMeasurements|_|Measurements_RangeRate|</Name>
+                      <MeasurementRangeRate name="MCC_|OD_GroundObservationMeasurements|_|Measurements_RangeRate|" isConstant="false" isGlobal="false">
+                        <Name>MCC_|OD_GroundObservationMeasurements|_|Measurements_RangeRate|</Name>
                         <Bias>
-                          <EstimableRangeRateBias name="GroundStation1_|OD_GroundObservationMeasurements|_|Measurements_RangeRate|_|Measurements|" isConstant="false" isGlobal="false">
-                            <Name>GroundStation1_|OD_GroundObservationMeasurements|_|Measurements_RangeRate|_|Measurements|</Name>
+                          <EstimableRangeRateBias name="MCC_|OD_GroundObservationMeasurements|_|Measurements_RangeRate|_|Measurements|" isConstant="false" isGlobal="false">
+                            <Name>MCC_|OD_GroundObservationMeasurements|_|Measurements_RangeRate|_|Measurements|</Name>
                             <ProcessAction>0</ProcessAction>
                             <Sigma units="km/s" displayed_units="km/s">1e-6</Sigma>
                             <ProcessNoise units="km^2/s^2" displayed_units="km^2/s^2">1e-6</ProcessNoise>
@@ -1330,14 +1330,14 @@
                   </GroundObservationMeasurements>
                 </GroundObservation>
                 <TDRSObservation>
-                  <TDRSObservationMeasurements name="GroundStation1_|OD_TDRSObservationMeasurements|" isConstant="false" isGlobal="false">
-                    <Name>GroundStation1_|OD_TDRSObservationMeasurements|</Name>
+                  <TDRSObservationMeasurements name="MCC_|OD_TDRSObservationMeasurements|" isConstant="false" isGlobal="false">
+                    <Name>MCC_|OD_TDRSObservationMeasurements|</Name>
                     <OneWayDoppler>
-                      <MeasurementOneWayDoppler name="GroundStation1_|OD_TDRSObservationMeasurements|_|Measurements_OneWayDoppler|" isConstant="false" isGlobal="false">
-                        <Name>GroundStation1_|OD_TDRSObservationMeasurements|_|Measurements_OneWayDoppler|</Name>
+                      <MeasurementOneWayDoppler name="MCC_|OD_TDRSObservationMeasurements|_|Measurements_OneWayDoppler|" isConstant="false" isGlobal="false">
+                        <Name>MCC_|OD_TDRSObservationMeasurements|_|Measurements_OneWayDoppler|</Name>
                         <Bias>
-                          <EstimableDopplerBias name="GroundStation1_|OD_TDRSObservationMeasurements|_|Measurements_OneWayDoppler|_|Measurements|" isConstant="false" isGlobal="false">
-                            <Name>GroundStation1_|OD_TDRSObservationMeasurements|_|Measurements_OneWayDoppler|_|Measurements|</Name>
+                          <EstimableDopplerBias name="MCC_|OD_TDRSObservationMeasurements|_|Measurements_OneWayDoppler|_|Measurements|" isConstant="false" isGlobal="false">
+                            <Name>MCC_|OD_TDRSObservationMeasurements|_|Measurements_OneWayDoppler|_|Measurements|</Name>
                             <ProcessAction>0</ProcessAction>
                             <Sigma units="Hz" displayed_units="Hz">1e-6</Sigma>
                             <ProcessNoise units="Hz^2" displayed_units="Hz^2">1e-6</ProcessNoise>
@@ -1351,11 +1351,11 @@
                       </MeasurementOneWayDoppler>
                     </OneWayDoppler>
                     <TwoWayDoppler>
-                      <MeasurementTwoWayDoppler name="GroundStation1_|OD_TDRSObservationMeasurements|_|Measurements_TwoWayDoppler|" isConstant="false" isGlobal="false">
-                        <Name>GroundStation1_|OD_TDRSObservationMeasurements|_|Measurements_TwoWayDoppler|</Name>
+                      <MeasurementTwoWayDoppler name="MCC_|OD_TDRSObservationMeasurements|_|Measurements_TwoWayDoppler|" isConstant="false" isGlobal="false">
+                        <Name>MCC_|OD_TDRSObservationMeasurements|_|Measurements_TwoWayDoppler|</Name>
                         <Bias>
-                          <EstimableDopplerBias name="GroundStation1_|OD_TDRSObservationMeasurements|_|Measurements_TwoWayDoppler|_|Measurements|" isConstant="false" isGlobal="false">
-                            <Name>GroundStation1_|OD_TDRSObservationMeasurements|_|Measurements_TwoWayDoppler|_|Measurements|</Name>
+                          <EstimableDopplerBias name="MCC_|OD_TDRSObservationMeasurements|_|Measurements_TwoWayDoppler|_|Measurements|" isConstant="false" isGlobal="false">
+                            <Name>MCC_|OD_TDRSObservationMeasurements|_|Measurements_TwoWayDoppler|_|Measurements|</Name>
                             <ProcessAction>0</ProcessAction>
                             <Sigma units="Hz" displayed_units="Hz">1e-6</Sigma>
                             <ProcessNoise units="Hz^2" displayed_units="Hz^2">1e-6</ProcessNoise>
@@ -1369,11 +1369,11 @@
                       </MeasurementTwoWayDoppler>
                     </TwoWayDoppler>
                     <TwoWayRange>
-                      <MeasurementTwoWayRange name="GroundStation1_|OD_TDRSObservationMeasurements|_|Measurements_TwoWayRange|" isConstant="false" isGlobal="false">
-                        <Name>GroundStation1_|OD_TDRSObservationMeasurements|_|Measurements_TwoWayRange|</Name>
+                      <MeasurementTwoWayRange name="MCC_|OD_TDRSObservationMeasurements|_|Measurements_TwoWayRange|" isConstant="false" isGlobal="false">
+                        <Name>MCC_|OD_TDRSObservationMeasurements|_|Measurements_TwoWayRange|</Name>
                         <Bias>
-                          <EstimableDistanceBias name="GroundStation1_|OD_TDRSObservationMeasurements|_|Measurements_TwoWayRange|_|Measurements|" isConstant="false" isGlobal="false">
-                            <Name>GroundStation1_|OD_TDRSObservationMeasurements|_|Measurements_TwoWayRange|_|Measurements|</Name>
+                          <EstimableDistanceBias name="MCC_|OD_TDRSObservationMeasurements|_|Measurements_TwoWayRange|_|Measurements|" isConstant="false" isGlobal="false">
+                            <Name>MCC_|OD_TDRSObservationMeasurements|_|Measurements_TwoWayRange|_|Measurements|</Name>
                             <ProcessAction>0</ProcessAction>
                             <Sigma units="km" displayed_units="km">1e-6</Sigma>
                             <ProcessNoise units="km^2" displayed_units="km^2">1e-6</ProcessNoise>
@@ -1390,14 +1390,14 @@
                   </TDRSObservationMeasurements>
                 </TDRSObservation>
                 <BRTSObservation>
-                  <BRTSObservationMeasurements name="GroundStation1_|OD_BRTSObservationMeasurements|" isConstant="false" isGlobal="false">
-                    <Name>GroundStation1_|OD_BRTSObservationMeasurements|</Name>
+                  <BRTSObservationMeasurements name="MCC_|OD_BRTSObservationMeasurements|" isConstant="false" isGlobal="false">
+                    <Name>MCC_|OD_BRTSObservationMeasurements|</Name>
                     <TwoWayDoppler>
-                      <MeasurementTwoWayDoppler name="GroundStation1_|OD_BRTSObservationMeasurements|_|Measurements_TwoWayDoppler|" isConstant="false" isGlobal="false">
-                        <Name>GroundStation1_|OD_BRTSObservationMeasurements|_|Measurements_TwoWayDoppler|</Name>
+                      <MeasurementTwoWayDoppler name="MCC_|OD_BRTSObservationMeasurements|_|Measurements_TwoWayDoppler|" isConstant="false" isGlobal="false">
+                        <Name>MCC_|OD_BRTSObservationMeasurements|_|Measurements_TwoWayDoppler|</Name>
                         <Bias>
-                          <EstimableDopplerBias name="GroundStation1_|OD_BRTSObservationMeasurements|_|Measurements_TwoWayDoppler|_|Measurements|" isConstant="false" isGlobal="false">
-                            <Name>GroundStation1_|OD_BRTSObservationMeasurements|_|Measurements_TwoWayDoppler|_|Measurements|</Name>
+                          <EstimableDopplerBias name="MCC_|OD_BRTSObservationMeasurements|_|Measurements_TwoWayDoppler|_|Measurements|" isConstant="false" isGlobal="false">
+                            <Name>MCC_|OD_BRTSObservationMeasurements|_|Measurements_TwoWayDoppler|_|Measurements|</Name>
                             <ProcessAction>0</ProcessAction>
                             <Sigma units="Hz" displayed_units="Hz">1e-6</Sigma>
                             <ProcessNoise units="Hz^2" displayed_units="Hz^2">1e-6</ProcessNoise>
@@ -1411,11 +1411,11 @@
                       </MeasurementTwoWayDoppler>
                     </TwoWayDoppler>
                     <TwoWayRange>
-                      <MeasurementTwoWayRange name="GroundStation1_|OD_BRTSObservationMeasurements|_|Measurements_TwoWayRange|" isConstant="false" isGlobal="false">
-                        <Name>GroundStation1_|OD_BRTSObservationMeasurements|_|Measurements_TwoWayRange|</Name>
+                      <MeasurementTwoWayRange name="MCC_|OD_BRTSObservationMeasurements|_|Measurements_TwoWayRange|" isConstant="false" isGlobal="false">
+                        <Name>MCC_|OD_BRTSObservationMeasurements|_|Measurements_TwoWayRange|</Name>
                         <Bias>
-                          <EstimableDistanceBias name="GroundStation1_|OD_BRTSObservationMeasurements|_|Measurements_TwoWayRange|_|Measurements|" isConstant="false" isGlobal="false">
-                            <Name>GroundStation1_|OD_BRTSObservationMeasurements|_|Measurements_TwoWayRange|_|Measurements|</Name>
+                          <EstimableDistanceBias name="MCC_|OD_BRTSObservationMeasurements|_|Measurements_TwoWayRange|_|Measurements|" isConstant="false" isGlobal="false">
+                            <Name>MCC_|OD_BRTSObservationMeasurements|_|Measurements_TwoWayRange|_|Measurements|</Name>
                             <ProcessAction>0</ProcessAction>
                             <Sigma units="km" displayed_units="km">1e-6</Sigma>
                             <ProcessNoise units="km^2" displayed_units="km^2">1e-6</ProcessNoise>
@@ -1429,8 +1429,8 @@
                       </MeasurementTwoWayRange>
                     </TwoWayRange>
                     <RemoteTransponderDelay>
-                      <EstimableTimeBias name="GroundStation1_|OD_RemoteTransponderDelay|" isConstant="false" isGlobal="false">
-                        <Name>GroundStation1_|OD_RemoteTransponderDelay|</Name>
+                      <EstimableTimeBias name="MCC_|OD_RemoteTransponderDelay|" isConstant="false" isGlobal="false">
+                        <Name>MCC_|OD_RemoteTransponderDelay|</Name>
                         <ProcessAction>0</ProcessAction>
                         <Sigma units="s" displayed_units="s">1e-4</Sigma>
                         <ProcessNoise units="s^2" displayed_units="s^2">1e-17</ProcessNoise>
@@ -1452,11 +1452,11 @@
           <None />
         </RefractionModel>
         <OD>
-          <GroundStationODProperties name="GroundStation1_|GroundStationODProperties|" isConstant="false" isGlobal="false">
-            <Name>GroundStation1_|GroundStationODProperties|</Name>
+          <GroundStationODProperties name="MCC_|GroundStationODProperties|" isConstant="false" isGlobal="false">
+            <Name>MCC_|GroundStationODProperties|</Name>
             <LatitudeBias>
-              <EstimableLatLongBias name="GroundStation1_|OD_LatitudeBias|" isConstant="false" isGlobal="false">
-                <Name>GroundStation1_|OD_LatitudeBias|</Name>
+              <EstimableLatLongBias name="MCC_|OD_LatitudeBias|" isConstant="false" isGlobal="false">
+                <Name>MCC_|OD_LatitudeBias|</Name>
                 <ProcessAction>0</ProcessAction>
                 <Sigma units="deg" displayed_units="deg">1e-6</Sigma>
                 <ProcessNoise units="deg^2" displayed_units="deg^2">1e-6</ProcessNoise>
@@ -1464,8 +1464,8 @@
               </EstimableLatLongBias>
             </LatitudeBias>
             <LongitudeBias>
-              <EstimableLatLongBias name="GroundStation1_|OD_LongitudeBias|" isConstant="false" isGlobal="false">
-                <Name>GroundStation1_|OD_LongitudeBias|</Name>
+              <EstimableLatLongBias name="MCC_|OD_LongitudeBias|" isConstant="false" isGlobal="false">
+                <Name>MCC_|OD_LongitudeBias|</Name>
                 <ProcessAction>0</ProcessAction>
                 <Sigma units="deg" displayed_units="deg">1e-6</Sigma>
                 <ProcessNoise units="deg^2" displayed_units="deg^2">1e-6</ProcessNoise>
@@ -1473,8 +1473,8 @@
               </EstimableLatLongBias>
             </LongitudeBias>
             <HeightBias>
-              <EstimableHeightBias name="GroundStation1_|OD_HeightBias|" isConstant="false" isGlobal="false">
-                <Name>GroundStation1_|OD_HeightBias|</Name>
+              <EstimableHeightBias name="MCC_|OD_HeightBias|" isConstant="false" isGlobal="false">
+                <Name>MCC_|OD_HeightBias|</Name>
                 <ProcessAction>0</ProcessAction>
                 <Sigma units="km" displayed_units="km">1e-6</Sigma>
                 <ProcessNoise units="km^2" displayed_units="km^2">1e-6</ProcessNoise>
@@ -1488,11 +1488,11 @@
       </GroundStation>
     </Object>
     <Object>
-      <RFLink name="RFLink1" isConstant="false" isGlobal="false">
-        <Name>RFLink1</Name>
+      <RFLink name="RFLinkFINCHToMCC" isConstant="false" isGlobal="false">
+        <Name>RFLinkFINCHToMCC</Name>
         <Transmitter>
-          <RFLinkComponent name="RFLink1_|Transmitter|" isConstant="false" isGlobal="false">
-            <Name>RFLink1_|Transmitter|</Name>
+          <RFLinkComponent name="RFLinkFINCHToMCC_|Transmitter|" isConstant="false" isGlobal="false">
+            <Name>RFLinkFINCHToMCC_|Transmitter|</Name>
             <AntennaDiameter units="m" displayed_units="m">0.1</AntennaDiameter>
             <Power units="W" displayed_units="W">200</Power>
             <AntennaEfficiency units="" displayed_units="">0.6</AntennaEfficiency>
@@ -1507,8 +1507,8 @@
           </RFLinkComponent>
         </Transmitter>
         <Receiver>
-          <RFLinkComponent name="RFLink1_|Receiver|" isConstant="false" isGlobal="false">
-            <Name>RFLink1_|Receiver|</Name>
+          <RFLinkComponent name="RFLinkFINCHToMCC_|Receiver|" isConstant="false" isGlobal="false">
+            <Name>RFLinkFINCHToMCC_|Receiver|</Name>
             <AntennaDiameter units="m" displayed_units="m">0.1</AntennaDiameter>
             <Power units="W" displayed_units="W">200</Power>
             <AntennaEfficiency units="" displayed_units="">0.6</AntennaEfficiency>
@@ -1518,7 +1518,7 @@
             <ExtrapolatedGain units="dB" displayed_units="dB">-1e10</ExtrapolatedGain>
             <GainType>Calculated Uniform Antenna Gain</GainType>
             <GainType2 />
-            <ReferenceObject>GroundStation1</ReferenceObject>
+            <ReferenceObject>MCC</ReferenceObject>
             <metadata dim="0" />
           </RFLinkComponent>
         </Receiver>
@@ -1533,80 +1533,26 @@
       </RFLink>
     </Object>
     <Object>
-      <GraphicsOverlay name="GraphicsOverlay1" isConstant="false" isGlobal="false">
-        <Name>GraphicsOverlay1</Name>
-        <ReferenceObject>Earth</ReferenceObject>
-        <DefaultColor>16777215</DefaultColor>
-        <Position units="km" displayed_units="km" dim="(3)">
-          <value>0</value>
-          <value>0</value>
-          <value>0</value>
-        </Position>
-        <Orientation units="" displayed_units="" dim="(4)">
-          <value>0</value>
-          <value>0</value>
-          <value>0</value>
-          <value>1</value>
-        </Orientation>
-        <Scale units="" displayed_units="" dim="(3)">
-          <value>1.0</value>
-          <value>1.0</value>
-          <value>1.0</value>
-        </Scale>
-        <Shapes dim="1">
-          <value>
-            <GraphicsOverlayShape name="GraphicsOverlay1_|Shape|1" isConstant="false" isGlobal="false">
-              <Name>GraphicsOverlay1_|Shape|1</Name>
-              <Type>Lines</Type>
-              <Visible>true</Visible>
-              <Opacity units="" displayed_units="">1.0</Opacity>
-              <Position units="km" displayed_units="km" dim="(3)">
-                <value>0</value>
-                <value>0</value>
-                <value>0</value>
-              </Position>
-              <Orientation units="" displayed_units="" dim="(4)">
-                <value>0</value>
-                <value>0</value>
-                <value>0</value>
-                <value>1</value>
-              </Orientation>
-              <Scale units="" displayed_units="" dim="(3)">
-                <value>1.0</value>
-                <value>1.0</value>
-                <value>1.0</value>
-              </Scale>
-              <TickType>None</TickType>
-              <TickWidth units="pixel" displayed_units="pixel">7</TickWidth>
-              <Vertices units="km" displayed_units="km" dim="(0)" />
-              <Colors dim="(0)" />
-              <Annotations dim="(0)" />
-              <LineWidthUnits>1</LineWidthUnits>
-              <LineWidth units="" displayed_units="">1.0</LineWidth>
-              <ShowTextBackDrop>true</ShowTextBackDrop>
-              <AnnotationFont>
-                <ViewFont name="GraphicsOverlay1_|Shape|1_|AnnotationFont|" isConstant="false" isGlobal="false">
-                  <Name>GraphicsOverlay1_|Shape|1_|AnnotationFont|</Name>
-                  <Bold>false</Bold>
-                  <Italic>false</Italic>
-                  <Size units="" displayed_units="">20.0</Size>
-                  <Strikeout>false</Strikeout>
-                  <Typeface>Tahoma</Typeface>
-                  <Underline>false</Underline>
-                  <metadata dim="0" />
-                </ViewFont>
-              </AnnotationFont>
-              <IconFilename></IconFilename>
-              <IconScale units="km" displayed_units="km">1000</IconScale>
-              <IconReferencePoint>Center</IconReferencePoint>
-              <IconRotation units="deg" displayed_units="deg">0.0</IconRotation>
-              <PointWidth units="pixel" displayed_units="pixel">3.0</PointWidth>
-              <metadata dim="0" />
-            </GraphicsOverlayShape>
-          </value>
-        </Shapes>
+      <Vector name="visibilityVector" isConstant="false" isGlobal="false">
+        <Name>visibilityVector</Name>
+        <Alpha units="deg" displayed_units="deg">0.0</Alpha>
+        <Delta units="deg" displayed_units="deg">0.0</Delta>
+        <Magnitude units="" displayed_units="">1.0</Magnitude>
+        <Epoch>Undefined</Epoch>
+        <Visualization>
+          <Color>65535</Color>
+          <MagnitudeScaleFactor units="" displayed_units="">1.0</MagnitudeScaleFactor>
+          <Active>true</Active>
+          <DrawMethod>0</DrawMethod>
+          <LabelLocation>1</LabelLocation>
+          <VisualOffset units="km" displayed_units="km" dim="(3)">
+            <value>0</value>
+            <value>0</value>
+            <value>0</value>
+          </VisualOffset>
+        </Visualization>
         <metadata dim="0" />
-      </GraphicsOverlay>
+      </Vector>
     </Object>
   </ProjectObjects>
   <ProjectMissionSequence>
@@ -1616,12 +1562,14 @@
         <Label>CreateVisibilitySegment</Label>
         <Bookmarks />
         <Breakpoints />
-        <FreeFormScript><![CDATA[VisibilitySegment visSeg();
+        <FreeFormScript><![CDATA[VisibilitySegment visSeg;
 visSeg.AddOccultingBody(Earth);
 visSeg.CelestialObjectOccultationModel = 1;
 
 visSeg.SetTarget(FINCH);
-visSeg.SetObserver(GroundStation1);]]></FreeFormScript>
+visSeg.SetObserver(MCC);
+
+visibilityVector.BuildVector(9, FINCH, MCC);]]></FreeFormScript>
       </FreeForm>
       <WhileCommand enabled="true" collapsed="false">
         <While name="Command2" isConstant="false" isGlobal="false">
@@ -1667,36 +1615,20 @@ visSeg.SetObserver(GroundStation1);]]></FreeFormScript>
           </Condition>
           <metadata dim="0" />
         </While>
-        <ViewCommand enabled="true">
-          <View name="Command3" isConstant="false" isGlobal="false">
-            <Name>Command3</Name>
-            <ViewpointType>view</ViewpointType>
-            <Items dim="2">
-              <value>
-                <EventWithHeight name="Command3_:Items1" isConstant="false" isGlobal="false">
-                  <Name>Command3_:Items1</Name>
-                  <BaseObject>FINCH</BaseObject>
-                  <Height units="km" displayed_units="km">800</Height>
-                  <metadata dim="0" />
-                </EventWithHeight>
-              </value>
-              <value>
-                <EventWithHeight name="Command3_:Items2" isConstant="false" isGlobal="false">
-                  <Name>Command3_:Items2</Name>
-                  <BaseObject>GroundStation1</BaseObject>
-                  <Height units="km" displayed_units="km">800</Height>
-                  <metadata dim="0" />
-                </EventWithHeight>
-              </value>
-            </Items>
-            <metadata dim="0" />
-          </View>
-        </ViewCommand>
+        <FreeForm enabled="true">
+          <Label>PlotVisibility</Label>
+          <Bookmarks />
+          <Breakpoints />
+          <FreeFormScript><![CDATA[visibilityVector.Active = visSeg.Visibility(FINCH.Epoch);
+
+Report FINCH.EpochText, visSeg.Visibility(FINCH.Epoch);
+Plot FINCH.EpochText, visSeg.Visibility(FINCH.Epoch);]]></FreeFormScript>
+        </FreeForm>
         <ViewCommand enabled="true">
           <View name="Command4" isConstant="false" isGlobal="false">
             <Name>Command4</Name>
-            <ViewpointType>map</ViewpointType>
-            <Items dim="2">
+            <ViewpointType>view</ViewpointType>
+            <Items dim="3">
               <value>
                 <EventWithHeight name="Command4_:Items1" isConstant="false" isGlobal="false">
                   <Name>Command4_:Items1</Name>
@@ -1708,7 +1640,15 @@ visSeg.SetObserver(GroundStation1);]]></FreeFormScript>
               <value>
                 <EventWithHeight name="Command4_:Items2" isConstant="false" isGlobal="false">
                   <Name>Command4_:Items2</Name>
-                  <BaseObject>GroundStation1</BaseObject>
+                  <BaseObject>MCC</BaseObject>
+                  <Height units="km" displayed_units="km">800</Height>
+                  <metadata dim="0" />
+                </EventWithHeight>
+              </value>
+              <value>
+                <EventWithHeight name="Command4_:Items3" isConstant="false" isGlobal="false">
+                  <Name>Command4_:Items3</Name>
+                  <BaseObject>visibilityVector</BaseObject>
                   <Height units="km" displayed_units="km">800</Height>
                   <metadata dim="0" />
                 </EventWithHeight>
@@ -1717,16 +1657,49 @@ visSeg.SetObserver(GroundStation1);]]></FreeFormScript>
             <metadata dim="0" />
           </View>
         </ViewCommand>
-        <PlotCommand enabled="true">
-          <Plot name="Command5" isConstant="false" isGlobal="false">
+        <ViewCommand enabled="true">
+          <View name="Command5" isConstant="false" isGlobal="false">
             <Name>Command5</Name>
+            <ViewpointType>map</ViewpointType>
+            <Items dim="3">
+              <value>
+                <EventWithHeight name="Command5_:Items1" isConstant="false" isGlobal="false">
+                  <Name>Command5_:Items1</Name>
+                  <BaseObject>FINCH</BaseObject>
+                  <Height units="km" displayed_units="km">800</Height>
+                  <metadata dim="0" />
+                </EventWithHeight>
+              </value>
+              <value>
+                <EventWithHeight name="Command5_:Items2" isConstant="false" isGlobal="false">
+                  <Name>Command5_:Items2</Name>
+                  <BaseObject>MCC</BaseObject>
+                  <Height units="km" displayed_units="km">800</Height>
+                  <metadata dim="0" />
+                </EventWithHeight>
+              </value>
+              <value>
+                <EventWithHeight name="Command5_:Items3" isConstant="false" isGlobal="false">
+                  <Name>Command5_:Items3</Name>
+                  <BaseObject>visibilityVector</BaseObject>
+                  <Height units="km" displayed_units="km">800</Height>
+                  <metadata dim="0" />
+                </EventWithHeight>
+              </value>
+            </Items>
+            <metadata dim="0" />
+          </View>
+        </ViewCommand>
+        <PlotCommand enabled="false">
+          <Plot name="Command6" isConstant="false" isGlobal="false">
+            <Name>Command6</Name>
             <PlotType>XYPlot</PlotType>
             <ScrollPlot>0</ScrollPlot>
             <Items>
               <XYPlot>
                 <XAxisItem>
-                  <EventCall name="Command5_:XAxisItem" isConstant="false" isGlobal="false">
-                    <Name>Command5_:XAxisItem</Name>
+                  <EventCall name="Command6_:XAxisItem" isConstant="false" isGlobal="false">
+                    <Name>Command6_:XAxisItem</Name>
                     <BaseObject>FINCH</BaseObject>
                     <EventName>ElapsedTime</EventName>
                     <Parameters dim="0" />
@@ -1735,8 +1708,8 @@ visSeg.SetObserver(GroundStation1);]]></FreeFormScript>
                 </XAxisItem>
                 <YAxisItems dim="1">
                   <value>
-                    <ObjectParameter name="Command5_:YAxisItems1" isConstant="false" isGlobal="false">
-                      <Name>Command5_:YAxisItems1</Name>
+                    <ObjectParameter name="Command6_:YAxisItems1" isConstant="false" isGlobal="false">
+                      <Name>Command6_:YAxisItems1</Name>
                       <BaseObject>FINCH</BaseObject>
                       <Parameter>A</Parameter>
                       <IndexType>NoIndices</IndexType>
@@ -1753,11 +1726,11 @@ visSeg.SetObserver(GroundStation1);]]></FreeFormScript>
           </Plot>
         </PlotCommand>
         <StepCommand enabled="true">
-          <Step name="Command6" isConstant="false" isGlobal="false">
-            <Name>Command6</Name>
+          <Step name="Command7" isConstant="false" isGlobal="false">
+            <Name>Command7</Name>
             <StepObject>
-              <ObjectHolder name="Command6_:StepObject" isConstant="false" isGlobal="false">
-                <Name>Command6_:StepObject</Name>
+              <ObjectHolder name="Command7_:StepObject" isConstant="false" isGlobal="false">
+                <Name>Command7_:StepObject</Name>
                 <BaseObject>FINCH</BaseObject>
                 <metadata dim="0" />
               </ObjectHolder>
@@ -1769,16 +1742,22 @@ visSeg.SetObserver(GroundStation1);]]></FreeFormScript>
       </WhileCommand>
     </ProjectCommands>
   </ProjectMissionSequence>
-  <ProjectScript><![CDATA[VisibilitySegment visSeg();
+  <ProjectScript><![CDATA[VisibilitySegment visSeg;
 visSeg.AddOccultingBody(Earth);
 visSeg.CelestialObjectOccultationModel = 1;
 
 visSeg.SetTarget(FINCH);
-visSeg.SetObserver(GroundStation1);
+visSeg.SetObserver(MCC);
+
+visibilityVector.BuildVector(9, FINCH, MCC);
 While (FINCH.ElapsedTime < TIMESPAN(1 days));
-View FINCH, GroundStation1<800>;
-Map FINCH, GroundStation1<800>;
-Plot FINCH.ElapsedTime, FINCH.A;
+visibilityVector.Active = visSeg.Visibility(FINCH.Epoch);
+
+Report FINCH.EpochText, visSeg.Visibility(FINCH.Epoch);
+Plot FINCH.EpochText, visSeg.Visibility(FINCH.Epoch);
+View FINCH, MCC<800>, visibilityVector;
+Map FINCH, MCC<800>, visibilityVector;
+// Plot FINCH.ElapsedTime, FINCH.A;
 Step FINCH;
 End;]]></ProjectScript>
   <ProjectNotes></ProjectNotes>
