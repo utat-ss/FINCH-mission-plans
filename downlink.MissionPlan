@@ -3460,7 +3460,7 @@ If (visSeg.Visibility(FINCH.Epoch) and !visPrev);
 // visibility just ended
 ElseIf (!visSeg.Visibility(FINCH.Epoch) and visPrev);
   visDuration = FINCH.Epoch - visStart;
-  visDurations.Append(visDuration); // or whichever units you want
+  visDurations.PushBack(visDuration.ToSeconds); // or whichever units you want
   visCount += 1;
   visPrev = 0;
 End;
@@ -3582,7 +3582,7 @@ visibilityVector.Active = visSeg.Visibility(FINCH.Epoch);]]></FreeFormScript>
         <Breakpoints />
         <FreeFormScript><![CDATA[// Calculate averages
 Variable averageVisDuration = visDurations.Mean();
-Variable averageVisFrequency = visCount / (FINCH.ElapsedTime.TotalDays() / 7); // number of weeks
+Variable averageVisFrequency = visCount / (FINCH.ElapsedTime.GetWholeDays / 7); // number of weeks
 
 Report averageVisDuration, averageVisFrequency;]]></FreeFormScript>
       </FreeForm>
@@ -3615,7 +3615,7 @@ If (visSeg.Visibility(FINCH.Epoch) and !visPrev);
 // visibility just ended
 ElseIf (!visSeg.Visibility(FINCH.Epoch) and visPrev);
   visDuration = FINCH.Epoch - visStart;
-  visDurations.Append(visDuration); // or whichever units you want
+  visDurations.PushBack(visDuration.ToSeconds); // or whichever units you want
   visCount += 1;
   visPrev = 0;
 End;
@@ -3631,7 +3631,7 @@ Step FINCH;
 End;
 // Calculate averages
 Variable averageVisDuration = visDurations.Mean();
-Variable averageVisFrequency = visCount / (FINCH.ElapsedTime.TotalDays() / 7); // number of weeks
+Variable averageVisFrequency = visCount / (FINCH.ElapsedTime.GetWholeDays / 7); // number of weeks
 
 Report averageVisDuration, averageVisFrequency;]]></ProjectScript>
   <ProjectNotes></ProjectNotes>
