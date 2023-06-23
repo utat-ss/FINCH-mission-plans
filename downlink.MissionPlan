@@ -98,10 +98,10 @@
         <ElementType>Keplerian</ElementType>
         <OrbitState>
           <Keplerian>
-            <A units="km" displayed_units="km">6871</A>
+            <A units="km" displayed_units="km">6878.1</A>
             <E units="" displayed_units="">0</E>
-            <I units="deg" displayed_units="deg">97.6</I>
-            <RAAN units="deg" displayed_units="deg">103.07</RAAN>
+            <I units="deg" displayed_units="deg">97.4016658864285</I>
+            <RAAN units="deg" displayed_units="deg">100.665919587496</RAAN>
             <W units="deg" displayed_units="deg">0</W>
             <TA units="deg" displayed_units="deg">0</TA>
           </Keplerian>
@@ -147,7 +147,7 @@
         <Visualization>
           <Color>255</Color>
           <BodyScale units="" displayed_units="">0.01</BodyScale>
-          <TailLength units="" displayed_units="">100</TailLength>
+          <TailLength units="" displayed_units="">1000</TailLength>
           <HistoryMode>0</HistoryMode>
           <TickType>None</TickType>
           <Annotation></Annotation>
@@ -201,7 +201,7 @@
             <Prop>
               <RK89 name="FINCH_Propagator" isConstant="false" isGlobal="false">
                 <Name>FINCH_Propagator</Name>
-                <StepSize units="s" displayed_units="s">60</StepSize>
+                <StepSize units="s" displayed_units="s">10</StepSize>
                 <StepJustTaken units="s" displayed_units="s">300.0</StepJustTaken>
                 <StepToTake units="s" displayed_units="s">300.0</StepToTake>
                 <LargeCurvature units="" displayed_units="">0</LargeCurvature>
@@ -1557,7 +1557,7 @@
     <Object>
       <ViewWindow name="FINCHViewWindow" isConstant="false" isGlobal="false">
         <Name>FINCHViewWindow</Name>
-        <WindowTitle></WindowTitle>
+        <WindowTitle>FINCH View</WindowTitle>
         <Viewpoints dim="1">
           <value>
             <Viewpoint name="FINCHViewWindow_Default" isConstant="false" isGlobal="false">
@@ -1770,7 +1770,7 @@
           <value>0</value>
           <value>0</value>
           <value>0</value>
-          <value>0</value>
+          <value>1</value>
           <value>0</value>
         </ShowIcon>
         <IconImageFilename dim="15">
@@ -1787,7 +1787,1364 @@
           <value></value>
           <value></value>
           <value></value>
+          <value>C:\Users\David\Workbench\FINCH-mission-plans\icons\groundstation.png</value>
           <value></value>
+        </IconImageFilename>
+        <IconSize units="pixel" displayed_units="pixel" dim="15">
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30</value>
+          <value>30</value>
+          <value>30</value>
+        </IconSize>
+        <IconDrawingMode dim="15">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+        </IconDrawingMode>
+        <IconColor dim="15">
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+        </IconColor>
+        <StoreVelocity dim="15">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+        </StoreVelocity>
+        <AxesScaleMode dim="15">
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+        </AxesScaleMode>
+        <AxesSize units="km" displayed_units="km" dim="15">
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+        </AxesSize>
+        <AxesScale units="" displayed_units="" dim="15">
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+        </AxesScale>
+        <TailLength units="" displayed_units="" dim="15">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>100</value>
+          <value>0</value>
+          <value>0</value>
+        </TailLength>
+        <HistoryMode units="" displayed_units="" dim="15">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+        </HistoryMode>
+        <CurrentTailState units="" displayed_units="" dim="15">
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+        </CurrentTailState>
+        <LineWidthUnits units="" displayed_units="" dim="15">
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+        </LineWidthUnits>
+        <LineWidths units="" displayed_units="" dim="15">
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+        </LineWidths>
+        <LabelFonts dim="15">
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+        </LabelFonts>
+        <MouseInteractionEnabled>true</MouseInteractionEnabled>
+        <metadata dim="0" />
+      </ViewWindow>
+    </Object>
+    <Object>
+      <Variable name="SNR" isConstant="false" isGlobal="false">
+        <Name>SNR</Name>
+        <Value units="" displayed_units="">0.0</Value>
+        <metadata dim="0" />
+      </Variable>
+    </Object>
+    <Object>
+      <PlotWindow name="SNRPlot" isConstant="false" isGlobal="false">
+        <Name>SNRPlot</Name>
+        <WindowTitle>SNR Plot</WindowTitle>
+        <PlotType>XYPlot</PlotType>
+        <ConfigureFonts>true</ConfigureFonts>
+        <UseMonitorMode>false</UseMonitorMode>
+        <MaxPoints units="" displayed_units="">2000</MaxPoints>
+        <PointsToUpdate units="" displayed_units="">25</PointsToUpdate>
+        <Items>
+          <XYPlot>
+            <XAxisItem>
+              <ObjectParameter name="SNRPlot_:XAxisItem" isConstant="false" isGlobal="false">
+                <Name>SNRPlot_:XAxisItem</Name>
+                <BaseObject>FINCH</BaseObject>
+                <Parameter>Epoch</Parameter>
+                <IndexType>NoIndices</IndexType>
+                <IndexOptions>
+                  <NoIndices />
+                </IndexOptions>
+                <metadata dim="0" />
+              </ObjectParameter>
+            </XAxisItem>
+            <YAxisItems dim="1">
+              <value>
+                <ObjectHolder name="SNRPlot_:YAxisItems1" isConstant="false" isGlobal="false">
+                  <Name>SNRPlot_:YAxisItems1</Name>
+                  <BaseObject>SNR</BaseObject>
+                  <metadata dim="0" />
+                </ObjectHolder>
+              </value>
+            </YAxisItems>
+          </XYPlot>
+        </Items>
+        <BackgroundColor>16777215</BackgroundColor>
+        <HighQualityRendering>true</HighQualityRendering>
+        <InterlacedColor>15128749</InterlacedColor>
+        <InterlacedDirection>0</InterlacedDirection>
+        <Legend>
+          <PlotLegend name="SNRPlot_|PlotLegend|" isConstant="false" isGlobal="false">
+            <Name>SNRPlot_|PlotLegend|</Name>
+            <BorderVisible>false</BorderVisible>
+            <Font>
+              <PlotFont name="SNRPlot_|PlotLegend|_|PlotFont|" isConstant="false" isGlobal="false">
+                <Name>SNRPlot_|PlotLegend|_|PlotFont|</Name>
+                <Bold>false</Bold>
+                <BoldDefault>false</BoldDefault>
+                <Italic>false</Italic>
+                <Size units="points" displayed_units="points">9</Size>
+                <SizeDefault units="points" displayed_units="points">9</SizeDefault>
+                <Strikeout>false</Strikeout>
+                <Typeface>Verdana</Typeface>
+                <TypefaceDefault>Verdana</TypefaceDefault>
+                <Underline>false</Underline>
+                <metadata dim="0" />
+              </PlotFont>
+            </Font>
+            <Location>3</Location>
+            <TextColor>0</TextColor>
+            <BackgroundColor>16777215</BackgroundColor>
+            <BorderColor>16777215</BorderColor>
+            <Title>
+              <PlotTitle name="SNRPlot_|PlotLegend|_|PlotTitle|" isConstant="false" isGlobal="false">
+                <Name>SNRPlot_|PlotLegend|_|PlotTitle|</Name>
+                <Color>0</Color>
+                <Font>
+                  <PlotFont name="SNRPlot_|PlotLegend|_|PlotTitle|_|PlotFont|" isConstant="false" isGlobal="false">
+                    <Name>SNRPlot_|PlotLegend|_|PlotTitle|_|PlotFont|</Name>
+                    <Bold>false</Bold>
+                    <BoldDefault>false</BoldDefault>
+                    <Italic>false</Italic>
+                    <Size units="points" displayed_units="points">9</Size>
+                    <SizeDefault units="points" displayed_units="points">9</SizeDefault>
+                    <Strikeout>false</Strikeout>
+                    <Typeface>Verdana</Typeface>
+                    <TypefaceDefault>Verdana</TypefaceDefault>
+                    <Underline>false</Underline>
+                    <metadata dim="0" />
+                  </PlotFont>
+                </Font>
+                <Text></Text>
+                <TextDefault></TextDefault>
+                <Visible>true</Visible>
+                <metadata dim="0" />
+              </PlotTitle>
+            </Title>
+            <Visible>true</Visible>
+            <metadata dim="0" />
+          </PlotLegend>
+        </Legend>
+        <PlotAreaColor>16777215</PlotAreaColor>
+        <PlotSubTitle>
+          <PlotTitle name="SNRPlot_|PlotSubTitle|" isConstant="false" isGlobal="false">
+            <Name>SNRPlot_|PlotSubTitle|</Name>
+            <Color>0</Color>
+            <Font>
+              <PlotFont name="SNRPlot_|PlotSubTitle|_|PlotFont|" isConstant="false" isGlobal="false">
+                <Name>SNRPlot_|PlotSubTitle|_|PlotFont|</Name>
+                <Bold>false</Bold>
+                <BoldDefault>false</BoldDefault>
+                <Italic>false</Italic>
+                <Size units="points" displayed_units="points">10</Size>
+                <SizeDefault units="points" displayed_units="points">10</SizeDefault>
+                <Strikeout>false</Strikeout>
+                <Typeface>Segoe UI</Typeface>
+                <TypefaceDefault>Segoe UI</TypefaceDefault>
+                <Underline>false</Underline>
+                <metadata dim="0" />
+              </PlotFont>
+            </Font>
+            <Text>06/23/2023</Text>
+            <TextDefault>06/23/2023</TextDefault>
+            <Visible>true</Visible>
+            <metadata dim="0" />
+          </PlotTitle>
+        </PlotSubTitle>
+        <PlotTitle>
+          <PlotTitle name="SNRPlot_|PlotTitle|" isConstant="false" isGlobal="false">
+            <Name>SNRPlot_|PlotTitle|</Name>
+            <Color>0</Color>
+            <Font>
+              <PlotFont name="SNRPlot_|PlotTitle|_|PlotFont|" isConstant="false" isGlobal="false">
+                <Name>SNRPlot_|PlotTitle|_|PlotFont|</Name>
+                <Bold>true</Bold>
+                <BoldDefault>true</BoldDefault>
+                <Italic>false</Italic>
+                <Size units="points" displayed_units="points">13</Size>
+                <SizeDefault units="points" displayed_units="points">13</SizeDefault>
+                <Strikeout>false</Strikeout>
+                <Typeface>Verdana</Typeface>
+                <TypefaceDefault>Verdana</TypefaceDefault>
+                <Underline>false</Underline>
+                <metadata dim="0" />
+              </PlotFont>
+            </Font>
+            <Text>FreeFlyer Plot</Text>
+            <TextDefault>FreeFlyer Plot</TextDefault>
+            <Visible>true</Visible>
+            <metadata dim="0" />
+          </PlotTitle>
+        </PlotTitle>
+        <RAxis>
+          <PlotAxis name="SNRPlot_|RAxis|" isConstant="false" isGlobal="false">
+            <Name>SNRPlot_|RAxis|</Name>
+            <Direction>0</Direction>
+            <GridColor>13420739</GridColor>
+            <GridLineStyle>2</GridLineStyle>
+            <GridLineStyleDefault>2</GridLineStyleDefault>
+            <GridLineWidth units="" displayed_units="">1</GridLineWidth>
+            <GridVisible>true</GridVisible>
+            <LabelsArrangement>0</LabelsArrangement>
+            <LabelsColor>0</LabelsColor>
+            <LabelsFont>
+              <PlotFont name="SNRPlot_|RAxis|_|PlotFont|" isConstant="false" isGlobal="false">
+                <Name>SNRPlot_|RAxis|_|PlotFont|</Name>
+                <Bold>false</Bold>
+                <BoldDefault>false</BoldDefault>
+                <Italic>false</Italic>
+                <Size units="points" displayed_units="points">9</Size>
+                <SizeDefault units="points" displayed_units="points">9</SizeDefault>
+                <Strikeout>false</Strikeout>
+                <Typeface>Verdana</Typeface>
+                <TypefaceDefault>Verdana</TypefaceDefault>
+                <Underline>false</Underline>
+                <metadata dim="0" />
+              </PlotFont>
+            </LabelsFont>
+            <LabelsFormat>0.000</LabelsFormat>
+            <LabelsSpacing units="" displayed_units="">0</LabelsSpacing>
+            <Location>0</Location>
+            <MaximumValue units="" displayed_units="">0</MaximumValue>
+            <MinimumValue units="" displayed_units="">0</MinimumValue>
+            <Scaling>0</Scaling>
+            <Title>
+              <PlotTitle name="SNRPlot_|RAxis|_|PlotTitle|" isConstant="false" isGlobal="false">
+                <Name>SNRPlot_|RAxis|_|PlotTitle|</Name>
+                <Color>0</Color>
+                <Font>
+                  <PlotFont name="SNRPlot_|RAxis|_|PlotTitle|_|PlotFont|" isConstant="false" isGlobal="false">
+                    <Name>SNRPlot_|RAxis|_|PlotTitle|_|PlotFont|</Name>
+                    <Bold>false</Bold>
+                    <BoldDefault>false</BoldDefault>
+                    <Italic>false</Italic>
+                    <Size units="points" displayed_units="points">9</Size>
+                    <SizeDefault units="points" displayed_units="points">9</SizeDefault>
+                    <Strikeout>false</Strikeout>
+                    <Typeface>Verdana</Typeface>
+                    <TypefaceDefault>Verdana</TypefaceDefault>
+                    <Underline>false</Underline>
+                    <metadata dim="0" />
+                  </PlotFont>
+                </Font>
+                <Text></Text>
+                <TextDefault></TextDefault>
+                <Visible>true</Visible>
+                <metadata dim="0" />
+              </PlotTitle>
+            </Title>
+            <UseAutoMaximum>true</UseAutoMaximum>
+            <UseAutoMinimum>true</UseAutoMinimum>
+            <UseDateTimeFormatting>false</UseDateTimeFormatting>
+            <UseDateTimeFormattingDefault>false</UseDateTimeFormattingDefault>
+            <metadata dim="0" />
+          </PlotAxis>
+        </RAxis>
+        <OwnedSeries dim="1">
+          <value>
+            <PlotScatterSeries name="SNRPlot_PlotScatterSeries1" isConstant="false" isGlobal="false">
+              <Name>SNRPlot_PlotScatterSeries1</Name>
+              <DataLabelsFont>
+                <PlotFont name="SNRPlot_PlotScatterSeries1_|PlotFont|" isConstant="false" isGlobal="false">
+                  <Name>SNRPlot_PlotScatterSeries1_|PlotFont|</Name>
+                  <Bold>false</Bold>
+                  <BoldDefault>false</BoldDefault>
+                  <Italic>false</Italic>
+                  <Size units="points" displayed_units="points">9</Size>
+                  <SizeDefault units="points" displayed_units="points">9</SizeDefault>
+                  <Strikeout>false</Strikeout>
+                  <Typeface>Verdana</Typeface>
+                  <TypefaceDefault>Verdana</TypefaceDefault>
+                  <Underline>false</Underline>
+                  <metadata dim="0" />
+                </PlotFont>
+              </DataLabelsFont>
+              <DataLabelsTextColor>0</DataLabelsTextColor>
+              <DataLabelsBackgroundColor>14745599</DataLabelsBackgroundColor>
+              <DataLabelsBackgroundVisible>false</DataLabelsBackgroundVisible>
+              <DataLabelsStyle>0</DataLabelsStyle>
+              <DataLabelsVisible>false</DataLabelsVisible>
+              <Label>SNR</Label>
+              <LabelDefault>SNR</LabelDefault>
+              <LineColor>12674086</LineColor>
+              <LineStyle>0</LineStyle>
+              <LineVisible>true</LineVisible>
+              <LineWidth units="" displayed_units="">1</LineWidth>
+              <MarkersColor>12674086</MarkersColor>
+              <MarkersSize units="" displayed_units="">1</MarkersSize>
+              <MarkersStyle>0</MarkersStyle>
+              <MarkersVisible>false</MarkersVisible>
+              <ShowInLegend>true</ShowInLegend>
+              <EnableDataCulling>true</EnableDataCulling>
+              <FullDataLabels dim="0" />
+              <FullData units="" displayed_units="" dim="0,2" />
+              <metadata dim="0" />
+            </PlotScatterSeries>
+          </value>
+        </OwnedSeries>
+        <ThetaAxis>
+          <PlotAxis name="SNRPlot_|ThetaAxis|" isConstant="false" isGlobal="false">
+            <Name>SNRPlot_|ThetaAxis|</Name>
+            <Direction>0</Direction>
+            <GridColor>13420739</GridColor>
+            <GridLineStyle>2</GridLineStyle>
+            <GridLineStyleDefault>2</GridLineStyleDefault>
+            <GridLineWidth units="" displayed_units="">1</GridLineWidth>
+            <GridVisible>true</GridVisible>
+            <LabelsArrangement>0</LabelsArrangement>
+            <LabelsColor>0</LabelsColor>
+            <LabelsFont>
+              <PlotFont name="SNRPlot_|ThetaAxis|_|PlotFont|" isConstant="false" isGlobal="false">
+                <Name>SNRPlot_|ThetaAxis|_|PlotFont|</Name>
+                <Bold>false</Bold>
+                <BoldDefault>false</BoldDefault>
+                <Italic>false</Italic>
+                <Size units="points" displayed_units="points">9</Size>
+                <SizeDefault units="points" displayed_units="points">9</SizeDefault>
+                <Strikeout>false</Strikeout>
+                <Typeface>Verdana</Typeface>
+                <TypefaceDefault>Verdana</TypefaceDefault>
+                <Underline>false</Underline>
+                <metadata dim="0" />
+              </PlotFont>
+            </LabelsFont>
+            <LabelsFormat>0.000</LabelsFormat>
+            <LabelsSpacing units="" displayed_units="">0</LabelsSpacing>
+            <Location>0</Location>
+            <MaximumValue units="" displayed_units="">0</MaximumValue>
+            <MinimumValue units="" displayed_units="">0</MinimumValue>
+            <Scaling>0</Scaling>
+            <Title>
+              <PlotTitle name="SNRPlot_|ThetaAxis|_|PlotTitle|" isConstant="false" isGlobal="false">
+                <Name>SNRPlot_|ThetaAxis|_|PlotTitle|</Name>
+                <Color>0</Color>
+                <Font>
+                  <PlotFont name="SNRPlot_|ThetaAxis|_|PlotTitle|_|PlotFont|" isConstant="false" isGlobal="false">
+                    <Name>SNRPlot_|ThetaAxis|_|PlotTitle|_|PlotFont|</Name>
+                    <Bold>false</Bold>
+                    <BoldDefault>false</BoldDefault>
+                    <Italic>false</Italic>
+                    <Size units="points" displayed_units="points">9</Size>
+                    <SizeDefault units="points" displayed_units="points">9</SizeDefault>
+                    <Strikeout>false</Strikeout>
+                    <Typeface>Verdana</Typeface>
+                    <TypefaceDefault>Verdana</TypefaceDefault>
+                    <Underline>false</Underline>
+                    <metadata dim="0" />
+                  </PlotFont>
+                </Font>
+                <Text></Text>
+                <TextDefault></TextDefault>
+                <Visible>true</Visible>
+                <metadata dim="0" />
+              </PlotTitle>
+            </Title>
+            <UseAutoMaximum>true</UseAutoMaximum>
+            <UseAutoMinimum>true</UseAutoMinimum>
+            <UseDateTimeFormatting>false</UseDateTimeFormatting>
+            <UseDateTimeFormattingDefault>false</UseDateTimeFormattingDefault>
+            <metadata dim="0" />
+          </PlotAxis>
+        </ThetaAxis>
+        <XAxis>
+          <PlotAxis name="SNRPlot_|XAxis|" isConstant="false" isGlobal="false">
+            <Name>SNRPlot_|XAxis|</Name>
+            <Direction>0</Direction>
+            <GridColor>13420739</GridColor>
+            <GridLineStyle>2</GridLineStyle>
+            <GridLineStyleDefault>2</GridLineStyleDefault>
+            <GridLineWidth units="" displayed_units="">1</GridLineWidth>
+            <GridVisible>true</GridVisible>
+            <LabelsArrangement>0</LabelsArrangement>
+            <LabelsColor>0</LabelsColor>
+            <LabelsFont>
+              <PlotFont name="SNRPlot_|XAxis|_|PlotFont|" isConstant="false" isGlobal="false">
+                <Name>SNRPlot_|XAxis|_|PlotFont|</Name>
+                <Bold>false</Bold>
+                <BoldDefault>false</BoldDefault>
+                <Italic>false</Italic>
+                <Size units="points" displayed_units="points">9</Size>
+                <SizeDefault units="points" displayed_units="points">9</SizeDefault>
+                <Strikeout>false</Strikeout>
+                <Typeface>Verdana</Typeface>
+                <TypefaceDefault>Verdana</TypefaceDefault>
+                <Underline>false</Underline>
+                <metadata dim="0" />
+              </PlotFont>
+            </LabelsFont>
+            <LabelsFormat>0.000</LabelsFormat>
+            <LabelsSpacing units="" displayed_units="">0</LabelsSpacing>
+            <Location>0</Location>
+            <MaximumValue units="" displayed_units="">44</MaximumValue>
+            <MinimumValue units="" displayed_units="">0</MinimumValue>
+            <Scaling>0</Scaling>
+            <Title>
+              <PlotTitle name="SNRPlot_|XAxis|_|PlotTitle|" isConstant="false" isGlobal="false">
+                <Name>SNRPlot_|XAxis|_|PlotTitle|</Name>
+                <Color>0</Color>
+                <Font>
+                  <PlotFont name="SNRPlot_|XAxis|_|PlotTitle|_|PlotFont|" isConstant="false" isGlobal="false">
+                    <Name>SNRPlot_|XAxis|_|PlotTitle|_|PlotFont|</Name>
+                    <Bold>false</Bold>
+                    <BoldDefault>false</BoldDefault>
+                    <Italic>false</Italic>
+                    <Size units="points" displayed_units="points">9</Size>
+                    <SizeDefault units="points" displayed_units="points">9</SizeDefault>
+                    <Strikeout>false</Strikeout>
+                    <Typeface>Verdana</Typeface>
+                    <TypefaceDefault>Verdana</TypefaceDefault>
+                    <Underline>false</Underline>
+                    <metadata dim="0" />
+                  </PlotFont>
+                </Font>
+                <Text>FINCH.Epoch (day)</Text>
+                <TextDefault>FINCH.Epoch (day)</TextDefault>
+                <Visible>true</Visible>
+                <metadata dim="0" />
+              </PlotTitle>
+            </Title>
+            <UseAutoMaximum>true</UseAutoMaximum>
+            <UseAutoMinimum>true</UseAutoMinimum>
+            <UseDateTimeFormatting>true</UseDateTimeFormatting>
+            <UseDateTimeFormattingDefault>true</UseDateTimeFormattingDefault>
+            <metadata dim="0" />
+          </PlotAxis>
+        </XAxis>
+        <YAxis>
+          <PlotAxis name="SNRPlot_|YAxis|" isConstant="false" isGlobal="false">
+            <Name>SNRPlot_|YAxis|</Name>
+            <Direction>0</Direction>
+            <GridColor>13420739</GridColor>
+            <GridLineStyle>2</GridLineStyle>
+            <GridLineStyleDefault>2</GridLineStyleDefault>
+            <GridLineWidth units="" displayed_units="">1</GridLineWidth>
+            <GridVisible>true</GridVisible>
+            <LabelsArrangement>0</LabelsArrangement>
+            <LabelsColor>0</LabelsColor>
+            <LabelsFont>
+              <PlotFont name="SNRPlot_|YAxis|_|PlotFont|" isConstant="false" isGlobal="false">
+                <Name>SNRPlot_|YAxis|_|PlotFont|</Name>
+                <Bold>false</Bold>
+                <BoldDefault>false</BoldDefault>
+                <Italic>false</Italic>
+                <Size units="points" displayed_units="points">9</Size>
+                <SizeDefault units="points" displayed_units="points">9</SizeDefault>
+                <Strikeout>false</Strikeout>
+                <Typeface>Verdana</Typeface>
+                <TypefaceDefault>Verdana</TypefaceDefault>
+                <Underline>false</Underline>
+                <metadata dim="0" />
+              </PlotFont>
+            </LabelsFont>
+            <LabelsFormat>0.000</LabelsFormat>
+            <LabelsSpacing units="" displayed_units="">0</LabelsSpacing>
+            <Location>0</Location>
+            <MaximumValue units="" displayed_units="">1.9993908270191</MaximumValue>
+            <MinimumValue units="" displayed_units="">0.000609172980904238</MinimumValue>
+            <Scaling>0</Scaling>
+            <Title>
+              <PlotTitle name="SNRPlot_|YAxis|_|PlotTitle|" isConstant="false" isGlobal="false">
+                <Name>SNRPlot_|YAxis|_|PlotTitle|</Name>
+                <Color>0</Color>
+                <Font>
+                  <PlotFont name="SNRPlot_|YAxis|_|PlotTitle|_|PlotFont|" isConstant="false" isGlobal="false">
+                    <Name>SNRPlot_|YAxis|_|PlotTitle|_|PlotFont|</Name>
+                    <Bold>false</Bold>
+                    <BoldDefault>false</BoldDefault>
+                    <Italic>false</Italic>
+                    <Size units="points" displayed_units="points">9</Size>
+                    <SizeDefault units="points" displayed_units="points">9</SizeDefault>
+                    <Strikeout>false</Strikeout>
+                    <Typeface>Verdana</Typeface>
+                    <TypefaceDefault>Verdana</TypefaceDefault>
+                    <Underline>false</Underline>
+                    <metadata dim="0" />
+                  </PlotFont>
+                </Font>
+                <Text>SNR</Text>
+                <TextDefault>SNR</TextDefault>
+                <Visible>true</Visible>
+                <metadata dim="0" />
+              </PlotTitle>
+            </Title>
+            <UseAutoMaximum>true</UseAutoMaximum>
+            <UseAutoMinimum>true</UseAutoMinimum>
+            <UseDateTimeFormatting>false</UseDateTimeFormatting>
+            <UseDateTimeFormattingDefault>false</UseDateTimeFormattingDefault>
+            <metadata dim="0" />
+          </PlotAxis>
+        </YAxis>
+        <metadata dim="0" />
+      </PlotWindow>
+    </Object>
+    <Object>
+      <PlotWindow name="VisibilityPlot" isConstant="false" isGlobal="false">
+        <Name>VisibilityPlot</Name>
+        <WindowTitle>Visibility</WindowTitle>
+        <PlotType>XYPlot</PlotType>
+        <ConfigureFonts>true</ConfigureFonts>
+        <UseMonitorMode>false</UseMonitorMode>
+        <MaxPoints units="" displayed_units="">2000</MaxPoints>
+        <PointsToUpdate units="" displayed_units="">25</PointsToUpdate>
+        <Items>
+          <XYPlot>
+            <XAxisItem>
+              <ObjectParameter name="VisibilityPlot_:XAxisItem" isConstant="false" isGlobal="false">
+                <Name>VisibilityPlot_:XAxisItem</Name>
+                <BaseObject>FINCH</BaseObject>
+                <Parameter>Epoch</Parameter>
+                <IndexType>NoIndices</IndexType>
+                <IndexOptions>
+                  <NoIndices />
+                </IndexOptions>
+                <metadata dim="0" />
+              </ObjectParameter>
+            </XAxisItem>
+            <YAxisItems dim="1">
+              <value>
+                <ObjectParameter name="VisibilityPlot_:YAxisItems1" isConstant="false" isGlobal="false">
+                  <Name>VisibilityPlot_:YAxisItems1</Name>
+                  <BaseObject>visibilityVector</BaseObject>
+                  <Parameter>Active</Parameter>
+                  <IndexType>NoIndices</IndexType>
+                  <IndexOptions>
+                    <NoIndices />
+                  </IndexOptions>
+                  <metadata dim="0" />
+                </ObjectParameter>
+              </value>
+            </YAxisItems>
+          </XYPlot>
+        </Items>
+        <BackgroundColor>16777215</BackgroundColor>
+        <HighQualityRendering>true</HighQualityRendering>
+        <InterlacedColor>15128749</InterlacedColor>
+        <InterlacedDirection>0</InterlacedDirection>
+        <Legend>
+          <PlotLegend name="VisibilityPlot_|PlotLegend|" isConstant="false" isGlobal="false">
+            <Name>VisibilityPlot_|PlotLegend|</Name>
+            <BorderVisible>false</BorderVisible>
+            <Font>
+              <PlotFont name="VisibilityPlot_|PlotLegend|_|PlotFont|" isConstant="false" isGlobal="false">
+                <Name>VisibilityPlot_|PlotLegend|_|PlotFont|</Name>
+                <Bold>false</Bold>
+                <BoldDefault>false</BoldDefault>
+                <Italic>false</Italic>
+                <Size units="points" displayed_units="points">9</Size>
+                <SizeDefault units="points" displayed_units="points">9</SizeDefault>
+                <Strikeout>false</Strikeout>
+                <Typeface>Verdana</Typeface>
+                <TypefaceDefault>Verdana</TypefaceDefault>
+                <Underline>false</Underline>
+                <metadata dim="0" />
+              </PlotFont>
+            </Font>
+            <Location>3</Location>
+            <TextColor>0</TextColor>
+            <BackgroundColor>16777215</BackgroundColor>
+            <BorderColor>16777215</BorderColor>
+            <Title>
+              <PlotTitle name="VisibilityPlot_|PlotLegend|_|PlotTitle|" isConstant="false" isGlobal="false">
+                <Name>VisibilityPlot_|PlotLegend|_|PlotTitle|</Name>
+                <Color>0</Color>
+                <Font>
+                  <PlotFont name="VisibilityPlot_|PlotLegend|_|PlotTitle|_|PlotFont|" isConstant="false" isGlobal="false">
+                    <Name>VisibilityPlot_|PlotLegend|_|PlotTitle|_|PlotFont|</Name>
+                    <Bold>false</Bold>
+                    <BoldDefault>false</BoldDefault>
+                    <Italic>false</Italic>
+                    <Size units="points" displayed_units="points">9</Size>
+                    <SizeDefault units="points" displayed_units="points">9</SizeDefault>
+                    <Strikeout>false</Strikeout>
+                    <Typeface>Verdana</Typeface>
+                    <TypefaceDefault>Verdana</TypefaceDefault>
+                    <Underline>false</Underline>
+                    <metadata dim="0" />
+                  </PlotFont>
+                </Font>
+                <Text></Text>
+                <TextDefault></TextDefault>
+                <Visible>true</Visible>
+                <metadata dim="0" />
+              </PlotTitle>
+            </Title>
+            <Visible>true</Visible>
+            <metadata dim="0" />
+          </PlotLegend>
+        </Legend>
+        <PlotAreaColor>16777215</PlotAreaColor>
+        <PlotSubTitle>
+          <PlotTitle name="VisibilityPlot_|PlotSubTitle|" isConstant="false" isGlobal="false">
+            <Name>VisibilityPlot_|PlotSubTitle|</Name>
+            <Color>0</Color>
+            <Font>
+              <PlotFont name="VisibilityPlot_|PlotSubTitle|_|PlotFont|" isConstant="false" isGlobal="false">
+                <Name>VisibilityPlot_|PlotSubTitle|_|PlotFont|</Name>
+                <Bold>false</Bold>
+                <BoldDefault>false</BoldDefault>
+                <Italic>false</Italic>
+                <Size units="points" displayed_units="points">10</Size>
+                <SizeDefault units="points" displayed_units="points">10</SizeDefault>
+                <Strikeout>false</Strikeout>
+                <Typeface>Segoe UI</Typeface>
+                <TypefaceDefault>Segoe UI</TypefaceDefault>
+                <Underline>false</Underline>
+                <metadata dim="0" />
+              </PlotFont>
+            </Font>
+            <Text>06/23/2023</Text>
+            <TextDefault>06/23/2023</TextDefault>
+            <Visible>true</Visible>
+            <metadata dim="0" />
+          </PlotTitle>
+        </PlotSubTitle>
+        <PlotTitle>
+          <PlotTitle name="VisibilityPlot_|PlotTitle|" isConstant="false" isGlobal="false">
+            <Name>VisibilityPlot_|PlotTitle|</Name>
+            <Color>0</Color>
+            <Font>
+              <PlotFont name="VisibilityPlot_|PlotTitle|_|PlotFont|" isConstant="false" isGlobal="false">
+                <Name>VisibilityPlot_|PlotTitle|_|PlotFont|</Name>
+                <Bold>true</Bold>
+                <BoldDefault>true</BoldDefault>
+                <Italic>false</Italic>
+                <Size units="points" displayed_units="points">13</Size>
+                <SizeDefault units="points" displayed_units="points">13</SizeDefault>
+                <Strikeout>false</Strikeout>
+                <Typeface>Verdana</Typeface>
+                <TypefaceDefault>Verdana</TypefaceDefault>
+                <Underline>false</Underline>
+                <metadata dim="0" />
+              </PlotFont>
+            </Font>
+            <Text>FreeFlyer Plot</Text>
+            <TextDefault>FreeFlyer Plot</TextDefault>
+            <Visible>true</Visible>
+            <metadata dim="0" />
+          </PlotTitle>
+        </PlotTitle>
+        <RAxis>
+          <PlotAxis name="VisibilityPlot_|RAxis|" isConstant="false" isGlobal="false">
+            <Name>VisibilityPlot_|RAxis|</Name>
+            <Direction>0</Direction>
+            <GridColor>13420739</GridColor>
+            <GridLineStyle>2</GridLineStyle>
+            <GridLineStyleDefault>2</GridLineStyleDefault>
+            <GridLineWidth units="" displayed_units="">1</GridLineWidth>
+            <GridVisible>true</GridVisible>
+            <LabelsArrangement>0</LabelsArrangement>
+            <LabelsColor>0</LabelsColor>
+            <LabelsFont>
+              <PlotFont name="VisibilityPlot_|RAxis|_|PlotFont|" isConstant="false" isGlobal="false">
+                <Name>VisibilityPlot_|RAxis|_|PlotFont|</Name>
+                <Bold>false</Bold>
+                <BoldDefault>false</BoldDefault>
+                <Italic>false</Italic>
+                <Size units="points" displayed_units="points">9</Size>
+                <SizeDefault units="points" displayed_units="points">9</SizeDefault>
+                <Strikeout>false</Strikeout>
+                <Typeface>Verdana</Typeface>
+                <TypefaceDefault>Verdana</TypefaceDefault>
+                <Underline>false</Underline>
+                <metadata dim="0" />
+              </PlotFont>
+            </LabelsFont>
+            <LabelsFormat>0.000</LabelsFormat>
+            <LabelsSpacing units="" displayed_units="">0</LabelsSpacing>
+            <Location>0</Location>
+            <MaximumValue units="" displayed_units="">0</MaximumValue>
+            <MinimumValue units="" displayed_units="">0</MinimumValue>
+            <Scaling>0</Scaling>
+            <Title>
+              <PlotTitle name="VisibilityPlot_|RAxis|_|PlotTitle|" isConstant="false" isGlobal="false">
+                <Name>VisibilityPlot_|RAxis|_|PlotTitle|</Name>
+                <Color>0</Color>
+                <Font>
+                  <PlotFont name="VisibilityPlot_|RAxis|_|PlotTitle|_|PlotFont|" isConstant="false" isGlobal="false">
+                    <Name>VisibilityPlot_|RAxis|_|PlotTitle|_|PlotFont|</Name>
+                    <Bold>false</Bold>
+                    <BoldDefault>false</BoldDefault>
+                    <Italic>false</Italic>
+                    <Size units="points" displayed_units="points">9</Size>
+                    <SizeDefault units="points" displayed_units="points">9</SizeDefault>
+                    <Strikeout>false</Strikeout>
+                    <Typeface>Verdana</Typeface>
+                    <TypefaceDefault>Verdana</TypefaceDefault>
+                    <Underline>false</Underline>
+                    <metadata dim="0" />
+                  </PlotFont>
+                </Font>
+                <Text></Text>
+                <TextDefault></TextDefault>
+                <Visible>true</Visible>
+                <metadata dim="0" />
+              </PlotTitle>
+            </Title>
+            <UseAutoMaximum>true</UseAutoMaximum>
+            <UseAutoMinimum>true</UseAutoMinimum>
+            <UseDateTimeFormatting>false</UseDateTimeFormatting>
+            <UseDateTimeFormattingDefault>false</UseDateTimeFormattingDefault>
+            <metadata dim="0" />
+          </PlotAxis>
+        </RAxis>
+        <OwnedSeries dim="1">
+          <value>
+            <PlotScatterSeries name="VisibilityPlot_PlotScatterSeries1" isConstant="false" isGlobal="false">
+              <Name>VisibilityPlot_PlotScatterSeries1</Name>
+              <DataLabelsFont>
+                <PlotFont name="VisibilityPlot_PlotScatterSeries1_|PlotFont|" isConstant="false" isGlobal="false">
+                  <Name>VisibilityPlot_PlotScatterSeries1_|PlotFont|</Name>
+                  <Bold>false</Bold>
+                  <BoldDefault>false</BoldDefault>
+                  <Italic>false</Italic>
+                  <Size units="points" displayed_units="points">9</Size>
+                  <SizeDefault units="points" displayed_units="points">9</SizeDefault>
+                  <Strikeout>false</Strikeout>
+                  <Typeface>Verdana</Typeface>
+                  <TypefaceDefault>Verdana</TypefaceDefault>
+                  <Underline>false</Underline>
+                  <metadata dim="0" />
+                </PlotFont>
+              </DataLabelsFont>
+              <DataLabelsTextColor>0</DataLabelsTextColor>
+              <DataLabelsBackgroundColor>14745599</DataLabelsBackgroundColor>
+              <DataLabelsBackgroundVisible>false</DataLabelsBackgroundVisible>
+              <DataLabelsStyle>0</DataLabelsStyle>
+              <DataLabelsVisible>false</DataLabelsVisible>
+              <Label>visibilityVector.Active</Label>
+              <LabelDefault>visibilityVector.Active</LabelDefault>
+              <LineColor>12674086</LineColor>
+              <LineStyle>0</LineStyle>
+              <LineVisible>true</LineVisible>
+              <LineWidth units="" displayed_units="">1</LineWidth>
+              <MarkersColor>12674086</MarkersColor>
+              <MarkersSize units="" displayed_units="">1</MarkersSize>
+              <MarkersStyle>0</MarkersStyle>
+              <MarkersVisible>false</MarkersVisible>
+              <ShowInLegend>true</ShowInLegend>
+              <EnableDataCulling>true</EnableDataCulling>
+              <FullDataLabels dim="0" />
+              <FullData units="" displayed_units="" dim="0,2" />
+              <metadata dim="0" />
+            </PlotScatterSeries>
+          </value>
+        </OwnedSeries>
+        <ThetaAxis>
+          <PlotAxis name="VisibilityPlot_|ThetaAxis|" isConstant="false" isGlobal="false">
+            <Name>VisibilityPlot_|ThetaAxis|</Name>
+            <Direction>0</Direction>
+            <GridColor>13420739</GridColor>
+            <GridLineStyle>2</GridLineStyle>
+            <GridLineStyleDefault>2</GridLineStyleDefault>
+            <GridLineWidth units="" displayed_units="">1</GridLineWidth>
+            <GridVisible>true</GridVisible>
+            <LabelsArrangement>0</LabelsArrangement>
+            <LabelsColor>0</LabelsColor>
+            <LabelsFont>
+              <PlotFont name="VisibilityPlot_|ThetaAxis|_|PlotFont|" isConstant="false" isGlobal="false">
+                <Name>VisibilityPlot_|ThetaAxis|_|PlotFont|</Name>
+                <Bold>false</Bold>
+                <BoldDefault>false</BoldDefault>
+                <Italic>false</Italic>
+                <Size units="points" displayed_units="points">9</Size>
+                <SizeDefault units="points" displayed_units="points">9</SizeDefault>
+                <Strikeout>false</Strikeout>
+                <Typeface>Verdana</Typeface>
+                <TypefaceDefault>Verdana</TypefaceDefault>
+                <Underline>false</Underline>
+                <metadata dim="0" />
+              </PlotFont>
+            </LabelsFont>
+            <LabelsFormat>0.000</LabelsFormat>
+            <LabelsSpacing units="" displayed_units="">0</LabelsSpacing>
+            <Location>0</Location>
+            <MaximumValue units="" displayed_units="">0</MaximumValue>
+            <MinimumValue units="" displayed_units="">0</MinimumValue>
+            <Scaling>0</Scaling>
+            <Title>
+              <PlotTitle name="VisibilityPlot_|ThetaAxis|_|PlotTitle|" isConstant="false" isGlobal="false">
+                <Name>VisibilityPlot_|ThetaAxis|_|PlotTitle|</Name>
+                <Color>0</Color>
+                <Font>
+                  <PlotFont name="VisibilityPlot_|ThetaAxis|_|PlotTitle|_|PlotFont|" isConstant="false" isGlobal="false">
+                    <Name>VisibilityPlot_|ThetaAxis|_|PlotTitle|_|PlotFont|</Name>
+                    <Bold>false</Bold>
+                    <BoldDefault>false</BoldDefault>
+                    <Italic>false</Italic>
+                    <Size units="points" displayed_units="points">9</Size>
+                    <SizeDefault units="points" displayed_units="points">9</SizeDefault>
+                    <Strikeout>false</Strikeout>
+                    <Typeface>Verdana</Typeface>
+                    <TypefaceDefault>Verdana</TypefaceDefault>
+                    <Underline>false</Underline>
+                    <metadata dim="0" />
+                  </PlotFont>
+                </Font>
+                <Text></Text>
+                <TextDefault></TextDefault>
+                <Visible>true</Visible>
+                <metadata dim="0" />
+              </PlotTitle>
+            </Title>
+            <UseAutoMaximum>true</UseAutoMaximum>
+            <UseAutoMinimum>true</UseAutoMinimum>
+            <UseDateTimeFormatting>false</UseDateTimeFormatting>
+            <UseDateTimeFormattingDefault>false</UseDateTimeFormattingDefault>
+            <metadata dim="0" />
+          </PlotAxis>
+        </ThetaAxis>
+        <XAxis>
+          <PlotAxis name="VisibilityPlot_|XAxis|" isConstant="false" isGlobal="false">
+            <Name>VisibilityPlot_|XAxis|</Name>
+            <Direction>0</Direction>
+            <GridColor>13420739</GridColor>
+            <GridLineStyle>2</GridLineStyle>
+            <GridLineStyleDefault>2</GridLineStyleDefault>
+            <GridLineWidth units="" displayed_units="">1</GridLineWidth>
+            <GridVisible>true</GridVisible>
+            <LabelsArrangement>0</LabelsArrangement>
+            <LabelsColor>0</LabelsColor>
+            <LabelsFont>
+              <PlotFont name="VisibilityPlot_|XAxis|_|PlotFont|" isConstant="false" isGlobal="false">
+                <Name>VisibilityPlot_|XAxis|_|PlotFont|</Name>
+                <Bold>false</Bold>
+                <BoldDefault>false</BoldDefault>
+                <Italic>false</Italic>
+                <Size units="points" displayed_units="points">9</Size>
+                <SizeDefault units="points" displayed_units="points">9</SizeDefault>
+                <Strikeout>false</Strikeout>
+                <Typeface>Verdana</Typeface>
+                <TypefaceDefault>Verdana</TypefaceDefault>
+                <Underline>false</Underline>
+                <metadata dim="0" />
+              </PlotFont>
+            </LabelsFont>
+            <LabelsFormat>0.000</LabelsFormat>
+            <LabelsSpacing units="" displayed_units="">0</LabelsSpacing>
+            <Location>0</Location>
+            <MaximumValue units="" displayed_units="">44</MaximumValue>
+            <MinimumValue units="" displayed_units="">0</MinimumValue>
+            <Scaling>0</Scaling>
+            <Title>
+              <PlotTitle name="VisibilityPlot_|XAxis|_|PlotTitle|" isConstant="false" isGlobal="false">
+                <Name>VisibilityPlot_|XAxis|_|PlotTitle|</Name>
+                <Color>0</Color>
+                <Font>
+                  <PlotFont name="VisibilityPlot_|XAxis|_|PlotTitle|_|PlotFont|" isConstant="false" isGlobal="false">
+                    <Name>VisibilityPlot_|XAxis|_|PlotTitle|_|PlotFont|</Name>
+                    <Bold>false</Bold>
+                    <BoldDefault>false</BoldDefault>
+                    <Italic>false</Italic>
+                    <Size units="points" displayed_units="points">9</Size>
+                    <SizeDefault units="points" displayed_units="points">9</SizeDefault>
+                    <Strikeout>false</Strikeout>
+                    <Typeface>Verdana</Typeface>
+                    <TypefaceDefault>Verdana</TypefaceDefault>
+                    <Underline>false</Underline>
+                    <metadata dim="0" />
+                  </PlotFont>
+                </Font>
+                <Text>FINCH.Epoch (day)</Text>
+                <TextDefault>FINCH.Epoch (day)</TextDefault>
+                <Visible>true</Visible>
+                <metadata dim="0" />
+              </PlotTitle>
+            </Title>
+            <UseAutoMaximum>true</UseAutoMaximum>
+            <UseAutoMinimum>true</UseAutoMinimum>
+            <UseDateTimeFormatting>true</UseDateTimeFormatting>
+            <UseDateTimeFormattingDefault>true</UseDateTimeFormattingDefault>
+            <metadata dim="0" />
+          </PlotAxis>
+        </XAxis>
+        <YAxis>
+          <PlotAxis name="VisibilityPlot_|YAxis|" isConstant="false" isGlobal="false">
+            <Name>VisibilityPlot_|YAxis|</Name>
+            <Direction>0</Direction>
+            <GridColor>13420739</GridColor>
+            <GridLineStyle>2</GridLineStyle>
+            <GridLineStyleDefault>2</GridLineStyleDefault>
+            <GridLineWidth units="" displayed_units="">1</GridLineWidth>
+            <GridVisible>true</GridVisible>
+            <LabelsArrangement>0</LabelsArrangement>
+            <LabelsColor>0</LabelsColor>
+            <LabelsFont>
+              <PlotFont name="VisibilityPlot_|YAxis|_|PlotFont|" isConstant="false" isGlobal="false">
+                <Name>VisibilityPlot_|YAxis|_|PlotFont|</Name>
+                <Bold>false</Bold>
+                <BoldDefault>false</BoldDefault>
+                <Italic>false</Italic>
+                <Size units="points" displayed_units="points">9</Size>
+                <SizeDefault units="points" displayed_units="points">9</SizeDefault>
+                <Strikeout>false</Strikeout>
+                <Typeface>Verdana</Typeface>
+                <TypefaceDefault>Verdana</TypefaceDefault>
+                <Underline>false</Underline>
+                <metadata dim="0" />
+              </PlotFont>
+            </LabelsFont>
+            <LabelsFormat>0.000</LabelsFormat>
+            <LabelsSpacing units="" displayed_units="">0</LabelsSpacing>
+            <Location>0</Location>
+            <MaximumValue units="" displayed_units="">1.9993908270191</MaximumValue>
+            <MinimumValue units="" displayed_units="">0.000609172980904238</MinimumValue>
+            <Scaling>0</Scaling>
+            <Title>
+              <PlotTitle name="VisibilityPlot_|YAxis|_|PlotTitle|" isConstant="false" isGlobal="false">
+                <Name>VisibilityPlot_|YAxis|_|PlotTitle|</Name>
+                <Color>0</Color>
+                <Font>
+                  <PlotFont name="VisibilityPlot_|YAxis|_|PlotTitle|_|PlotFont|" isConstant="false" isGlobal="false">
+                    <Name>VisibilityPlot_|YAxis|_|PlotTitle|_|PlotFont|</Name>
+                    <Bold>false</Bold>
+                    <BoldDefault>false</BoldDefault>
+                    <Italic>false</Italic>
+                    <Size units="points" displayed_units="points">9</Size>
+                    <SizeDefault units="points" displayed_units="points">9</SizeDefault>
+                    <Strikeout>false</Strikeout>
+                    <Typeface>Verdana</Typeface>
+                    <TypefaceDefault>Verdana</TypefaceDefault>
+                    <Underline>false</Underline>
+                    <metadata dim="0" />
+                  </PlotFont>
+                </Font>
+                <Text>visibilityVector.Active</Text>
+                <TextDefault>visibilityVector.Active</TextDefault>
+                <Visible>true</Visible>
+                <metadata dim="0" />
+              </PlotTitle>
+            </Title>
+            <UseAutoMaximum>true</UseAutoMaximum>
+            <UseAutoMinimum>true</UseAutoMinimum>
+            <UseDateTimeFormatting>false</UseDateTimeFormatting>
+            <UseDateTimeFormattingDefault>false</UseDateTimeFormattingDefault>
+            <metadata dim="0" />
+          </PlotAxis>
+        </YAxis>
+        <metadata dim="0" />
+      </PlotWindow>
+    </Object>
+    <Object>
+      <ViewWindow name="MCCViewWindow" isConstant="false" isGlobal="false">
+        <Name>MCCViewWindow</Name>
+        <WindowTitle>MCC View</WindowTitle>
+        <Viewpoints dim="1">
+          <value>
+            <Viewpoint name="MCCViewWindow_Default" isConstant="false" isGlobal="false">
+              <Name>MCCViewWindow_Default</Name>
+              <ViewpointName>Default</ViewpointName>
+              <ViewpointType>view</ViewpointType>
+              <ViewpointParameters>
+                <view>
+                  <ThreeDView>
+                    <ThreeDViewpointOptions name="MCCViewWindow_Default_|ThreeDView|" isConstant="false" isGlobal="false">
+                      <Name>MCCViewWindow_Default_|ThreeDView|</Name>
+                      <Source>MCC</Source>
+                      <Target>FINCH</Target>
+                      <TailReference>Earth</TailReference>
+                      <ReferenceFrame>body fixed</ReferenceFrame>
+                      <Declination units="deg" displayed_units="deg">0</Declination>
+                      <FieldOfView units="deg" displayed_units="deg">45.0</FieldOfView>
+                      <Radius units="km" displayed_units="km">0.001</Radius>
+                      <RightAscension units="deg" displayed_units="deg">0</RightAscension>
+                      <metadata dim="0" />
+                    </ThreeDViewpointOptions>
+                  </ThreeDView>
+                </view>
+              </ViewpointParameters>
+              <metadata dim="0" />
+            </Viewpoint>
+          </value>
+        </Viewpoints>
+        <UseLighting>true</UseLighting>
+        <UseTextures>true</UseTextures>
+        <ShowLogo>true</ShowLogo>
+        <LogoTextureFilename></LogoTextureFilename>
+        <ShowStatusText>true</ShowStatusText>
+        <ShowTextBackdrops>true</ShowTextBackdrops>
+        <AmbientColor>6710886</AmbientColor>
+        <StatusTextColor>16777215</StatusTextColor>
+        <BackgroundColor>0</BackgroundColor>
+        <ObjectShadowing>0</ObjectShadowing>
+        <StatusTextFont>
+          <ViewFont name="MCCViewWindow_|StatusTextFont|" isConstant="false" isGlobal="false">
+            <Name>MCCViewWindow_|StatusTextFont|</Name>
+            <Bold>false</Bold>
+            <Italic>false</Italic>
+            <Size units="" displayed_units="">0</Size>
+            <Strikeout>false</Strikeout>
+            <Typeface>Tahoma</Typeface>
+            <Underline>false</Underline>
+            <metadata dim="0" />
+          </ViewFont>
+        </StatusTextFont>
+        <DefaultObjectLabelFont>
+          <ViewFont name="MCCViewWindow_|DefaultObjectLabelFont|" isConstant="false" isGlobal="false">
+            <Name>MCCViewWindow_|DefaultObjectLabelFont|</Name>
+            <Bold>false</Bold>
+            <Italic>false</Italic>
+            <Size units="" displayed_units="">20</Size>
+            <Strikeout>false</Strikeout>
+            <Typeface>Tahoma</Typeface>
+            <Underline>false</Underline>
+            <metadata dim="0" />
+          </ViewFont>
+        </DefaultObjectLabelFont>
+        <Objects dim="15">
+          <value>Mercury</value>
+          <value>Venus</value>
+          <value>Earth</value>
+          <value>Moon</value>
+          <value>Mars</value>
+          <value>Jupiter</value>
+          <value>Saturn</value>
+          <value>Uranus</value>
+          <value>Neptune</value>
+          <value>Pluto</value>
+          <value>Sun</value>
+          <value>Stars</value>
+          <value>FINCH</value>
+          <value>MCC</value>
+          <value>visibilityVector</value>
+        </Objects>
+        <ProjectionHeights units="km" displayed_units="km" dim="15">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>800</value>
+          <value>800</value>
+          <value>800</value>
+        </ProjectionHeights>
+        <ShowObject dim="15">
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+        </ShowObject>
+        <ShowBody dim="15">
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+        </ShowBody>
+        <ShowName dim="15">
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>0</value>
+          <value>1</value>
+          <value>1</value>
+          <value>0</value>
+        </ShowName>
+        <ShowGrid dim="15">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+        </ShowGrid>
+        <ShowAxes dim="15">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+        </ShowAxes>
+        <ShowHistory dim="15">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>1</value>
+          <value>0</value>
+          <value>0</value>
+        </ShowHistory>
+        <ShowIcon dim="15">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>1</value>
+          <value>1</value>
+          <value>0</value>
+        </ShowIcon>
+        <IconImageFilename dim="15">
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value>C:\Users\David\Workbench\FINCH-mission-plans\icons\satellite.png</value>
+          <value>C:\Users\David\Workbench\FINCH-mission-plans\icons\groundstation.png</value>
           <value></value>
         </IconImageFilename>
         <IconSize units="pixel" displayed_units="pixel" dim="15">
@@ -2077,35 +3434,56 @@ visibilityVector.BuildVector(9, FINCH, MCC);]]></FreeFormScript>
           <metadata dim="0" />
         </While>
         <FreeForm enabled="true">
+          <Label>CalculateSNR</Label>
+          <Bookmarks />
+          <Breakpoints />
+          <FreeFormScript><![CDATA[SNR = RFLinkFINCHToMCC.GetSignalToNoiseRatio(FINCH.Epoch, "Calculated");
+SNR = 10^(SNR/10); // convert to linear ratio]]></FreeFormScript>
+        </FreeForm>
+        <FreeForm enabled="true">
           <Label>RenderVisibilityVector</Label>
           <Bookmarks />
           <Breakpoints />
           <FreeFormScript><![CDATA[visibilityVector.Active = visSeg.Visibility(FINCH.Epoch);]]></FreeFormScript>
         </FreeForm>
+        <UpdateCommand enabled="true">
+          <Update name="Command5" isConstant="false" isGlobal="false">
+            <Name>Command5</Name>
+            <Window>VisibilityPlot</Window>
+            <metadata dim="0" />
+          </Update>
+        </UpdateCommand>
+        <UpdateCommand enabled="false">
+          <Update name="Command6" isConstant="false" isGlobal="false">
+            <Name>Command6</Name>
+            <Window>SNRPlot</Window>
+            <metadata dim="0" />
+          </Update>
+        </UpdateCommand>
         <ViewCommand enabled="true">
-          <View name="Command4" isConstant="false" isGlobal="false">
-            <Name>Command4</Name>
+          <View name="Command7" isConstant="false" isGlobal="false">
+            <Name>Command7</Name>
             <ViewpointType>view</ViewpointType>
             <Items dim="3">
               <value>
-                <EventWithHeight name="Command4_:Items1" isConstant="false" isGlobal="false">
-                  <Name>Command4_:Items1</Name>
+                <EventWithHeight name="Command7_:Items1" isConstant="false" isGlobal="false">
+                  <Name>Command7_:Items1</Name>
                   <BaseObject>FINCH</BaseObject>
                   <Height units="km" displayed_units="km">800</Height>
                   <metadata dim="0" />
                 </EventWithHeight>
               </value>
               <value>
-                <EventWithHeight name="Command4_:Items2" isConstant="false" isGlobal="false">
-                  <Name>Command4_:Items2</Name>
+                <EventWithHeight name="Command7_:Items2" isConstant="false" isGlobal="false">
+                  <Name>Command7_:Items2</Name>
                   <BaseObject>MCC</BaseObject>
                   <Height units="km" displayed_units="km">800</Height>
                   <metadata dim="0" />
                 </EventWithHeight>
               </value>
               <value>
-                <EventWithHeight name="Command4_:Items3" isConstant="false" isGlobal="false">
-                  <Name>Command4_:Items3</Name>
+                <EventWithHeight name="Command7_:Items3" isConstant="false" isGlobal="false">
+                  <Name>Command7_:Items3</Name>
                   <BaseObject>visibilityVector</BaseObject>
                   <Height units="km" displayed_units="km">800</Height>
                   <metadata dim="0" />
@@ -2116,29 +3494,29 @@ visibilityVector.BuildVector(9, FINCH, MCC);]]></FreeFormScript>
           </View>
         </ViewCommand>
         <ViewCommand enabled="true">
-          <View name="Command5" isConstant="false" isGlobal="false">
-            <Name>Command5</Name>
+          <View name="Command8" isConstant="false" isGlobal="false">
+            <Name>Command8</Name>
             <ViewpointType>map</ViewpointType>
             <Items dim="3">
               <value>
-                <EventWithHeight name="Command5_:Items1" isConstant="false" isGlobal="false">
-                  <Name>Command5_:Items1</Name>
+                <EventWithHeight name="Command8_:Items1" isConstant="false" isGlobal="false">
+                  <Name>Command8_:Items1</Name>
                   <BaseObject>FINCH</BaseObject>
                   <Height units="km" displayed_units="km">800</Height>
                   <metadata dim="0" />
                 </EventWithHeight>
               </value>
               <value>
-                <EventWithHeight name="Command5_:Items2" isConstant="false" isGlobal="false">
-                  <Name>Command5_:Items2</Name>
+                <EventWithHeight name="Command8_:Items2" isConstant="false" isGlobal="false">
+                  <Name>Command8_:Items2</Name>
                   <BaseObject>MCC</BaseObject>
                   <Height units="km" displayed_units="km">800</Height>
                   <metadata dim="0" />
                 </EventWithHeight>
               </value>
               <value>
-                <EventWithHeight name="Command5_:Items3" isConstant="false" isGlobal="false">
-                  <Name>Command5_:Items3</Name>
+                <EventWithHeight name="Command8_:Items3" isConstant="false" isGlobal="false">
+                  <Name>Command8_:Items3</Name>
                   <BaseObject>visibilityVector</BaseObject>
                   <Height units="km" displayed_units="km">800</Height>
                   <metadata dim="0" />
@@ -2148,54 +3526,26 @@ visibilityVector.BuildVector(9, FINCH, MCC);]]></FreeFormScript>
             <metadata dim="0" />
           </View>
         </ViewCommand>
-        <PlotCommand enabled="true">
-          <Plot name="Command6" isConstant="false" isGlobal="false">
-            <Name>Command6</Name>
-            <PlotType>XYPlot</PlotType>
-            <ScrollPlot>0</ScrollPlot>
-            <Items>
-              <XYPlot>
-                <XAxisItem>
-                  <EventCall name="Command6_:XAxisItem" isConstant="false" isGlobal="false">
-                    <Name>Command6_:XAxisItem</Name>
-                    <BaseObject>FINCH</BaseObject>
-                    <EventName>ElapsedTime</EventName>
-                    <Parameters dim="0" />
-                    <metadata dim="0" />
-                  </EventCall>
-                </XAxisItem>
-                <YAxisItems dim="1">
-                  <value>
-                    <ObjectParameter name="Command6_:YAxisItems1" isConstant="false" isGlobal="false">
-                      <Name>Command6_:YAxisItems1</Name>
-                      <BaseObject>visibilityVector</BaseObject>
-                      <Parameter>Active</Parameter>
-                      <IndexType>NoIndices</IndexType>
-                      <IndexOptions>
-                        <NoIndices />
-                      </IndexOptions>
-                      <metadata dim="0" />
-                    </ObjectParameter>
-                  </value>
-                </YAxisItems>
-              </XYPlot>
-            </Items>
-            <metadata dim="0" />
-          </Plot>
-        </PlotCommand>
         <UpdateCommand enabled="true">
-          <Update name="Command7" isConstant="false" isGlobal="false">
-            <Name>Command7</Name>
+          <Update name="Command9" isConstant="false" isGlobal="false">
+            <Name>Command9</Name>
             <Window>FINCHViewWindow</Window>
             <metadata dim="0" />
           </Update>
         </UpdateCommand>
+        <UpdateCommand enabled="true">
+          <Update name="Command10" isConstant="false" isGlobal="false">
+            <Name>Command10</Name>
+            <Window>MCCViewWindow</Window>
+            <metadata dim="0" />
+          </Update>
+        </UpdateCommand>
         <StepCommand enabled="true">
-          <Step name="Command8" isConstant="false" isGlobal="false">
-            <Name>Command8</Name>
+          <Step name="Command11" isConstant="false" isGlobal="false">
+            <Name>Command11</Name>
             <StepObject>
-              <ObjectHolder name="Command8_:StepObject" isConstant="false" isGlobal="false">
-                <Name>Command8_:StepObject</Name>
+              <ObjectHolder name="Command11_:StepObject" isConstant="false" isGlobal="false">
+                <Name>Command11_:StepObject</Name>
                 <BaseObject>FINCH</BaseObject>
                 <metadata dim="0" />
               </ObjectHolder>
@@ -2205,6 +3555,12 @@ visibilityVector.BuildVector(9, FINCH, MCC);]]></FreeFormScript>
           </Step>
         </StepCommand>
       </WhileCommand>
+      <FreeForm enabled="true">
+        <Label>FreeForm</Label>
+        <Bookmarks />
+        <Breakpoints />
+        <FreeFormScript><![CDATA[]]></FreeFormScript>
+      </FreeForm>
     </ProjectCommands>
   </ProjectMissionSequence>
   <ProjectScript><![CDATA[VisibilitySegment visSeg;
@@ -2216,12 +3572,17 @@ visSeg.SetObserver(MCC);
 
 visibilityVector.BuildVector(9, FINCH, MCC);
 While (FINCH.ElapsedTime < TIMESPAN(1 days));
+SNR = RFLinkFINCHToMCC.GetSignalToNoiseRatio(FINCH.Epoch, "Calculated");
+SNR = 10^(SNR/10); // convert to linear ratio
 visibilityVector.Active = visSeg.Visibility(FINCH.Epoch);
+Update VisibilityPlot;
+// Update SNRPlot;
 View FINCH, MCC<800>, visibilityVector;
 Map FINCH, MCC<800>, visibilityVector;
-Plot FINCH.ElapsedTime, visibilityVector.Active;
 Update FINCHViewWindow;
+Update MCCViewWindow;
 Step FINCH;
-End;]]></ProjectScript>
+End;
+]]></ProjectScript>
   <ProjectNotes></ProjectNotes>
 </FreeFlyerProjectFile>
