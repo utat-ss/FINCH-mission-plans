@@ -3380,14 +3380,23 @@
         <Label>CreateVisibilitySegment</Label>
         <Bookmarks />
         <Breakpoints />
-        <FreeFormScript><![CDATA[VisibilitySegment visSeg;
+        <FreeFormScript><![CDATA[Variable visPrev = 0; // boolean tracking whether the spacecraft was visible in the previous timestep
+Array visDurations;
+Variable visCount = 0;
+TimeSpan visStart;
+TimeSpan visDuration;
+VisibilitySegment visSeg;
+
 visSeg.AddOccultingBody(Earth);
 visSeg.CelestialObjectOccultationModel = 1;
 
 visSeg.SetTarget(FINCH);
 visSeg.SetObserver(MCC);
 
-visibilityVector.BuildVector(9, FINCH, MCC);]]></FreeFormScript>
+visibilityVector.BuildVector(9, FINCH, MCC);
+
+
+]]></FreeFormScript>
       </FreeForm>
       <WhileCommand enabled="true" collapsed="false">
         <While name="Command2" isConstant="false" isGlobal="false">
@@ -3444,7 +3453,19 @@ SNR = 10^(SNR/10); // convert to linear ratio]]></FreeFormScript>
           <Label>RenderVisibilityVector</Label>
           <Bookmarks />
           <Breakpoints />
-          <FreeFormScript><![CDATA[visibilityVector.Active = visSeg.Visibility(FINCH.Epoch);]]></FreeFormScript>
+          <FreeFormScript><![CDATA[// visibility just started
+If (visSeg.Visibility(FINCH.Epoch) and !visPrev);
+  visStart = FINCH.Epoch;
+  visPrev = 1;
+// visibility just ended
+ElseIf (!visSeg.Visibility(FINCH.Epoch) and visPrev);
+  visDuration = FINCH.Epoch - visStart;
+  visDurations.Append(visDuration); // or whichever units you want
+  visCount += 1;
+  visPrev = 0;
+End;
+
+visibilityVector.Active = visSeg.Visibility(FINCH.Epoch);]]></FreeFormScript>
         </FreeForm>
         <UpdateCommand enabled="true">
           <Update name="Command5" isConstant="false" isGlobal="false">
@@ -3556,14 +3577,24 @@ SNR = 10^(SNR/10); // convert to linear ratio]]></FreeFormScript>
         </StepCommand>
       </WhileCommand>
       <FreeForm enabled="true">
-        <Label>FreeForm</Label>
+        <Label>ReportVisibilityMetrics</Label>
         <Bookmarks />
         <Breakpoints />
-        <FreeFormScript><![CDATA[]]></FreeFormScript>
+        <FreeFormScript><![CDATA[// Calculate averages
+Variable averageVisDuration = visDurations.Mean();
+Variable averageVisFrequency = visCount / (FINCH.ElapsedTime.TotalDays() / 7); // number of weeks
+
+Report averageVisDuration, averageVisFrequency;]]></FreeFormScript>
       </FreeForm>
     </ProjectCommands>
   </ProjectMissionSequence>
-  <ProjectScript><![CDATA[VisibilitySegment visSeg;
+  <ProjectScript><![CDATA[Variable visPrev = 0; // boolean tracking whether the spacecraft was visible in the previous timestep
+Array visDurations;
+Variable visCount = 0;
+TimeSpan visStart;
+TimeSpan visDuration;
+VisibilitySegment visSeg;
+
 visSeg.AddOccultingBody(Earth);
 visSeg.CelestialObjectOccultationModel = 1;
 
@@ -3571,9 +3602,24 @@ visSeg.SetTarget(FINCH);
 visSeg.SetObserver(MCC);
 
 visibilityVector.BuildVector(9, FINCH, MCC);
+
+
+
 While (FINCH.ElapsedTime < TIMESPAN(1 days));
 SNR = RFLinkFINCHToMCC.GetSignalToNoiseRatio(FINCH.Epoch, "Calculated");
 SNR = 10^(SNR/10); // convert to linear ratio
+// visibility just started
+If (visSeg.Visibility(FINCH.Epoch) and !visPrev);
+  visStart = FINCH.Epoch;
+  visPrev = 1;
+// visibility just ended
+ElseIf (!visSeg.Visibility(FINCH.Epoch) and visPrev);
+  visDuration = FINCH.Epoch - visStart;
+  visDurations.Append(visDuration); // or whichever units you want
+  visCount += 1;
+  visPrev = 0;
+End;
+
 visibilityVector.Active = visSeg.Visibility(FINCH.Epoch);
 Update VisibilityPlot;
 // Update SNRPlot;
@@ -3583,6 +3629,10 @@ Update FINCHViewWindow;
 Update MCCViewWindow;
 Step FINCH;
 End;
-]]></ProjectScript>
+// Calculate averages
+Variable averageVisDuration = visDurations.Mean();
+Variable averageVisFrequency = visCount / (FINCH.ElapsedTime.TotalDays() / 7); // number of weeks
+
+Report averageVisDuration, averageVisFrequency;]]></ProjectScript>
   <ProjectNotes></ProjectNotes>
 </FreeFlyerProjectFile>
