@@ -201,7 +201,7 @@
             <Prop>
               <RK89 name="FINCH_Propagator" isConstant="false" isGlobal="false">
                 <Name>FINCH_Propagator</Name>
-                <StepSize units="s" displayed_units="s">10</StepSize>
+                <StepSize units="s" displayed_units="s">30</StepSize>
                 <StepJustTaken units="s" displayed_units="s">300.0</StepJustTaken>
                 <StepToTake units="s" displayed_units="s">300.0</StepToTake>
                 <LargeCurvature units="" displayed_units="">0</LargeCurvature>
@@ -1533,8 +1533,8 @@
       </RFLink>
     </Object>
     <Object>
-      <Vector name="visibilityVector" isConstant="false" isGlobal="false">
-        <Name>visibilityVector</Name>
+      <Vector name="VisibilityVector" isConstant="false" isGlobal="false">
+        <Name>VisibilityVector</Name>
         <Alpha units="deg" displayed_units="deg">0.0</Alpha>
         <Delta units="deg" displayed_units="deg">0.0</Delta>
         <Magnitude units="" displayed_units="">1.0</Magnitude>
@@ -1555,20 +1555,20 @@
       </Vector>
     </Object>
     <Object>
-      <ViewWindow name="FINCHViewWindow" isConstant="false" isGlobal="false">
-        <Name>FINCHViewWindow</Name>
+      <ViewWindow name="FINCHView" isConstant="false" isGlobal="false">
+        <Name>FINCHView</Name>
         <WindowTitle>FINCH View</WindowTitle>
         <Viewpoints dim="1">
           <value>
-            <Viewpoint name="FINCHViewWindow_Default" isConstant="false" isGlobal="false">
-              <Name>FINCHViewWindow_Default</Name>
+            <Viewpoint name="FINCHView_Default" isConstant="false" isGlobal="false">
+              <Name>FINCHView_Default</Name>
               <ViewpointName>Default</ViewpointName>
               <ViewpointType>view</ViewpointType>
               <ViewpointParameters>
                 <view>
                   <ThreeDView>
-                    <ThreeDViewpointOptions name="FINCHViewWindow_Default_|ThreeDView|" isConstant="false" isGlobal="false">
-                      <Name>FINCHViewWindow_Default_|ThreeDView|</Name>
+                    <ThreeDViewpointOptions name="FINCHView_Default_|ThreeDView|" isConstant="false" isGlobal="false">
+                      <Name>FINCHView_Default_|ThreeDView|</Name>
                       <Source>FINCH</Source>
                       <Target>FINCH</Target>
                       <TailReference>Earth</TailReference>
@@ -1597,8 +1597,8 @@
         <BackgroundColor>0</BackgroundColor>
         <ObjectShadowing>0</ObjectShadowing>
         <StatusTextFont>
-          <ViewFont name="FINCHViewWindow_|StatusTextFont|" isConstant="false" isGlobal="false">
-            <Name>FINCHViewWindow_|StatusTextFont|</Name>
+          <ViewFont name="FINCHView_|StatusTextFont|" isConstant="false" isGlobal="false">
+            <Name>FINCHView_|StatusTextFont|</Name>
             <Bold>false</Bold>
             <Italic>false</Italic>
             <Size units="" displayed_units="">0</Size>
@@ -1609,8 +1609,8 @@
           </ViewFont>
         </StatusTextFont>
         <DefaultObjectLabelFont>
-          <ViewFont name="FINCHViewWindow_|DefaultObjectLabelFont|" isConstant="false" isGlobal="false">
-            <Name>FINCHViewWindow_|DefaultObjectLabelFont|</Name>
+          <ViewFont name="FINCHView_|DefaultObjectLabelFont|" isConstant="false" isGlobal="false">
+            <Name>FINCHView_|DefaultObjectLabelFont|</Name>
             <Bold>false</Bold>
             <Italic>false</Italic>
             <Size units="" displayed_units="">20</Size>
@@ -1635,7 +1635,7 @@
           <value>Stars</value>
           <value>FINCH</value>
           <value>MCC</value>
-          <value>visibilityVector</value>
+          <value>VisibilityVector</value>
         </Objects>
         <ProjectionHeights units="km" displayed_units="km" dim="15">
           <value>0</value>
@@ -2465,467 +2465,27 @@
       </PlotWindow>
     </Object>
     <Object>
-      <PlotWindow name="VisibilityPlot" isConstant="false" isGlobal="false">
-        <Name>VisibilityPlot</Name>
-        <WindowTitle>Visibility</WindowTitle>
-        <PlotType>XYPlot</PlotType>
-        <ConfigureFonts>true</ConfigureFonts>
-        <UseMonitorMode>false</UseMonitorMode>
-        <MaxPoints units="" displayed_units="">2000</MaxPoints>
-        <PointsToUpdate units="" displayed_units="">25</PointsToUpdate>
-        <Items>
-          <XYPlot>
-            <XAxisItem>
-              <ObjectParameter name="VisibilityPlot_:XAxisItem" isConstant="false" isGlobal="false">
-                <Name>VisibilityPlot_:XAxisItem</Name>
-                <BaseObject>FINCH</BaseObject>
-                <Parameter>Epoch</Parameter>
-                <IndexType>NoIndices</IndexType>
-                <IndexOptions>
-                  <NoIndices />
-                </IndexOptions>
-                <metadata dim="0" />
-              </ObjectParameter>
-            </XAxisItem>
-            <YAxisItems dim="1">
-              <value>
-                <ObjectParameter name="VisibilityPlot_:YAxisItems1" isConstant="false" isGlobal="false">
-                  <Name>VisibilityPlot_:YAxisItems1</Name>
-                  <BaseObject>visibilityVector</BaseObject>
-                  <Parameter>Active</Parameter>
-                  <IndexType>NoIndices</IndexType>
-                  <IndexOptions>
-                    <NoIndices />
-                  </IndexOptions>
-                  <metadata dim="0" />
-                </ObjectParameter>
-              </value>
-            </YAxisItems>
-          </XYPlot>
-        </Items>
-        <BackgroundColor>16777215</BackgroundColor>
-        <HighQualityRendering>true</HighQualityRendering>
-        <InterlacedColor>15128749</InterlacedColor>
-        <InterlacedDirection>0</InterlacedDirection>
-        <Legend>
-          <PlotLegend name="VisibilityPlot_|PlotLegend|" isConstant="false" isGlobal="false">
-            <Name>VisibilityPlot_|PlotLegend|</Name>
-            <BorderVisible>false</BorderVisible>
-            <Font>
-              <PlotFont name="VisibilityPlot_|PlotLegend|_|PlotFont|" isConstant="false" isGlobal="false">
-                <Name>VisibilityPlot_|PlotLegend|_|PlotFont|</Name>
-                <Bold>false</Bold>
-                <BoldDefault>false</BoldDefault>
-                <Italic>false</Italic>
-                <Size units="points" displayed_units="points">9</Size>
-                <SizeDefault units="points" displayed_units="points">9</SizeDefault>
-                <Strikeout>false</Strikeout>
-                <Typeface>Verdana</Typeface>
-                <TypefaceDefault>Verdana</TypefaceDefault>
-                <Underline>false</Underline>
-                <metadata dim="0" />
-              </PlotFont>
-            </Font>
-            <Location>3</Location>
-            <TextColor>0</TextColor>
-            <BackgroundColor>16777215</BackgroundColor>
-            <BorderColor>16777215</BorderColor>
-            <Title>
-              <PlotTitle name="VisibilityPlot_|PlotLegend|_|PlotTitle|" isConstant="false" isGlobal="false">
-                <Name>VisibilityPlot_|PlotLegend|_|PlotTitle|</Name>
-                <Color>0</Color>
-                <Font>
-                  <PlotFont name="VisibilityPlot_|PlotLegend|_|PlotTitle|_|PlotFont|" isConstant="false" isGlobal="false">
-                    <Name>VisibilityPlot_|PlotLegend|_|PlotTitle|_|PlotFont|</Name>
-                    <Bold>false</Bold>
-                    <BoldDefault>false</BoldDefault>
-                    <Italic>false</Italic>
-                    <Size units="points" displayed_units="points">9</Size>
-                    <SizeDefault units="points" displayed_units="points">9</SizeDefault>
-                    <Strikeout>false</Strikeout>
-                    <Typeface>Verdana</Typeface>
-                    <TypefaceDefault>Verdana</TypefaceDefault>
-                    <Underline>false</Underline>
-                    <metadata dim="0" />
-                  </PlotFont>
-                </Font>
-                <Text></Text>
-                <TextDefault></TextDefault>
-                <Visible>true</Visible>
-                <metadata dim="0" />
-              </PlotTitle>
-            </Title>
-            <Visible>true</Visible>
-            <metadata dim="0" />
-          </PlotLegend>
-        </Legend>
-        <PlotAreaColor>16777215</PlotAreaColor>
-        <PlotSubTitle>
-          <PlotTitle name="VisibilityPlot_|PlotSubTitle|" isConstant="false" isGlobal="false">
-            <Name>VisibilityPlot_|PlotSubTitle|</Name>
-            <Color>0</Color>
-            <Font>
-              <PlotFont name="VisibilityPlot_|PlotSubTitle|_|PlotFont|" isConstant="false" isGlobal="false">
-                <Name>VisibilityPlot_|PlotSubTitle|_|PlotFont|</Name>
-                <Bold>false</Bold>
-                <BoldDefault>false</BoldDefault>
-                <Italic>false</Italic>
-                <Size units="points" displayed_units="points">10</Size>
-                <SizeDefault units="points" displayed_units="points">10</SizeDefault>
-                <Strikeout>false</Strikeout>
-                <Typeface>Segoe UI</Typeface>
-                <TypefaceDefault>Segoe UI</TypefaceDefault>
-                <Underline>false</Underline>
-                <metadata dim="0" />
-              </PlotFont>
-            </Font>
-            <Text>06/23/2023</Text>
-            <TextDefault>06/23/2023</TextDefault>
-            <Visible>true</Visible>
-            <metadata dim="0" />
-          </PlotTitle>
-        </PlotSubTitle>
-        <PlotTitle>
-          <PlotTitle name="VisibilityPlot_|PlotTitle|" isConstant="false" isGlobal="false">
-            <Name>VisibilityPlot_|PlotTitle|</Name>
-            <Color>0</Color>
-            <Font>
-              <PlotFont name="VisibilityPlot_|PlotTitle|_|PlotFont|" isConstant="false" isGlobal="false">
-                <Name>VisibilityPlot_|PlotTitle|_|PlotFont|</Name>
-                <Bold>true</Bold>
-                <BoldDefault>true</BoldDefault>
-                <Italic>false</Italic>
-                <Size units="points" displayed_units="points">13</Size>
-                <SizeDefault units="points" displayed_units="points">13</SizeDefault>
-                <Strikeout>false</Strikeout>
-                <Typeface>Verdana</Typeface>
-                <TypefaceDefault>Verdana</TypefaceDefault>
-                <Underline>false</Underline>
-                <metadata dim="0" />
-              </PlotFont>
-            </Font>
-            <Text>FreeFlyer Plot</Text>
-            <TextDefault>FreeFlyer Plot</TextDefault>
-            <Visible>true</Visible>
-            <metadata dim="0" />
-          </PlotTitle>
-        </PlotTitle>
-        <RAxis>
-          <PlotAxis name="VisibilityPlot_|RAxis|" isConstant="false" isGlobal="false">
-            <Name>VisibilityPlot_|RAxis|</Name>
-            <Direction>0</Direction>
-            <GridColor>13420739</GridColor>
-            <GridLineStyle>2</GridLineStyle>
-            <GridLineStyleDefault>2</GridLineStyleDefault>
-            <GridLineWidth units="" displayed_units="">1</GridLineWidth>
-            <GridVisible>true</GridVisible>
-            <LabelsArrangement>0</LabelsArrangement>
-            <LabelsColor>0</LabelsColor>
-            <LabelsFont>
-              <PlotFont name="VisibilityPlot_|RAxis|_|PlotFont|" isConstant="false" isGlobal="false">
-                <Name>VisibilityPlot_|RAxis|_|PlotFont|</Name>
-                <Bold>false</Bold>
-                <BoldDefault>false</BoldDefault>
-                <Italic>false</Italic>
-                <Size units="points" displayed_units="points">9</Size>
-                <SizeDefault units="points" displayed_units="points">9</SizeDefault>
-                <Strikeout>false</Strikeout>
-                <Typeface>Verdana</Typeface>
-                <TypefaceDefault>Verdana</TypefaceDefault>
-                <Underline>false</Underline>
-                <metadata dim="0" />
-              </PlotFont>
-            </LabelsFont>
-            <LabelsFormat>0.000</LabelsFormat>
-            <LabelsSpacing units="" displayed_units="">0</LabelsSpacing>
-            <Location>0</Location>
-            <MaximumValue units="" displayed_units="">0</MaximumValue>
-            <MinimumValue units="" displayed_units="">0</MinimumValue>
-            <Scaling>0</Scaling>
-            <Title>
-              <PlotTitle name="VisibilityPlot_|RAxis|_|PlotTitle|" isConstant="false" isGlobal="false">
-                <Name>VisibilityPlot_|RAxis|_|PlotTitle|</Name>
-                <Color>0</Color>
-                <Font>
-                  <PlotFont name="VisibilityPlot_|RAxis|_|PlotTitle|_|PlotFont|" isConstant="false" isGlobal="false">
-                    <Name>VisibilityPlot_|RAxis|_|PlotTitle|_|PlotFont|</Name>
-                    <Bold>false</Bold>
-                    <BoldDefault>false</BoldDefault>
-                    <Italic>false</Italic>
-                    <Size units="points" displayed_units="points">9</Size>
-                    <SizeDefault units="points" displayed_units="points">9</SizeDefault>
-                    <Strikeout>false</Strikeout>
-                    <Typeface>Verdana</Typeface>
-                    <TypefaceDefault>Verdana</TypefaceDefault>
-                    <Underline>false</Underline>
-                    <metadata dim="0" />
-                  </PlotFont>
-                </Font>
-                <Text></Text>
-                <TextDefault></TextDefault>
-                <Visible>true</Visible>
-                <metadata dim="0" />
-              </PlotTitle>
-            </Title>
-            <UseAutoMaximum>true</UseAutoMaximum>
-            <UseAutoMinimum>true</UseAutoMinimum>
-            <UseDateTimeFormatting>false</UseDateTimeFormatting>
-            <UseDateTimeFormattingDefault>false</UseDateTimeFormattingDefault>
-            <metadata dim="0" />
-          </PlotAxis>
-        </RAxis>
-        <OwnedSeries dim="1">
-          <value>
-            <PlotScatterSeries name="VisibilityPlot_PlotScatterSeries1" isConstant="false" isGlobal="false">
-              <Name>VisibilityPlot_PlotScatterSeries1</Name>
-              <DataLabelsFont>
-                <PlotFont name="VisibilityPlot_PlotScatterSeries1_|PlotFont|" isConstant="false" isGlobal="false">
-                  <Name>VisibilityPlot_PlotScatterSeries1_|PlotFont|</Name>
-                  <Bold>false</Bold>
-                  <BoldDefault>false</BoldDefault>
-                  <Italic>false</Italic>
-                  <Size units="points" displayed_units="points">9</Size>
-                  <SizeDefault units="points" displayed_units="points">9</SizeDefault>
-                  <Strikeout>false</Strikeout>
-                  <Typeface>Verdana</Typeface>
-                  <TypefaceDefault>Verdana</TypefaceDefault>
-                  <Underline>false</Underline>
-                  <metadata dim="0" />
-                </PlotFont>
-              </DataLabelsFont>
-              <DataLabelsTextColor>0</DataLabelsTextColor>
-              <DataLabelsBackgroundColor>14745599</DataLabelsBackgroundColor>
-              <DataLabelsBackgroundVisible>false</DataLabelsBackgroundVisible>
-              <DataLabelsStyle>0</DataLabelsStyle>
-              <DataLabelsVisible>false</DataLabelsVisible>
-              <Label>visibilityVector.Active</Label>
-              <LabelDefault>visibilityVector.Active</LabelDefault>
-              <LineColor>12674086</LineColor>
-              <LineStyle>0</LineStyle>
-              <LineVisible>true</LineVisible>
-              <LineWidth units="" displayed_units="">1</LineWidth>
-              <MarkersColor>12674086</MarkersColor>
-              <MarkersSize units="" displayed_units="">1</MarkersSize>
-              <MarkersStyle>0</MarkersStyle>
-              <MarkersVisible>false</MarkersVisible>
-              <ShowInLegend>true</ShowInLegend>
-              <EnableDataCulling>true</EnableDataCulling>
-              <FullDataLabels dim="0" />
-              <FullData units="" displayed_units="" dim="0,2" />
-              <metadata dim="0" />
-            </PlotScatterSeries>
-          </value>
-        </OwnedSeries>
-        <ThetaAxis>
-          <PlotAxis name="VisibilityPlot_|ThetaAxis|" isConstant="false" isGlobal="false">
-            <Name>VisibilityPlot_|ThetaAxis|</Name>
-            <Direction>0</Direction>
-            <GridColor>13420739</GridColor>
-            <GridLineStyle>2</GridLineStyle>
-            <GridLineStyleDefault>2</GridLineStyleDefault>
-            <GridLineWidth units="" displayed_units="">1</GridLineWidth>
-            <GridVisible>true</GridVisible>
-            <LabelsArrangement>0</LabelsArrangement>
-            <LabelsColor>0</LabelsColor>
-            <LabelsFont>
-              <PlotFont name="VisibilityPlot_|ThetaAxis|_|PlotFont|" isConstant="false" isGlobal="false">
-                <Name>VisibilityPlot_|ThetaAxis|_|PlotFont|</Name>
-                <Bold>false</Bold>
-                <BoldDefault>false</BoldDefault>
-                <Italic>false</Italic>
-                <Size units="points" displayed_units="points">9</Size>
-                <SizeDefault units="points" displayed_units="points">9</SizeDefault>
-                <Strikeout>false</Strikeout>
-                <Typeface>Verdana</Typeface>
-                <TypefaceDefault>Verdana</TypefaceDefault>
-                <Underline>false</Underline>
-                <metadata dim="0" />
-              </PlotFont>
-            </LabelsFont>
-            <LabelsFormat>0.000</LabelsFormat>
-            <LabelsSpacing units="" displayed_units="">0</LabelsSpacing>
-            <Location>0</Location>
-            <MaximumValue units="" displayed_units="">0</MaximumValue>
-            <MinimumValue units="" displayed_units="">0</MinimumValue>
-            <Scaling>0</Scaling>
-            <Title>
-              <PlotTitle name="VisibilityPlot_|ThetaAxis|_|PlotTitle|" isConstant="false" isGlobal="false">
-                <Name>VisibilityPlot_|ThetaAxis|_|PlotTitle|</Name>
-                <Color>0</Color>
-                <Font>
-                  <PlotFont name="VisibilityPlot_|ThetaAxis|_|PlotTitle|_|PlotFont|" isConstant="false" isGlobal="false">
-                    <Name>VisibilityPlot_|ThetaAxis|_|PlotTitle|_|PlotFont|</Name>
-                    <Bold>false</Bold>
-                    <BoldDefault>false</BoldDefault>
-                    <Italic>false</Italic>
-                    <Size units="points" displayed_units="points">9</Size>
-                    <SizeDefault units="points" displayed_units="points">9</SizeDefault>
-                    <Strikeout>false</Strikeout>
-                    <Typeface>Verdana</Typeface>
-                    <TypefaceDefault>Verdana</TypefaceDefault>
-                    <Underline>false</Underline>
-                    <metadata dim="0" />
-                  </PlotFont>
-                </Font>
-                <Text></Text>
-                <TextDefault></TextDefault>
-                <Visible>true</Visible>
-                <metadata dim="0" />
-              </PlotTitle>
-            </Title>
-            <UseAutoMaximum>true</UseAutoMaximum>
-            <UseAutoMinimum>true</UseAutoMinimum>
-            <UseDateTimeFormatting>false</UseDateTimeFormatting>
-            <UseDateTimeFormattingDefault>false</UseDateTimeFormattingDefault>
-            <metadata dim="0" />
-          </PlotAxis>
-        </ThetaAxis>
-        <XAxis>
-          <PlotAxis name="VisibilityPlot_|XAxis|" isConstant="false" isGlobal="false">
-            <Name>VisibilityPlot_|XAxis|</Name>
-            <Direction>0</Direction>
-            <GridColor>13420739</GridColor>
-            <GridLineStyle>2</GridLineStyle>
-            <GridLineStyleDefault>2</GridLineStyleDefault>
-            <GridLineWidth units="" displayed_units="">1</GridLineWidth>
-            <GridVisible>true</GridVisible>
-            <LabelsArrangement>0</LabelsArrangement>
-            <LabelsColor>0</LabelsColor>
-            <LabelsFont>
-              <PlotFont name="VisibilityPlot_|XAxis|_|PlotFont|" isConstant="false" isGlobal="false">
-                <Name>VisibilityPlot_|XAxis|_|PlotFont|</Name>
-                <Bold>false</Bold>
-                <BoldDefault>false</BoldDefault>
-                <Italic>false</Italic>
-                <Size units="points" displayed_units="points">9</Size>
-                <SizeDefault units="points" displayed_units="points">9</SizeDefault>
-                <Strikeout>false</Strikeout>
-                <Typeface>Verdana</Typeface>
-                <TypefaceDefault>Verdana</TypefaceDefault>
-                <Underline>false</Underline>
-                <metadata dim="0" />
-              </PlotFont>
-            </LabelsFont>
-            <LabelsFormat>0.000</LabelsFormat>
-            <LabelsSpacing units="" displayed_units="">0</LabelsSpacing>
-            <Location>0</Location>
-            <MaximumValue units="" displayed_units="">44</MaximumValue>
-            <MinimumValue units="" displayed_units="">0</MinimumValue>
-            <Scaling>0</Scaling>
-            <Title>
-              <PlotTitle name="VisibilityPlot_|XAxis|_|PlotTitle|" isConstant="false" isGlobal="false">
-                <Name>VisibilityPlot_|XAxis|_|PlotTitle|</Name>
-                <Color>0</Color>
-                <Font>
-                  <PlotFont name="VisibilityPlot_|XAxis|_|PlotTitle|_|PlotFont|" isConstant="false" isGlobal="false">
-                    <Name>VisibilityPlot_|XAxis|_|PlotTitle|_|PlotFont|</Name>
-                    <Bold>false</Bold>
-                    <BoldDefault>false</BoldDefault>
-                    <Italic>false</Italic>
-                    <Size units="points" displayed_units="points">9</Size>
-                    <SizeDefault units="points" displayed_units="points">9</SizeDefault>
-                    <Strikeout>false</Strikeout>
-                    <Typeface>Verdana</Typeface>
-                    <TypefaceDefault>Verdana</TypefaceDefault>
-                    <Underline>false</Underline>
-                    <metadata dim="0" />
-                  </PlotFont>
-                </Font>
-                <Text>FINCH.Epoch (day)</Text>
-                <TextDefault>FINCH.Epoch (day)</TextDefault>
-                <Visible>true</Visible>
-                <metadata dim="0" />
-              </PlotTitle>
-            </Title>
-            <UseAutoMaximum>true</UseAutoMaximum>
-            <UseAutoMinimum>true</UseAutoMinimum>
-            <UseDateTimeFormatting>true</UseDateTimeFormatting>
-            <UseDateTimeFormattingDefault>true</UseDateTimeFormattingDefault>
-            <metadata dim="0" />
-          </PlotAxis>
-        </XAxis>
-        <YAxis>
-          <PlotAxis name="VisibilityPlot_|YAxis|" isConstant="false" isGlobal="false">
-            <Name>VisibilityPlot_|YAxis|</Name>
-            <Direction>0</Direction>
-            <GridColor>13420739</GridColor>
-            <GridLineStyle>2</GridLineStyle>
-            <GridLineStyleDefault>2</GridLineStyleDefault>
-            <GridLineWidth units="" displayed_units="">1</GridLineWidth>
-            <GridVisible>true</GridVisible>
-            <LabelsArrangement>0</LabelsArrangement>
-            <LabelsColor>0</LabelsColor>
-            <LabelsFont>
-              <PlotFont name="VisibilityPlot_|YAxis|_|PlotFont|" isConstant="false" isGlobal="false">
-                <Name>VisibilityPlot_|YAxis|_|PlotFont|</Name>
-                <Bold>false</Bold>
-                <BoldDefault>false</BoldDefault>
-                <Italic>false</Italic>
-                <Size units="points" displayed_units="points">9</Size>
-                <SizeDefault units="points" displayed_units="points">9</SizeDefault>
-                <Strikeout>false</Strikeout>
-                <Typeface>Verdana</Typeface>
-                <TypefaceDefault>Verdana</TypefaceDefault>
-                <Underline>false</Underline>
-                <metadata dim="0" />
-              </PlotFont>
-            </LabelsFont>
-            <LabelsFormat>0.000</LabelsFormat>
-            <LabelsSpacing units="" displayed_units="">0</LabelsSpacing>
-            <Location>0</Location>
-            <MaximumValue units="" displayed_units="">1.9993908270191</MaximumValue>
-            <MinimumValue units="" displayed_units="">0.000609172980904238</MinimumValue>
-            <Scaling>0</Scaling>
-            <Title>
-              <PlotTitle name="VisibilityPlot_|YAxis|_|PlotTitle|" isConstant="false" isGlobal="false">
-                <Name>VisibilityPlot_|YAxis|_|PlotTitle|</Name>
-                <Color>0</Color>
-                <Font>
-                  <PlotFont name="VisibilityPlot_|YAxis|_|PlotTitle|_|PlotFont|" isConstant="false" isGlobal="false">
-                    <Name>VisibilityPlot_|YAxis|_|PlotTitle|_|PlotFont|</Name>
-                    <Bold>false</Bold>
-                    <BoldDefault>false</BoldDefault>
-                    <Italic>false</Italic>
-                    <Size units="points" displayed_units="points">9</Size>
-                    <SizeDefault units="points" displayed_units="points">9</SizeDefault>
-                    <Strikeout>false</Strikeout>
-                    <Typeface>Verdana</Typeface>
-                    <TypefaceDefault>Verdana</TypefaceDefault>
-                    <Underline>false</Underline>
-                    <metadata dim="0" />
-                  </PlotFont>
-                </Font>
-                <Text>visibilityVector.Active</Text>
-                <TextDefault>visibilityVector.Active</TextDefault>
-                <Visible>true</Visible>
-                <metadata dim="0" />
-              </PlotTitle>
-            </Title>
-            <UseAutoMaximum>true</UseAutoMaximum>
-            <UseAutoMinimum>true</UseAutoMinimum>
-            <UseDateTimeFormatting>false</UseDateTimeFormatting>
-            <UseDateTimeFormattingDefault>false</UseDateTimeFormattingDefault>
-            <metadata dim="0" />
-          </PlotAxis>
-        </YAxis>
+      <TimeSpan name="PassEpoch" isConstant="false" isGlobal="false">
+        <Name>PassEpoch</Name>
+        <Value units="s" displayed_units="s">0</Value>
         <metadata dim="0" />
-      </PlotWindow>
+      </TimeSpan>
     </Object>
     <Object>
-      <ViewWindow name="MCCViewWindow" isConstant="false" isGlobal="false">
-        <Name>MCCViewWindow</Name>
+      <ViewWindow name="MCCView" isConstant="false" isGlobal="false">
+        <Name>MCCView</Name>
         <WindowTitle>MCC View</WindowTitle>
         <Viewpoints dim="1">
           <value>
-            <Viewpoint name="MCCViewWindow_Default" isConstant="false" isGlobal="false">
-              <Name>MCCViewWindow_Default</Name>
+            <Viewpoint name="MCCView_Default" isConstant="false" isGlobal="false">
+              <Name>MCCView_Default</Name>
               <ViewpointName>Default</ViewpointName>
               <ViewpointType>view</ViewpointType>
               <ViewpointParameters>
                 <view>
                   <ThreeDView>
-                    <ThreeDViewpointOptions name="MCCViewWindow_Default_|ThreeDView|" isConstant="false" isGlobal="false">
-                      <Name>MCCViewWindow_Default_|ThreeDView|</Name>
+                    <ThreeDViewpointOptions name="MCCView_Default_|ThreeDView|" isConstant="false" isGlobal="false">
+                      <Name>MCCView_Default_|ThreeDView|</Name>
                       <Source>MCC</Source>
                       <Target>FINCH</Target>
                       <TailReference>Earth</TailReference>
@@ -2954,8 +2514,8 @@
         <BackgroundColor>0</BackgroundColor>
         <ObjectShadowing>0</ObjectShadowing>
         <StatusTextFont>
-          <ViewFont name="MCCViewWindow_|StatusTextFont|" isConstant="false" isGlobal="false">
-            <Name>MCCViewWindow_|StatusTextFont|</Name>
+          <ViewFont name="MCCView_|StatusTextFont|" isConstant="false" isGlobal="false">
+            <Name>MCCView_|StatusTextFont|</Name>
             <Bold>false</Bold>
             <Italic>false</Italic>
             <Size units="" displayed_units="">0</Size>
@@ -2966,8 +2526,8 @@
           </ViewFont>
         </StatusTextFont>
         <DefaultObjectLabelFont>
-          <ViewFont name="MCCViewWindow_|DefaultObjectLabelFont|" isConstant="false" isGlobal="false">
-            <Name>MCCViewWindow_|DefaultObjectLabelFont|</Name>
+          <ViewFont name="MCCView_|DefaultObjectLabelFont|" isConstant="false" isGlobal="false">
+            <Name>MCCView_|DefaultObjectLabelFont|</Name>
             <Bold>false</Bold>
             <Italic>false</Italic>
             <Size units="" displayed_units="">20</Size>
@@ -2992,7 +2552,7 @@
           <value>Stars</value>
           <value>FINCH</value>
           <value>MCC</value>
-          <value>visibilityVector</value>
+          <value>VisibilityVector</value>
         </Objects>
         <ProjectionHeights units="km" displayed_units="km" dim="15">
           <value>0</value>
@@ -3372,6 +2932,85 @@
         <metadata dim="0" />
       </ViewWindow>
     </Object>
+    <Object>
+      <Variable name="PassCount" isConstant="false" isGlobal="false">
+        <Name>PassCount</Name>
+        <Value units="" displayed_units="">0.0</Value>
+        <metadata dim="0" />
+      </Variable>
+    </Object>
+    <Object>
+      <Variable name="AvgPassDuration" isConstant="false" isGlobal="false">
+        <Name>AvgPassDuration</Name>
+        <Value units="" displayed_units="">0.0</Value>
+        <metadata dim="0" />
+      </Variable>
+    </Object>
+    <Object>
+      <TimeSpanArray name="PassEpochs" isConstant="false" isGlobal="false">
+        <Name>PassEpochs</Name>
+        <Dimension units="" displayed_units="">0</Dimension>
+        <Capacity units="" displayed_units="">0</Capacity>
+        <Element units="s" displayed_units="s" dim="0" />
+        <metadata dim="0" />
+      </TimeSpanArray>
+    </Object>
+    <Object>
+      <DataTableWindow name="PassLog" isConstant="false" isGlobal="false">
+        <Name>PassLog</Name>
+        <WindowTitle></WindowTitle>
+        <Items dim="1">
+          <value>
+            <EventWithFormat name="PassLog_:Items1" isConstant="false" isGlobal="false">
+              <Name>PassLog_:Items1</Name>
+              <BaseObject>
+                <ArrayElement name="PassLog_:Items1_:BaseObject" isConstant="false" isGlobal="false">
+                  <Name>PassLog_:Items1_:BaseObject</Name>
+                  <BaseObject>PassEpochs</BaseObject>
+                  <Index units="" displayed_units="" dim="(1)">
+                    <value>0</value>
+                  </Index>
+                  <metadata dim="0" />
+                </ArrayElement>
+              </BaseObject>
+              <Width units="" displayed_units="">14</Width>
+              <Precision units="" displayed_units="">7</Precision>
+              <metadata dim="0" />
+            </EventWithFormat>
+          </value>
+        </Items>
+        <metadata dim="0" />
+      </DataTableWindow>
+    </Object>
+    <Object>
+      <WatchWindow name="PassMetrics" isConstant="false" isGlobal="false">
+        <Name>PassMetrics</Name>
+        <WindowTitle>Visibility Metrics</WindowTitle>
+        <Items dim="1">
+          <value>
+            <EventWithBounds name="PassMetrics_:Items1" isConstant="false" isGlobal="false">
+              <Name>PassMetrics_:Items1</Name>
+              <BaseObject>
+                <ObjectHolder name="PassMetrics_:Items1_:BaseObject" isConstant="false" isGlobal="false">
+                  <Name>PassMetrics_:Items1_:BaseObject</Name>
+                  <BaseObject>PassCount</BaseObject>
+                  <metadata dim="0" />
+                </ObjectHolder>
+              </BaseObject>
+              <BoundsType>Color</BoundsType>
+              <MinimumErrorBound units="" displayed_units="">-1000.0</MinimumErrorBound>
+              <MinimumWarningBound units="" displayed_units="">-100.0</MinimumWarningBound>
+              <MaximumWarningBound units="" displayed_units="">100.0</MaximumWarningBound>
+              <MaximumErrorBound units="" displayed_units="">1000.0</MaximumErrorBound>
+              <Color>0</Color>
+              <metadata dim="0" />
+            </EventWithBounds>
+          </value>
+        </Items>
+        <LineLabels dim="(0)" />
+        <metadata dim="0" />
+      </WatchWindow>
+    </Object>
   </ProjectObjects>
   <ProjectMissionSequence>
     <ProjectExternals />
@@ -3380,20 +3019,18 @@
         <Label>CreateVisibilitySegment</Label>
         <Bookmarks />
         <Breakpoints />
-        <FreeFormScript><![CDATA[Variable visPrev = 0; // boolean tracking whether the spacecraft was visible in the previous timestep
-Array visDurations;
-Variable visCount = 0;
-TimeSpan visStart;
-TimeSpan visDuration;
-VisibilitySegment visSeg;
+        <FreeFormScript><![CDATA[Array PassDurations;
+TimeSpan PassStart;
+TimeSpan PassDuration;
+VisibilitySegment VisSeg;
+Variable VisPrev = 0; // boolean tracking whether the spacecraft was visible in the previous timestep
 
-visSeg.AddOccultingBody(Earth);
-visSeg.CelestialObjectOccultationModel = 1;
+VisSeg.AddOccultingBody(Earth);
+VisSeg.CelestialObjectOccultationModel = 1;
+VisSeg.SetTarget(FINCH);
+VisSeg.SetObserver(MCC);
 
-visSeg.SetTarget(FINCH);
-visSeg.SetObserver(MCC);
-
-visibilityVector.BuildVector(9, FINCH, MCC);
+VisibilityVector.BuildVector(9, FINCH, MCC);
 
 
 ]]></FreeFormScript>
@@ -3450,41 +3087,72 @@ visibilityVector.BuildVector(9, FINCH, MCC);
 SNR = 10^(SNR/10); // convert to linear ratio]]></FreeFormScript>
         </FreeForm>
         <FreeForm enabled="true">
-          <Label>RenderVisibilityVector</Label>
+          <Label>UpdateVisibility</Label>
           <Bookmarks />
           <Breakpoints />
           <FreeFormScript><![CDATA[// visibility just started
-If (visSeg.Visibility(FINCH.Epoch) and !visPrev);
-  visStart = FINCH.Epoch;
-  visPrev = 1;
+If (VisSeg.Visibility(FINCH.Epoch) and !VisPrev);
+  PassStart = FINCH.Epoch;
+  VisPrev = 1;
 // visibility just ended
-ElseIf (!visSeg.Visibility(FINCH.Epoch) and visPrev);
-  visDuration = FINCH.Epoch - visStart;
-  visDurations.PushBack(visDuration.ToSeconds); // or whichever units you want
-  visCount += 1;
-  visPrev = 0;
+ElseIf (!VisSeg.Visibility(FINCH.Epoch) and VisPrev);
+  PassDuration = FINCH.Epoch - PassStart;
+  PassDurations.PushBack(PassDuration.ToSeconds); // or whichever units you want
+  PassEpochs.PushBack(PassDuration);
+  PassCount += 1;
+  VisPrev = 0;
 End;
 
-visibilityVector.Active = visSeg.Visibility(FINCH.Epoch);]]></FreeFormScript>
+If (PassDurations.Dimension > 0);
+	AvgPassDuration = PassDurations.Mean();
+	//Variable averageVisFrequency = visCount / (FINCH.ElapsedTime.GetWholeDays() / 7); // number of weeks
+End;
+VisibilityVector.Active = VisSeg.Visibility(FINCH.Epoch);]]></FreeFormScript>
         </FreeForm>
-        <UpdateCommand enabled="true">
+        <UpdateCommand enabled="false">
           <Update name="Command5" isConstant="false" isGlobal="false">
             <Name>Command5</Name>
-            <Window>VisibilityPlot</Window>
-            <metadata dim="0" />
-          </Update>
-        </UpdateCommand>
-        <UpdateCommand enabled="false">
-          <Update name="Command6" isConstant="false" isGlobal="false">
-            <Name>Command6</Name>
             <Window>SNRPlot</Window>
             <metadata dim="0" />
           </Update>
         </UpdateCommand>
         <ViewCommand enabled="true">
+          <View name="Command6" isConstant="false" isGlobal="false">
+            <Name>Command6</Name>
+            <ViewpointType>view</ViewpointType>
+            <Items dim="3">
+              <value>
+                <EventWithHeight name="Command6_:Items1" isConstant="false" isGlobal="false">
+                  <Name>Command6_:Items1</Name>
+                  <BaseObject>FINCH</BaseObject>
+                  <Height units="km" displayed_units="km">800</Height>
+                  <metadata dim="0" />
+                </EventWithHeight>
+              </value>
+              <value>
+                <EventWithHeight name="Command6_:Items2" isConstant="false" isGlobal="false">
+                  <Name>Command6_:Items2</Name>
+                  <BaseObject>MCC</BaseObject>
+                  <Height units="km" displayed_units="km">800</Height>
+                  <metadata dim="0" />
+                </EventWithHeight>
+              </value>
+              <value>
+                <EventWithHeight name="Command6_:Items3" isConstant="false" isGlobal="false">
+                  <Name>Command6_:Items3</Name>
+                  <BaseObject>VisibilityVector</BaseObject>
+                  <Height units="km" displayed_units="km">800</Height>
+                  <metadata dim="0" />
+                </EventWithHeight>
+              </value>
+            </Items>
+            <metadata dim="0" />
+          </View>
+        </ViewCommand>
+        <ViewCommand enabled="true">
           <View name="Command7" isConstant="false" isGlobal="false">
             <Name>Command7</Name>
-            <ViewpointType>view</ViewpointType>
+            <ViewpointType>map</ViewpointType>
             <Items dim="3">
               <value>
                 <EventWithHeight name="Command7_:Items1" isConstant="false" isGlobal="false">
@@ -3505,40 +3173,7 @@ visibilityVector.Active = visSeg.Visibility(FINCH.Epoch);]]></FreeFormScript>
               <value>
                 <EventWithHeight name="Command7_:Items3" isConstant="false" isGlobal="false">
                   <Name>Command7_:Items3</Name>
-                  <BaseObject>visibilityVector</BaseObject>
-                  <Height units="km" displayed_units="km">800</Height>
-                  <metadata dim="0" />
-                </EventWithHeight>
-              </value>
-            </Items>
-            <metadata dim="0" />
-          </View>
-        </ViewCommand>
-        <ViewCommand enabled="true">
-          <View name="Command8" isConstant="false" isGlobal="false">
-            <Name>Command8</Name>
-            <ViewpointType>map</ViewpointType>
-            <Items dim="3">
-              <value>
-                <EventWithHeight name="Command8_:Items1" isConstant="false" isGlobal="false">
-                  <Name>Command8_:Items1</Name>
-                  <BaseObject>FINCH</BaseObject>
-                  <Height units="km" displayed_units="km">800</Height>
-                  <metadata dim="0" />
-                </EventWithHeight>
-              </value>
-              <value>
-                <EventWithHeight name="Command8_:Items2" isConstant="false" isGlobal="false">
-                  <Name>Command8_:Items2</Name>
-                  <BaseObject>MCC</BaseObject>
-                  <Height units="km" displayed_units="km">800</Height>
-                  <metadata dim="0" />
-                </EventWithHeight>
-              </value>
-              <value>
-                <EventWithHeight name="Command8_:Items3" isConstant="false" isGlobal="false">
-                  <Name>Command8_:Items3</Name>
-                  <BaseObject>visibilityVector</BaseObject>
+                  <BaseObject>VisibilityVector</BaseObject>
                   <Height units="km" displayed_units="km">800</Height>
                   <metadata dim="0" />
                 </EventWithHeight>
@@ -3548,25 +3183,39 @@ visibilityVector.Active = visSeg.Visibility(FINCH.Epoch);]]></FreeFormScript>
           </View>
         </ViewCommand>
         <UpdateCommand enabled="true">
+          <Update name="Command8" isConstant="false" isGlobal="false">
+            <Name>Command8</Name>
+            <Window>FINCHView</Window>
+            <metadata dim="0" />
+          </Update>
+        </UpdateCommand>
+        <UpdateCommand enabled="true">
           <Update name="Command9" isConstant="false" isGlobal="false">
             <Name>Command9</Name>
-            <Window>FINCHViewWindow</Window>
+            <Window>MCCView</Window>
             <metadata dim="0" />
           </Update>
         </UpdateCommand>
         <UpdateCommand enabled="true">
           <Update name="Command10" isConstant="false" isGlobal="false">
             <Name>Command10</Name>
-            <Window>MCCViewWindow</Window>
+            <Window>PassMetrics</Window>
+            <metadata dim="0" />
+          </Update>
+        </UpdateCommand>
+        <UpdateCommand enabled="true">
+          <Update name="Command11" isConstant="false" isGlobal="false">
+            <Name>Command11</Name>
+            <Window>PassLog</Window>
             <metadata dim="0" />
           </Update>
         </UpdateCommand>
         <StepCommand enabled="true">
-          <Step name="Command11" isConstant="false" isGlobal="false">
-            <Name>Command11</Name>
+          <Step name="Command12" isConstant="false" isGlobal="false">
+            <Name>Command12</Name>
             <StepObject>
-              <ObjectHolder name="Command11_:StepObject" isConstant="false" isGlobal="false">
-                <Name>Command11_:StepObject</Name>
+              <ObjectHolder name="Command12_:StepObject" isConstant="false" isGlobal="false">
+                <Name>Command12_:StepObject</Name>
                 <BaseObject>FINCH</BaseObject>
                 <metadata dim="0" />
               </ObjectHolder>
@@ -3576,32 +3225,30 @@ visibilityVector.Active = visSeg.Visibility(FINCH.Epoch);]]></FreeFormScript>
           </Step>
         </StepCommand>
       </WhileCommand>
-      <FreeForm enabled="true">
+      <FreeForm enabled="false">
         <Label>ReportVisibilityMetrics</Label>
         <Bookmarks />
         <Breakpoints />
         <FreeFormScript><![CDATA[// Calculate averages
 Variable averageVisDuration = visDurations.Mean();
-Variable averageVisFrequency = visCount / (FINCH.ElapsedTime.GetWholeDays / 7); // number of weeks
 
-Report averageVisDuration, averageVisFrequency;]]></FreeFormScript>
+
+Report averageVisDuration;]]></FreeFormScript>
       </FreeForm>
     </ProjectCommands>
   </ProjectMissionSequence>
-  <ProjectScript><![CDATA[Variable visPrev = 0; // boolean tracking whether the spacecraft was visible in the previous timestep
-Array visDurations;
-Variable visCount = 0;
-TimeSpan visStart;
-TimeSpan visDuration;
-VisibilitySegment visSeg;
+  <ProjectScript><![CDATA[Array PassDurations;
+TimeSpan PassStart;
+TimeSpan PassDuration;
+VisibilitySegment VisSeg;
+Variable VisPrev = 0; // boolean tracking whether the spacecraft was visible in the previous timestep
 
-visSeg.AddOccultingBody(Earth);
-visSeg.CelestialObjectOccultationModel = 1;
+VisSeg.AddOccultingBody(Earth);
+VisSeg.CelestialObjectOccultationModel = 1;
+VisSeg.SetTarget(FINCH);
+VisSeg.SetObserver(MCC);
 
-visSeg.SetTarget(FINCH);
-visSeg.SetObserver(MCC);
-
-visibilityVector.BuildVector(9, FINCH, MCC);
+VisibilityVector.BuildVector(9, FINCH, MCC);
 
 
 
@@ -3609,30 +3256,36 @@ While (FINCH.ElapsedTime < TIMESPAN(1 days));
 SNR = RFLinkFINCHToMCC.GetSignalToNoiseRatio(FINCH.Epoch, "Calculated");
 SNR = 10^(SNR/10); // convert to linear ratio
 // visibility just started
-If (visSeg.Visibility(FINCH.Epoch) and !visPrev);
-  visStart = FINCH.Epoch;
-  visPrev = 1;
+If (VisSeg.Visibility(FINCH.Epoch) and !VisPrev);
+  PassStart = FINCH.Epoch;
+  VisPrev = 1;
 // visibility just ended
-ElseIf (!visSeg.Visibility(FINCH.Epoch) and visPrev);
-  visDuration = FINCH.Epoch - visStart;
-  visDurations.PushBack(visDuration.ToSeconds); // or whichever units you want
-  visCount += 1;
-  visPrev = 0;
+ElseIf (!VisSeg.Visibility(FINCH.Epoch) and VisPrev);
+  PassDuration = FINCH.Epoch - PassStart;
+  PassDurations.PushBack(PassDuration.ToSeconds); // or whichever units you want
+  PassEpochs.PushBack(PassDuration);
+  PassCount += 1;
+  VisPrev = 0;
 End;
 
-visibilityVector.Active = visSeg.Visibility(FINCH.Epoch);
-Update VisibilityPlot;
+If (PassDurations.Dimension > 0);
+	AvgPassDuration = PassDurations.Mean();
+	//Variable averageVisFrequency = visCount / (FINCH.ElapsedTime.GetWholeDays() / 7); // number of weeks
+End;
+VisibilityVector.Active = VisSeg.Visibility(FINCH.Epoch);
 // Update SNRPlot;
-View FINCH, MCC<800>, visibilityVector;
-Map FINCH, MCC<800>, visibilityVector;
-Update FINCHViewWindow;
-Update MCCViewWindow;
+View FINCH, MCC<800>, VisibilityVector;
+Map FINCH, MCC<800>, VisibilityVector;
+Update FINCHView;
+Update MCCView;
+Update PassMetrics;
+Update PassLog;
 Step FINCH;
 End;
-// Calculate averages
-Variable averageVisDuration = visDurations.Mean();
-Variable averageVisFrequency = visCount / (FINCH.ElapsedTime.GetWholeDays / 7); // number of weeks
-
-Report averageVisDuration, averageVisFrequency;]]></ProjectScript>
+// // Calculate averages
+// Variable averageVisDuration = visDurations.Mean();
+// 
+// 
+// Report averageVisDuration;]]></ProjectScript>
   <ProjectNotes></ProjectNotes>
 </FreeFlyerProjectFile>
