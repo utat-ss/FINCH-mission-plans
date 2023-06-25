@@ -201,7 +201,7 @@
             <Prop>
               <RK89 name="FINCH_Propagator" isConstant="false" isGlobal="false">
                 <Name>FINCH_Propagator</Name>
-                <StepSize units="s" displayed_units="s">30</StepSize>
+                <StepSize units="s" displayed_units="s">60</StepSize>
                 <StepJustTaken units="s" displayed_units="s">300.0</StepJustTaken>
                 <StepToTake units="s" displayed_units="s">300.0</StepToTake>
                 <LargeCurvature units="" displayed_units="">0</LargeCurvature>
@@ -2933,11 +2933,13 @@
       </ViewWindow>
     </Object>
     <Object>
-      <Variable name="PassCount" isConstant="false" isGlobal="false">
-        <Name>PassCount</Name>
-        <Value units="" displayed_units="">0.0</Value>
+      <Array name="PassDurations" isConstant="false" isGlobal="false">
+        <Name>PassDurations</Name>
+        <Dimension units="" displayed_units="">0</Dimension>
+        <Capacity units="" displayed_units="">0</Capacity>
+        <Element units="" displayed_units="" dim="(0)" />
         <metadata dim="0" />
-      </Variable>
+      </Array>
     </Object>
     <Object>
       <Variable name="AvgPassDuration" isConstant="false" isGlobal="false">
@@ -2954,17 +2956,101 @@
       </TimeSpan>
     </Object>
     <Object>
+      <Variable name="PassDuration" isConstant="false" isGlobal="false">
+        <Name>PassDuration</Name>
+        <Value units="" displayed_units="">0.0</Value>
+        <metadata dim="0" />
+      </Variable>
+    </Object>
+    <Object>
+      <Variable name="PassDailyFrequencyAvg" isConstant="false" isGlobal="false">
+        <Name>PassDailyFrequencyAvg</Name>
+        <Value units="" displayed_units="">0.0</Value>
+        <metadata dim="0" />
+      </Variable>
+    </Object>
+    <Object>
+      <TimeSpan name="EpochStart" isConstant="false" isGlobal="false">
+        <Name>EpochStart</Name>
+        <Value units="s" displayed_units="s">0</Value>
+        <metadata dim="0" />
+      </TimeSpan>
+    </Object>
+    <Object>
       <WatchWindow name="PassMetrics" isConstant="false" isGlobal="false">
         <Name>PassMetrics</Name>
         <WindowTitle>Visibility Metrics</WindowTitle>
-        <Items dim="1">
+        <Items dim="4">
           <value>
             <EventWithBounds name="PassMetrics_:Items1" isConstant="false" isGlobal="false">
               <Name>PassMetrics_:Items1</Name>
               <BaseObject>
-                <ObjectHolder name="PassMetrics_:Items1_:BaseObject" isConstant="false" isGlobal="false">
+                <EventCall name="PassMetrics_:Items1_:BaseObject" isConstant="false" isGlobal="false">
                   <Name>PassMetrics_:Items1_:BaseObject</Name>
-                  <BaseObject>PassCount</BaseObject>
+                  <BaseObject>PassDurations</BaseObject>
+                  <EventName>Mean</EventName>
+                  <Parameters dim="0" />
+                  <metadata dim="0" />
+                </EventCall>
+              </BaseObject>
+              <BoundsType>Color</BoundsType>
+              <MinimumErrorBound units="" displayed_units="">-1000.0</MinimumErrorBound>
+              <MinimumWarningBound units="" displayed_units="">-100.0</MinimumWarningBound>
+              <MaximumWarningBound units="" displayed_units="">100.0</MaximumWarningBound>
+              <MaximumErrorBound units="" displayed_units="">1000.0</MaximumErrorBound>
+              <Color>0</Color>
+              <metadata dim="0" />
+            </EventWithBounds>
+          </value>
+          <value>
+            <EventWithBounds name="PassMetrics_:Items2" isConstant="false" isGlobal="false">
+              <Name>PassMetrics_:Items2</Name>
+              <BaseObject>
+                <EventCall name="PassMetrics_:Items2_:BaseObject" isConstant="false" isGlobal="false">
+                  <Name>PassMetrics_:Items2_:BaseObject</Name>
+                  <BaseObject>PassDurations</BaseObject>
+                  <EventName>Min</EventName>
+                  <Parameters dim="0" />
+                  <metadata dim="0" />
+                </EventCall>
+              </BaseObject>
+              <BoundsType>Color</BoundsType>
+              <MinimumErrorBound units="" displayed_units="">-1000.0</MinimumErrorBound>
+              <MinimumWarningBound units="" displayed_units="">-100.0</MinimumWarningBound>
+              <MaximumWarningBound units="" displayed_units="">100.0</MaximumWarningBound>
+              <MaximumErrorBound units="" displayed_units="">1000.0</MaximumErrorBound>
+              <Color>0</Color>
+              <metadata dim="0" />
+            </EventWithBounds>
+          </value>
+          <value>
+            <EventWithBounds name="PassMetrics_:Items3" isConstant="false" isGlobal="false">
+              <Name>PassMetrics_:Items3</Name>
+              <BaseObject>
+                <EventCall name="PassMetrics_:Items3_:BaseObject" isConstant="false" isGlobal="false">
+                  <Name>PassMetrics_:Items3_:BaseObject</Name>
+                  <BaseObject>PassDurations</BaseObject>
+                  <EventName>Max</EventName>
+                  <Parameters dim="0" />
+                  <metadata dim="0" />
+                </EventCall>
+              </BaseObject>
+              <BoundsType>Color</BoundsType>
+              <MinimumErrorBound units="" displayed_units="">-1000.0</MinimumErrorBound>
+              <MinimumWarningBound units="" displayed_units="">-100.0</MinimumWarningBound>
+              <MaximumWarningBound units="" displayed_units="">100.0</MaximumWarningBound>
+              <MaximumErrorBound units="" displayed_units="">1000.0</MaximumErrorBound>
+              <Color>0</Color>
+              <metadata dim="0" />
+            </EventWithBounds>
+          </value>
+          <value>
+            <EventWithBounds name="PassMetrics_:Items4" isConstant="false" isGlobal="false">
+              <Name>PassMetrics_:Items4</Name>
+              <BaseObject>
+                <ObjectHolder name="PassMetrics_:Items4_:BaseObject" isConstant="false" isGlobal="false">
+                  <Name>PassMetrics_:Items4_:BaseObject</Name>
+                  <BaseObject>PassDailyFrequencyAvg</BaseObject>
                   <metadata dim="0" />
                 </ObjectHolder>
               </BaseObject>
@@ -2981,13 +3067,6 @@
         <LineLabels dim="(0)" />
         <metadata dim="0" />
       </WatchWindow>
-    </Object>
-    <Object>
-      <TimeSpan name="PassDuration" isConstant="false" isGlobal="false">
-        <Name>PassDuration</Name>
-        <Value units="s" displayed_units="s">0</Value>
-        <metadata dim="0" />
-      </TimeSpan>
     </Object>
     <Object>
       <DataTableWindow name="PassLog" isConstant="false" isGlobal="false">
@@ -3032,13 +3111,11 @@
             <EventWithFormat name="PassLog_:Items3" isConstant="false" isGlobal="false">
               <Name>PassLog_:Items3</Name>
               <BaseObject>
-                <EventCall name="PassLog_:Items3_:Items3" isConstant="false" isGlobal="false">
-                  <Name>PassLog_:Items3_:Items3</Name>
+                <ObjectHolder name="PassLog_:Items3_:BaseObject" isConstant="false" isGlobal="false">
+                  <Name>PassLog_:Items3_:BaseObject</Name>
                   <BaseObject>PassDuration</BaseObject>
-                  <EventName>ToSeconds</EventName>
-                  <Parameters dim="0" />
                   <metadata dim="0" />
-                </EventCall>
+                </ObjectHolder>
               </BaseObject>
               <Width units="" displayed_units="">14</Width>
               <Precision units="" displayed_units="">7</Precision>
@@ -3053,6 +3130,36 @@
   <ProjectMissionSequence>
     <ProjectExternals />
     <ProjectCommands>
+      <AssignmentCommand enabled="true">
+        <Assignment name="Command1" isConstant="false" isGlobal="false">
+          <Name>Command1</Name>
+          <AssignCategory>TimeSpanScalar</AssignCategory>
+          <CategoryData>
+            <TimeSpanScalar>
+              <LHSTimeSpanScalar>
+                <ObjectHolder name="Command1_:LHSTimeSpanScalar" isConstant="false" isGlobal="false">
+                  <Name>Command1_:LHSTimeSpanScalar</Name>
+                  <BaseObject>EpochStart</BaseObject>
+                  <metadata dim="0" />
+                </ObjectHolder>
+              </LHSTimeSpanScalar>
+              <RHSTimeSpanScalar>
+                <ObjectParameter name="Command1_:RHSTimeSpanScalar" isConstant="false" isGlobal="false">
+                  <Name>Command1_:RHSTimeSpanScalar</Name>
+                  <BaseObject>FINCH</BaseObject>
+                  <Parameter>Epoch</Parameter>
+                  <IndexType>NoIndices</IndexType>
+                  <IndexOptions>
+                    <NoIndices />
+                  </IndexOptions>
+                  <metadata dim="0" />
+                </ObjectParameter>
+              </RHSTimeSpanScalar>
+            </TimeSpanScalar>
+          </CategoryData>
+          <metadata dim="0" />
+        </Assignment>
+      </AssignmentCommand>
       <FreeForm enabled="true">
         <Label>CreateVisibilitySegment</Label>
         <Bookmarks />
@@ -3068,22 +3175,22 @@ VisSeg.SetObserver(MCC);
 VisibilityVector.BuildVector(9, FINCH, MCC);]]></FreeFormScript>
       </FreeForm>
       <WhileCommand enabled="true" collapsed="false">
-        <While name="Command2" isConstant="false" isGlobal="false">
-          <Name>Command2</Name>
+        <While name="Command3" isConstant="false" isGlobal="false">
+          <Name>Command3</Name>
           <Condition>
-            <LogicalExpression name="Command2_:Condition" isConstant="false" isGlobal="false">
-              <Name>Command2_:Condition</Name>
+            <LogicalExpression name="Command3_:Condition" isConstant="false" isGlobal="false">
+              <Name>Command3_:Condition</Name>
               <LHS xsi:nil="true" />
               <RHS>
-                <LogicalCondition name="Command2_:Condition_:RHS" isConstant="false" isGlobal="false">
-                  <Name>Command2_:Condition_:RHS</Name>
+                <LogicalCondition name="Command3_:Condition_:RHS" isConstant="false" isGlobal="false">
+                  <Name>Command3_:Condition_:RHS</Name>
                   <ConditionType>RelExprDbl</ConditionType>
                   <Condition>
-                    <RelationalExprReal name="Command2_:Condition_:RHS_:Condition" isConstant="false" isGlobal="false">
-                      <Name>Command2_:Condition_:RHS_:Condition</Name>
+                    <RelationalExprReal name="Command3_:Condition_:RHS_:Condition" isConstant="false" isGlobal="false">
+                      <Name>Command3_:Condition_:RHS_:Condition</Name>
                       <LHS>
-                        <EventCall name="Command2_:Condition_:RHS_:Condition_:LHS" isConstant="false" isGlobal="false">
-                          <Name>Command2_:Condition_:RHS_:Condition_:LHS</Name>
+                        <EventCall name="Command3_:Condition_:RHS_:Condition_:LHS" isConstant="false" isGlobal="false">
+                          <Name>Command3_:Condition_:RHS_:Condition_:LHS</Name>
                           <BaseObject>FINCH</BaseObject>
                           <EventName>ElapsedTime</EventName>
                           <Parameters dim="0" />
@@ -3091,9 +3198,9 @@ VisibilityVector.BuildVector(9, FINCH, MCC);]]></FreeFormScript>
                         </EventCall>
                       </LHS>
                       <RHS>
-                        <TimeSpanConstant name="Command2_:Condition_:RHS_:Condition_:RHS" isConstant="false" isGlobal="false">
-                          <Name>Command2_:Condition_:RHS_:Condition_:RHS</Name>
-                          <value>1</value>
+                        <TimeSpanConstant name="Command3_:Condition_:RHS_:Condition_:RHS" isConstant="false" isGlobal="false">
+                          <Name>Command3_:Condition_:RHS_:Condition_:RHS</Name>
+                          <value>3</value>
                           <Units>days</Units>
                           <metadata dim="0" />
                         </TimeSpanConstant>
@@ -3129,55 +3236,29 @@ If (VisSeg.Visibility(FINCH.Epoch) and !VisPrev);
 // visibility just ended
 ElseIf (!VisSeg.Visibility(FINCH.Epoch) and VisPrev);
   PassEnd = FINCH.Epoch;
-  PassDuration = PassEnd - PassStart;
+  PassDuration = (PassEnd - PassStart).ToSeconds();
+  PassDurations.PushBack(PassDuration);
+  
+  
+  // calcuate pass frequency
+  If ((FINCH.Epoch - EpochStart).ToDays() > 0);
+    PassDailyFrequencyAvg = PassDurations.Dimension / (FINCH.Epoch - EpochStart).ToDays();
+  Else;
+  	PassDailyFrequencyAvg = PassDurations.Dimension;
+  End;
+  
   VisPrev = 0;
-	
+  
   Update PassLog;
+  Update PassMetrics;
 End;
 
-//If (PassDurations.Dimension > 0);
-//	AvgPassDuration = PassDurations.Mean();
-//	//Variable averageVisFrequency = visCount / (FINCH.ElapsedTime.GetWholeDays() / 7); // number of weeks
-//End;
 VisibilityVector.Active = VisSeg.Visibility(FINCH.Epoch);]]></FreeFormScript>
         </FreeForm>
         <ViewCommand enabled="true">
-          <View name="Command5" isConstant="false" isGlobal="false">
-            <Name>Command5</Name>
-            <ViewpointType>view</ViewpointType>
-            <Items dim="3">
-              <value>
-                <EventWithHeight name="Command5_:Items1" isConstant="false" isGlobal="false">
-                  <Name>Command5_:Items1</Name>
-                  <BaseObject>FINCH</BaseObject>
-                  <Height units="km" displayed_units="km">800</Height>
-                  <metadata dim="0" />
-                </EventWithHeight>
-              </value>
-              <value>
-                <EventWithHeight name="Command5_:Items2" isConstant="false" isGlobal="false">
-                  <Name>Command5_:Items2</Name>
-                  <BaseObject>MCC</BaseObject>
-                  <Height units="km" displayed_units="km">800</Height>
-                  <metadata dim="0" />
-                </EventWithHeight>
-              </value>
-              <value>
-                <EventWithHeight name="Command5_:Items3" isConstant="false" isGlobal="false">
-                  <Name>Command5_:Items3</Name>
-                  <BaseObject>VisibilityVector</BaseObject>
-                  <Height units="km" displayed_units="km">800</Height>
-                  <metadata dim="0" />
-                </EventWithHeight>
-              </value>
-            </Items>
-            <metadata dim="0" />
-          </View>
-        </ViewCommand>
-        <ViewCommand enabled="true">
           <View name="Command6" isConstant="false" isGlobal="false">
             <Name>Command6</Name>
-            <ViewpointType>map</ViewpointType>
+            <ViewpointType>view</ViewpointType>
             <Items dim="3">
               <value>
                 <EventWithHeight name="Command6_:Items1" isConstant="false" isGlobal="false">
@@ -3207,24 +3288,50 @@ VisibilityVector.Active = VisSeg.Visibility(FINCH.Epoch);]]></FreeFormScript>
             <metadata dim="0" />
           </View>
         </ViewCommand>
-        <UpdateCommand enabled="true">
-          <Update name="Command7" isConstant="false" isGlobal="false">
+        <ViewCommand enabled="true">
+          <View name="Command7" isConstant="false" isGlobal="false">
             <Name>Command7</Name>
-            <Window>FINCHView</Window>
+            <ViewpointType>map</ViewpointType>
+            <Items dim="3">
+              <value>
+                <EventWithHeight name="Command7_:Items1" isConstant="false" isGlobal="false">
+                  <Name>Command7_:Items1</Name>
+                  <BaseObject>FINCH</BaseObject>
+                  <Height units="km" displayed_units="km">800</Height>
+                  <metadata dim="0" />
+                </EventWithHeight>
+              </value>
+              <value>
+                <EventWithHeight name="Command7_:Items2" isConstant="false" isGlobal="false">
+                  <Name>Command7_:Items2</Name>
+                  <BaseObject>MCC</BaseObject>
+                  <Height units="km" displayed_units="km">800</Height>
+                  <metadata dim="0" />
+                </EventWithHeight>
+              </value>
+              <value>
+                <EventWithHeight name="Command7_:Items3" isConstant="false" isGlobal="false">
+                  <Name>Command7_:Items3</Name>
+                  <BaseObject>VisibilityVector</BaseObject>
+                  <Height units="km" displayed_units="km">800</Height>
+                  <metadata dim="0" />
+                </EventWithHeight>
+              </value>
+            </Items>
             <metadata dim="0" />
-          </Update>
-        </UpdateCommand>
+          </View>
+        </ViewCommand>
         <UpdateCommand enabled="true">
           <Update name="Command8" isConstant="false" isGlobal="false">
             <Name>Command8</Name>
-            <Window>MCCView</Window>
+            <Window>FINCHView</Window>
             <metadata dim="0" />
           </Update>
         </UpdateCommand>
         <UpdateCommand enabled="true">
           <Update name="Command9" isConstant="false" isGlobal="false">
             <Name>Command9</Name>
-            <Window>PassMetrics</Window>
+            <Window>MCCView</Window>
             <metadata dim="0" />
           </Update>
         </UpdateCommand>
@@ -3245,7 +3352,8 @@ VisibilityVector.Active = VisSeg.Visibility(FINCH.Epoch);]]></FreeFormScript>
       </WhileCommand>
     </ProjectCommands>
   </ProjectMissionSequence>
-  <ProjectScript><![CDATA[VisibilitySegment VisSeg;
+  <ProjectScript><![CDATA[EpochStart = FINCH.Epoch;
+VisibilitySegment VisSeg;
 Variable VisPrev = 0; // boolean tracking whether the spacecraft was visible in the previous timestep
 
 VisSeg.AddOccultingBody(Earth);
@@ -3254,7 +3362,7 @@ VisSeg.SetTarget(FINCH);
 VisSeg.SetObserver(MCC);
 
 VisibilityVector.BuildVector(9, FINCH, MCC);
-While (FINCH.ElapsedTime < TIMESPAN(1 days));
+While (FINCH.ElapsedTime < TIMESPAN(3 days));
 SNR = RFLinkFINCHToMCC.GetSignalToNoiseRatio(FINCH.Epoch, "Calculated");
 SNR = 10^(SNR/10); // convert to linear ratio
 // visibility just started
@@ -3264,22 +3372,28 @@ If (VisSeg.Visibility(FINCH.Epoch) and !VisPrev);
 // visibility just ended
 ElseIf (!VisSeg.Visibility(FINCH.Epoch) and VisPrev);
   PassEnd = FINCH.Epoch;
-  PassDuration = PassEnd - PassStart;
+  PassDuration = (PassEnd - PassStart).ToSeconds();
+  PassDurations.PushBack(PassDuration);
+  
+  
+  // calcuate pass frequency
+  If ((FINCH.Epoch - EpochStart).ToDays() > 0);
+    PassDailyFrequencyAvg = PassDurations.Dimension / (FINCH.Epoch - EpochStart).ToDays();
+  Else;
+  	PassDailyFrequencyAvg = PassDurations.Dimension;
+  End;
+  
   VisPrev = 0;
-	
+  
   Update PassLog;
+  Update PassMetrics;
 End;
 
-//If (PassDurations.Dimension > 0);
-//	AvgPassDuration = PassDurations.Mean();
-//	//Variable averageVisFrequency = visCount / (FINCH.ElapsedTime.GetWholeDays() / 7); // number of weeks
-//End;
 VisibilityVector.Active = VisSeg.Visibility(FINCH.Epoch);
 View FINCH, MCC<800>, VisibilityVector;
 Map FINCH, MCC<800>, VisibilityVector;
 Update FINCHView;
 Update MCCView;
-Update PassMetrics;
 Step FINCH;
 End;]]></ProjectScript>
   <ProjectNotes></ProjectNotes>
