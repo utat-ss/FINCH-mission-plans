@@ -154,7 +154,7 @@
           <ModelDefinitionType>0</ModelDefinitionType>
           <ModelDefinition>
             <ThreeDModelFilename>
-              <ThreeDModelFile>C:\Users\David\Workbench\FINCH-mission-plans\models\finch.stl</ThreeDModelFile>
+              <ThreeDModelFile>.\models\finch.stl</ThreeDModelFile>
             </ThreeDModelFilename>
           </ModelDefinition>
         </Visualization>
@@ -1787,7 +1787,7 @@
           <value></value>
           <value></value>
           <value></value>
-          <value>C:\Users\David\Workbench\FINCH-mission-plans\icons\groundstation.png</value>
+          <value>.\icons\groundstation.png</value>
           <value></value>
         </IconImageFilename>
         <IconSize units="pixel" displayed_units="pixel" dim="15">
@@ -2703,8 +2703,8 @@
           <value></value>
           <value></value>
           <value></value>
-          <value>C:\Users\David\Workbench\FINCH-mission-plans\icons\satellite.png</value>
-          <value>C:\Users\David\Workbench\FINCH-mission-plans\icons\groundstation.png</value>
+          <value>.\icons\satellite.png</value>
+          <value>.\icons\groundstation.png</value>
           <value></value>
         </IconImageFilename>
         <IconSize units="pixel" displayed_units="pixel" dim="15">
@@ -3425,8 +3425,8 @@
           <value></value>
           <value></value>
           <value></value>
-          <value>C:\Users\David\Workbench\FINCH-mission-plans\icons\satellite.png</value>
-          <value>C:\Users\David\Workbench\FINCH-mission-plans\icons\groundstation.png</value>
+          <value>.\icons\satellite.png</value>
+          <value>.\icons\groundstation.png</value>
           <value></value>
         </IconImageFilename>
         <IconSize units="pixel" displayed_units="pixel" dim="15">
@@ -3908,8 +3908,8 @@
           <value></value>
           <value></value>
           <value></value>
-          <value>C:\Users\David\Workbench\FINCH-mission-plans\icons\satellite.png</value>
-          <value>C:\Users\David\Workbench\FINCH-mission-plans\icons\groundstation.png</value>
+          <value>.\icons\satellite.png</value>
+          <value>.\icons\groundstation.png</value>
           <value></value>
         </IconImageFilename>
         <IconSize units="pixel" displayed_units="pixel" dim="15">
@@ -4288,21 +4288,21 @@ End;
 
 VisibilityVector.Active = VisSeg.Visibility(FINCH.Epoch);]]></FreeFormScript>
         </FreeForm>
-        <UpdateCommand enabled="false">
+        <UpdateCommand enabled="true">
           <Update name="Command6" isConstant="false" isGlobal="false">
             <Name>Command6</Name>
             <Window>GlobeView</Window>
             <metadata dim="0" />
           </Update>
         </UpdateCommand>
-        <UpdateCommand enabled="false">
+        <UpdateCommand enabled="true">
           <Update name="Command7" isConstant="false" isGlobal="false">
             <Name>Command7</Name>
             <Window>MapView</Window>
             <metadata dim="0" />
           </Update>
         </UpdateCommand>
-        <UpdateCommand enabled="false">
+        <UpdateCommand enabled="true">
           <Update name="Command8" isConstant="false" isGlobal="false">
             <Name>Command8</Name>
             <Window>FINCHView</Window>
@@ -4371,9 +4371,9 @@ ElseIf (!VisSeg.Visibility(FINCH.Epoch) and VisPrev);
 End;
 
 VisibilityVector.Active = VisSeg.Visibility(FINCH.Epoch);
-// Update GlobeView;
-// Update MapView;
-// Update FINCHView;
+Update GlobeView;
+Update MapView;
+Update FINCHView;
 // Update MCCView;
 Step FINCH;
 End;]]></ProjectScript>
