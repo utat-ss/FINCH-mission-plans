@@ -146,7 +146,7 @@
         </PhysicalProperties>
         <Visualization>
           <Color>255</Color>
-          <BodyScale units="" displayed_units="">0.01</BodyScale>
+          <BodyScale units="" displayed_units="">0.001</BodyScale>
           <TailLength units="" displayed_units="">1000</TailLength>
           <HistoryMode>0</HistoryMode>
           <TickType>None</TickType>
@@ -154,7 +154,7 @@
           <ModelDefinitionType>0</ModelDefinitionType>
           <ModelDefinition>
             <ThreeDModelFilename>
-              <ThreeDModelFile>C:\Users\David\Workbench\FINCH-mission-plans\Satellite.stl</ThreeDModelFile>
+              <ThreeDModelFile>C:\Users\David\Workbench\FINCH-mission-plans\models\finch.stl</ThreeDModelFile>
             </ThreeDModelFilename>
           </ModelDefinition>
         </Visualization>
@@ -1108,7 +1108,7 @@
           <MaskShape>Cone</MaskShape>
           <InterpolationMode>0</InterpolationMode>
           <Cone>
-            <ConeElevation units="deg" displayed_units="deg">10</ConeElevation>
+            <ConeElevation units="deg" displayed_units="deg">45</ConeElevation>
           </Cone>
           <Points>
             <NumberOfPoints units="" displayed_units="">13</NumberOfPoints>
@@ -2980,18 +2980,21 @@
       <WatchWindow name="PassMetrics" isConstant="false" isGlobal="false">
         <Name>PassMetrics</Name>
         <WindowTitle>Visibility Metrics</WindowTitle>
-        <Items dim="4">
+        <Items dim="5">
           <value>
             <EventWithBounds name="PassMetrics_:Items1" isConstant="false" isGlobal="false">
               <Name>PassMetrics_:Items1</Name>
               <BaseObject>
-                <EventCall name="PassMetrics_:Items1_:BaseObject" isConstant="false" isGlobal="false">
-                  <Name>PassMetrics_:Items1_:BaseObject</Name>
+                <ObjectParameter name="PassMetrics_:Items1_:Items4" isConstant="false" isGlobal="false">
+                  <Name>PassMetrics_:Items1_:Items4</Name>
                   <BaseObject>PassDurations</BaseObject>
-                  <EventName>Mean</EventName>
-                  <Parameters dim="0" />
+                  <Parameter>Dimension</Parameter>
+                  <IndexType>NoIndices</IndexType>
+                  <IndexOptions>
+                    <NoIndices />
+                  </IndexOptions>
                   <metadata dim="0" />
-                </EventCall>
+                </ObjectParameter>
               </BaseObject>
               <BoundsType>Color</BoundsType>
               <MinimumErrorBound units="" displayed_units="">-1000.0</MinimumErrorBound>
@@ -3030,7 +3033,7 @@
                 <EventCall name="PassMetrics_:Items3_:BaseObject" isConstant="false" isGlobal="false">
                   <Name>PassMetrics_:Items3_:BaseObject</Name>
                   <BaseObject>PassDurations</BaseObject>
-                  <EventName>Max</EventName>
+                  <EventName>Mean</EventName>
                   <Parameters dim="0" />
                   <metadata dim="0" />
                 </EventCall>
@@ -3048,8 +3051,29 @@
             <EventWithBounds name="PassMetrics_:Items4" isConstant="false" isGlobal="false">
               <Name>PassMetrics_:Items4</Name>
               <BaseObject>
-                <ObjectHolder name="PassMetrics_:Items4_:BaseObject" isConstant="false" isGlobal="false">
+                <EventCall name="PassMetrics_:Items4_:BaseObject" isConstant="false" isGlobal="false">
                   <Name>PassMetrics_:Items4_:BaseObject</Name>
+                  <BaseObject>PassDurations</BaseObject>
+                  <EventName>Max</EventName>
+                  <Parameters dim="0" />
+                  <metadata dim="0" />
+                </EventCall>
+              </BaseObject>
+              <BoundsType>Color</BoundsType>
+              <MinimumErrorBound units="" displayed_units="">-1000.0</MinimumErrorBound>
+              <MinimumWarningBound units="" displayed_units="">-100.0</MinimumWarningBound>
+              <MaximumWarningBound units="" displayed_units="">100.0</MaximumWarningBound>
+              <MaximumErrorBound units="" displayed_units="">1000.0</MaximumErrorBound>
+              <Color>0</Color>
+              <metadata dim="0" />
+            </EventWithBounds>
+          </value>
+          <value>
+            <EventWithBounds name="PassMetrics_:Items5" isConstant="false" isGlobal="false">
+              <Name>PassMetrics_:Items5</Name>
+              <BaseObject>
+                <ObjectHolder name="PassMetrics_:Items5_:BaseObject" isConstant="false" isGlobal="false">
+                  <Name>PassMetrics_:Items5_:BaseObject</Name>
                   <BaseObject>PassDailyFrequencyAvg</BaseObject>
                   <metadata dim="0" />
                 </ObjectHolder>
@@ -4209,7 +4233,7 @@ VisibilityVector.BuildVector(9, FINCH, MCC);]]></FreeFormScript>
                       <RHS>
                         <TimeSpanConstant name="Command3_:Condition_:RHS_:Condition_:RHS" isConstant="false" isGlobal="false">
                           <Name>Command3_:Condition_:RHS_:Condition_:RHS</Name>
-                          <value>3</value>
+                          <value>30</value>
                           <Units>days</Units>
                           <metadata dim="0" />
                         </TimeSpanConstant>
@@ -4235,7 +4259,7 @@ VisibilityVector.BuildVector(9, FINCH, MCC);]]></FreeFormScript>
 SNR = 10^(SNR/10); // convert to linear ratio]]></FreeFormScript>
         </FreeForm>
         <FreeForm enabled="true">
-          <Label>UpdateVisibility</Label>
+          <Label>UpdatePassMetrics</Label>
           <Bookmarks />
           <Breakpoints />
           <FreeFormScript><![CDATA[// visibility just started
@@ -4264,28 +4288,28 @@ End;
 
 VisibilityVector.Active = VisSeg.Visibility(FINCH.Epoch);]]></FreeFormScript>
         </FreeForm>
-        <UpdateCommand enabled="true">
+        <UpdateCommand enabled="false">
           <Update name="Command6" isConstant="false" isGlobal="false">
             <Name>Command6</Name>
             <Window>GlobeView</Window>
             <metadata dim="0" />
           </Update>
         </UpdateCommand>
-        <UpdateCommand enabled="true">
+        <UpdateCommand enabled="false">
           <Update name="Command7" isConstant="false" isGlobal="false">
             <Name>Command7</Name>
             <Window>MapView</Window>
             <metadata dim="0" />
           </Update>
         </UpdateCommand>
-        <UpdateCommand enabled="true">
+        <UpdateCommand enabled="false">
           <Update name="Command8" isConstant="false" isGlobal="false">
             <Name>Command8</Name>
             <Window>FINCHView</Window>
             <metadata dim="0" />
           </Update>
         </UpdateCommand>
-        <UpdateCommand enabled="true">
+        <UpdateCommand enabled="false">
           <Update name="Command9" isConstant="false" isGlobal="false">
             <Name>Command9</Name>
             <Window>MCCView</Window>
@@ -4319,7 +4343,7 @@ VisSeg.SetTarget(FINCH);
 VisSeg.SetObserver(MCC);
 
 VisibilityVector.BuildVector(9, FINCH, MCC);
-While (FINCH.ElapsedTime < TIMESPAN(3 days));
+While (FINCH.ElapsedTime < TIMESPAN(30 days));
 // SNR = RFLinkFINCHToMCC.GetSignalToNoiseRatio(FINCH.Epoch, "Calculated");
 // SNR = 10^(SNR/10); // convert to linear ratio
 // visibility just started
@@ -4347,10 +4371,10 @@ ElseIf (!VisSeg.Visibility(FINCH.Epoch) and VisPrev);
 End;
 
 VisibilityVector.Active = VisSeg.Visibility(FINCH.Epoch);
-Update GlobeView;
-Update MapView;
-Update FINCHView;
-Update MCCView;
+// Update GlobeView;
+// Update MapView;
+// Update FINCHView;
+// Update MCCView;
 Step FINCH;
 End;]]></ProjectScript>
   <ProjectNotes>This mission plan simulates downlink passes of FINCH over the UTAT Mission Control Center ground station. 
