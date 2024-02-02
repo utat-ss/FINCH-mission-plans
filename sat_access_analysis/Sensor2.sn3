@@ -204,6 +204,8 @@ BEGIN VectorAngle
 END
 UseAttachPoint		 No
 SensorRadius		 0
+ObscurationUseObjIntvl		 Yes
+ObscurationTimeStep		 10
 BEGIN AzElMask
     Time		 0
     WindowDim		 256

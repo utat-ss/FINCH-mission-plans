@@ -9,7 +9,7 @@ BEGIN Sensor
 
         BEGIN SimpleCone
 
-            ConeAngle		  7.0000000000000000e+01
+            ConeAngle		  5.0000000000000000e+01
             AngularPatternResolution		  4.0000000000000000e+00
 
         END SimpleCone
@@ -52,9 +52,11 @@ BEGIN Sensor
         END ADFFileData
 
         BEGIN AccessConstraints
-            3DTilesMask IncludeIntervals
             TerrainMask IncludeIntervals
             Range            Max		  2.0000000000000000e+06 IncludeIntervals
+            FieldOfView IncludeIntervals
+            LineOfSight IncludeIntervals
+            3DTilesMask IncludeIntervals
 
             UsePreferredMaxStep No
             PreferredMaxStep 360

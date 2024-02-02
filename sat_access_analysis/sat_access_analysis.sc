@@ -23,12 +23,12 @@ BEGIN Scenario
     BEGIN Interval
 
         Start		 1 Jan 2026 00:00:00.000000000
-        Stop		 1 Jan 2027 00:00:00.000000000
+        Stop		 28 Mar 2026 00:00:00.000000000
         SmartInterval		
         BEGIN EVENTINTERVAL
             BEGIN Interval
                 Start		 1 Jan 2026 00:00:00.000000000
-                Stop		 1 Jan 2027 00:00:00.000000000
+                Stop		 28 Mar 2026 00:00:00.000000000
             END Interval
             IntervalState		 Explicit
         END EVENTINTERVAL
@@ -159,14 +159,134 @@ BEGIN Scenario
                     TimeBound		 0
                 END Section
             END TimeData
-            DisplayOnLoad		 Yes
+            DisplayOnLoad		 No
             FrameType		 0
             DockCircleID		 0
             DockID		 0
-            WindowRectLeft		 332
-            WindowRectTop		 211
-            WindowRectRight		 1043
-            WindowRectBottom		 931
+            WindowRectLeft		 356
+            WindowRectTop		 235
+            WindowRectRight		 2343
+            WindowRectBottom		 951
+        END Report
+
+        BEGIN Report
+            Name		 Access2
+            Type		 Report
+            BaseDir		 Install
+            Style		 Access
+            AGIViewer		 Yes
+            Instance		 Place/BahenGS/Sensor/Sensor2
+            BEGIN InstanceList
+                Instance		 Satellite/Finch
+            END InstanceList
+            BEGIN TimeData
+                BEGIN Section
+                    SectionNumber		 1
+                    SectionType		 4
+                    ShowIntervals		 No
+                    TimeType		 Availability
+                    SamplingType		 Default
+                    TimeBound		 0
+                END Section
+            END TimeData
+            DisplayOnLoad		 No
+            FrameType		 0
+            DockCircleID		 0
+            DockID		 0
+            WindowRectLeft		 220
+            WindowRectTop		 76
+            WindowRectRight		 2565
+            WindowRectBottom		 1173
+        END Report
+
+        BEGIN Report
+            Name		 Access3
+            Type		 Report
+            BaseDir		 Install
+            Style		 Access
+            AGIViewer		 Yes
+            Instance		 Place/BahenGS/Sensor/Sensor2
+            BEGIN InstanceList
+                Instance		 Satellite/Finch
+            END InstanceList
+            BEGIN TimeData
+                BEGIN Section
+                    SectionNumber		 1
+                    SectionType		 4
+                    ShowIntervals		 No
+                    TimeType		 Availability
+                    SamplingType		 Default
+                    TimeBound		 0
+                END Section
+            END TimeData
+            DisplayOnLoad		 No
+            FrameType		 0
+            DockCircleID		 0
+            DockID		 0
+            WindowRectLeft		 408
+            WindowRectTop		 287
+            WindowRectRight		 2399
+            WindowRectBottom		 1007
+        END Report
+
+        BEGIN Report
+            Name		 Access4
+            Type		 Report
+            BaseDir		 Install
+            Style		 Access
+            AGIViewer		 Yes
+            Instance		 Place/BahenGS/Sensor/Sensor2
+            BEGIN InstanceList
+                Instance		 Satellite/Finch
+            END InstanceList
+            BEGIN TimeData
+                BEGIN Section
+                    SectionNumber		 1
+                    SectionType		 4
+                    ShowIntervals		 No
+                    TimeType		 Availability
+                    SamplingType		 Default
+                    TimeBound		 0
+                END Section
+            END TimeData
+            DisplayOnLoad		 No
+            FrameType		 0
+            DockCircleID		 0
+            DockID		 0
+            WindowRectLeft		 384
+            WindowRectTop		 261
+            WindowRectRight		 2375
+            WindowRectBottom		 1149
+        END Report
+
+        BEGIN Report
+            Name		 Access5
+            Type		 Graph
+            BaseDir		 Install
+            Style		 Access
+            AGIViewer		 No
+            Instance		 Place/BahenGS/Sensor/Sensor2
+            BEGIN InstanceList
+                Instance		 Satellite/Finch
+            END InstanceList
+            BEGIN TimeData
+                BEGIN Section
+                    SectionNumber		 1
+                    SectionType		 4
+                    ShowIntervals		 No
+                    TimeType		 Availability
+                    SamplingType		 Default
+                    TimeBound		 0
+                END Section
+            END TimeData
+            DisplayOnLoad		 No
+            FrameType		 0
+            DockCircleID		 0
+            DockID		 0
+            WindowRectLeft		 228
+            WindowRectTop		 105
+            WindowRectRight		 2215
+            WindowRectBottom		 823
         END Report
     END QuickReports
 
@@ -198,8 +318,8 @@ BEGIN Scenario
             LaunchWindowUseEntireTraj		 Yes
             LaunchWindowTrajMETStart		 0
             LaunchWindowTrajMETStop		 900
-            LaunchWindowStart		 0
-            LaunchWindowStop		 0
+            LaunchWindowStart		 -67676400
+            LaunchWindowStop		 -67590000
             LaunchMETOffset		 0
             LaunchWindowUseSecEphem		 No 
             LaunchWindowUseScenFolderForSecEphem		 Yes
@@ -565,12 +685,6 @@ BEGIN Scenario
         END ExportDataFile
 
         BEGIN Desc
-            BEGIN ShortText
-
-            END ShortText
-            BEGIN LongText
-
-            END LongText
         END Desc
 
         BEGIN RfEnv
@@ -1569,8 +1683,8 @@ BEGIN Scenario
             BEGIN Animation
 
                 StartTime		 1 Jan 2026 00:00:00.000000000
-                EndTime		 1 Jan 2027 00:00:00.000000000
-                CurrentTime		 1 Jan 2026 04:56:10.000000000
+                EndTime		 28 Mar 2026 00:00:00.000000000
+                CurrentTime		 14 Feb 2026 16:51:20.000000000
                 Direction		 Forward
                 UpdateDelta		 10
                 RefreshDelta		 0.010000
@@ -1655,8 +1769,8 @@ BEGIN Scenario
                     BEGIN MapAttributes
                         PrimaryBody		 Earth
                         SecondaryBody		 Sun
-                        CenterLatitude		 58.7410456813074
-                        CenterLongitude		 -81.86925109632369
+                        CenterLatitude		 46.95223655870517
+                        CenterLongitude		 -75.70390744934269
                         ProjectionAltitude		 63621860
                         FieldOfView		 35
                         OrthoDisplayDistance		 20000000
@@ -1679,7 +1793,7 @@ BEGIN Scenario
                         ShowImageNames		 Off
                         ImageNameFont		 0
                         Projection		 EquidistantCylindrical
-                        Resolution		 High
+                        Resolution		 Medium
                         CoordinateSys		 ECF
                         UseBackgroundImage		 On
                         UseBingForBackground		 On
@@ -1692,10 +1806,10 @@ BEGIN Scenario
                         UseCloudsFile		 Off
                         BEGIN ZoomLocations
                             BEGIN ZoomLocation
-                                CenterLat		 58.7410456813074
-                                CenterLon		 -81.86925109632369
-                                ZoomWidth		 63.80001418561286
-                                ZoomHeight		 62.76211921799999
+                                CenterLat		 46.95223655870517
+                                CenterLon		 -75.70390744934269
+                                ZoomWidth		 67.37664037086101
+                                ZoomHeight		 76.79009837647087
                             END ZoomLocation
                         END ZoomLocations
                         UseVarAspectRatio		 No
@@ -2289,6 +2403,7 @@ BEGIN Scenario
             *		
         END Instance
         Instance Place/BahenGS
+            *		
             Place/BahenGS		
             Place/BahenGS/Sensor/Sensor2		
         END Instance
@@ -2299,7 +2414,6 @@ BEGIN Scenario
             Place/Toronto_ON		
         END Instance
         Instance Satellite/Finch
-            *		
             Satellite/Finch		
         END Instance
     END References
