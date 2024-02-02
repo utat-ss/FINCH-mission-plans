@@ -169,13 +169,13 @@ BEGIN SceneWindow
         BEGIN MapList
             BEGIN Detail
                 Alias		 RWDB2_Coastlines
-                Show		 Yes
-                Color		 #8fbc8f
+                Show		 No
+                Color		 #00ff00
             END Detail
             BEGIN Detail
                 Alias		 RWDB2_International_Borders
-                Show		 Yes
-                Color		 #8fbc8f
+                Show		 No
+                Color		 #00ff00
             END Detail
             BEGIN Detail
                 Alias		 RWDB2_Islands
@@ -190,12 +190,12 @@ BEGIN SceneWindow
             BEGIN Detail
                 Alias		 RWDB2_Provincial_Borders
                 Show		 No
-                Color		 #8fbc8f
+                Color		 #00ff00
             END Detail
             BEGIN Detail
                 Alias		 RWDB2_Rivers
                 Show		 No
-                Color		 #87cefa
+                Color		 #00ff00
             END Detail
         END MapList
 
@@ -483,11 +483,11 @@ BEGIN SceneWindow
         GridDisplayColor		 #00ff00
         GridVertTextAlign		 Border        IsShowingPickAnnotation		 Yes
         UsePickAnnoPosition		 No
-        PickAnnoPosition		 527 569
+        PickAnnoPosition		 0 0
         PickAttachX		 Min
         PickAttachY		 Min
         PickAnnoFontSize		 1
-        PickAnnoColor		 #0000ff
+        PickAnnoColor		 #f0ffff
         PickHitMode		 DoClosestPickHit
         MinimumViewingAltitude		 0
         StopViewAtAltitude		 No
@@ -703,28 +703,28 @@ BEGIN SceneWindow
         RubberBandRGB		 0.6600000262260437 0.6600000262260437 0.6600000262260437
         BEGIN View
             ViewName		 STKVOInitialView
-            ViewTime		 0
+            ViewTime		 -67676400
             ViewUpdateDelta		 10
             CentralBody		 Earth
             BEGIN ViewCrdnAxes
                 BEGIN AXES
                     Type		 AXES_LINKTO
-                    Name		 ICR
-                    RelativePath		 Satellite/Finch
+                    Name		 TopoCentric
+                    RelativePath		 Place/BahenGS
                 END AXES
             END
             BEGIN FromViewCrdnPoint
                 BEGIN POINT
                     Type		 POINT_LINKTO
                     Name		 Center
-                    RelativePath		 Satellite/Finch
+                    RelativePath		 Place/BahenGS
                 END POINT
             END
             BEGIN ToViewCrdnPoint
                 BEGIN POINT
                     Type		 POINT_LINKTO
                     Name		 Center
-                    RelativePath		 Satellite/Finch
+                    RelativePath		 Place/BahenGS
                 END POINT
             END
             fov		 0.7853981633974483
@@ -740,24 +740,24 @@ BEGIN SceneWindow
             ZoomUseDistanceToCb		 Yes
             GlobeDetailLevel		 1
             UseLayer		 Yes
-            FromName		 "Satellite/Finch"
+            FromName		 "Place/BahenGS"
             FromRegPosAttView		 "Point"
-            FromPosition		 -2.3894083906875271e+06  2.9485671148781898e+06  6.7069035186773259e+06
-            FromOffset		 -1.9356496518931808e+06 -1.8999421396092640e+06  1.8494525815204394e+06
-            FromOffsetLLR		  2.8793282408318924e-02 -8.8276184820423864e-01  3.2828333128609858e+06
-            ToName		 "Satellite/Finch"
+            FromPosition		  3.4362785603120863e+06 -3.1029432279361137e+06  4.3724126619649706e+06
+            FromOffset		  8.6929799509700388e+01  2.3539866149891168e+01  1.6445465836767107e+02
+            FromOffsetLLR		  9.1528501758892800e-01  2.4197063362150013e+00  1.8749999999994378e+02
+            ToName		 "Place/BahenGS"
             ToRegPosAttView		 "Point"
-            ToPosition		 -4.5375873879434634e+05  4.8485092544874540e+06  4.8574509371568868e+06
+            ToPosition		  3.4361916305125766e+06 -3.1029667678022636e+06  4.3722482073066030e+06
             ToOffset		  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00
             ToOffsetLLR		  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00
             ConstantDistanceType		 None
             ConstantDistanceValue		 1
-            UpVector		 -4.9016513446025756e-02  7.2187710992291121e-01  6.9028314449864780e-01
-            ViewRad		  3.2828333128609862e+06
-            ViewQuat		  4.2714418244942515e-01 -1.3016455046374166e-02  6.1498664235306458e-03  9.0406891244009191e-01
+            UpVector		  2.7947315844682286e-01 -9.6009825221123501e-01 -1.0300476138964565e-02
+            ViewRad		  1.8749999999982728e+02
+            ViewQuat		  8.3929143391901517e-01  1.5603682598972843e-01  4.1336446477709227e-01 -3.1681574636492210e-01
             ViewCoordSystem		 From
             ViewFromToMode		 FromTo
-            ViewToCBIMtx		  2.4940133318585450e-01 -6.7364465308863097e-01  6.9570241940805155e-01  9.6615049545032405e-01  2.2202753333061825e-01 -1.3136588059391496e-01 -6.5971169052942535e-02  7.0491606295233422e-01  7.0621607815566545e-01
+            ViewToCBIMtx		  5.0977241491733649e-01 -4.6356070205958433e-01 -7.2473689053019286e-01  6.7142134294682465e-01  7.4107378494740750e-01 -1.7393962189607703e-03  5.3788982628864612e-01 -4.8571712011185009e-01  6.8902352209878959e-01
             UseUpAxis		 Yes
             UpAxisType		 Z
             UserDefinedUpAxis		  0.0000000000000000e+00  0.0000000000000000e+00  1.0000000000000000e+00
@@ -768,9 +768,9 @@ BEGIN SceneWindow
             MinAngleToUpAxis		  8.7266462599716477e-03
             InitUpAxisUp		 Yes
             TempUpAxisUp		 Yes
-            CrossAxis		 -7.7249565188401426e-01 -6.3502005308516984e-01  0.0000000000000000e+00
-            DefaultOffset		  4.0846097469329834e+01
-            BaseDefaultOffset		  3.2676877975463867e+01
+            CrossAxis		  6.6080164223099769e-01  7.5056058358057709e-01 -0.0000000000000000e+00
+            DefaultOffset		  1.8749999999999997e+02
+            BaseDefaultOffset		  1.4999999999999997e+02
         END View
 
         BEGIN ViewPathManagerSceneInfo
@@ -851,4 +851,146 @@ BEGIN View
     CrossAxis		  1.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00
     DefaultOffset		  3.5079753500000000e+07
     BaseDefaultOffset		  6.3781370000000000e+06
+END View
+BEGIN View
+    ViewName		 HomeView
+    ViewTime		 3856470
+    ViewUpdateDelta		 10
+    CentralBody		 Sun
+    BEGIN ViewCrdnAxes
+        BEGIN AXES
+            Type		 AXES_LINKTO
+            Name		 Inertial
+            AbsolutePath		 CentralBody/Sun
+        END AXES
+    END
+    BEGIN FromViewCrdnPoint
+        BEGIN POINT
+            Type		 POINT_LINKTO
+            Name		 Center
+            AbsolutePath		 CentralBody/Sun
+        END POINT
+    END
+    BEGIN ToViewCrdnPoint
+        BEGIN POINT
+            Type		 POINT_LINKTO
+            Name		 Center
+            AbsolutePath		 CentralBody/Sun
+        END POINT
+    END
+    fov		 0.7853981633974483
+    FarNearPlaneDistanceRatio		 1000
+    NearPlaneDistance		 1
+    FarPlaneDistance		 1000000000000
+    PanOnCentralBodies		 Yes
+    UseArcBallRotateSpeedOpt		 No
+    ArcBallRotateSpeed		 0
+    ArcBallRadius		 0.9
+    ArcBallRotateMode		 From
+    ZoomSpeed		 0
+    ZoomUseDistanceToCb		 Yes
+    GlobeDetailLevel		 1
+    UseLayer		 Yes
+    FromName		 "Sun"
+    FromRegPosAttView		 "Point"
+    FromPosition		  3.8263500000000000e+09  0.0000000000000000e+00  0.0000000000000000e+00
+    FromOffset		  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00
+    FromOffsetLLR		  0.0000000000000000e+00  0.0000000000000000e+00  3.8263500000000000e+09
+    ToName		 "Sun"
+    ToRegPosAttView		 "Point"
+    ToPosition		  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00
+    ToOffset		  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00
+    ToOffsetLLR		  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00
+    ConstantDistanceType		 None
+    ConstantDistanceValue		 1
+    UpVector		  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00
+    ViewRad		  3.8263500000000000e+09
+    ViewQuat		  6.1232339957367660e-17  0.0000000000000000e+00  0.0000000000000000e+00 -1.0000000000000000e+00
+    ViewCoordSystem		 From
+    ViewFromToMode		 FromTo
+    ViewToCBIMtx		  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00
+    UseUpAxis		 Yes
+    UpAxisType		 Z
+    UserDefinedUpAxis		  0.0000000000000000e+00  0.0000000000000000e+00  1.0000000000000000e+00
+    OverUpAxis		 No
+    LockInViewDir		 No
+    NoZoom		 No
+    NoPan		 No
+    MinAngleToUpAxis		  8.7266462599716477e-03
+    InitUpAxisUp		 Yes
+    TempUpAxisUp		 Yes
+    CrossAxis		  1.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00
+    DefaultOffset		  3.8263500000000000e+09
+    BaseDefaultOffset		  6.9570000000000000e+08
+END View
+BEGIN View
+    ViewName		 HomeView
+    ViewTime		 3856470
+    ViewUpdateDelta		 10
+    CentralBody		 Moon
+    BEGIN ViewCrdnAxes
+        BEGIN AXES
+            Type		 AXES_LINKTO
+            Name		 Inertial
+            AbsolutePath		 CentralBody/Moon
+        END AXES
+    END
+    BEGIN FromViewCrdnPoint
+        BEGIN POINT
+            Type		 POINT_LINKTO
+            Name		 Center
+            AbsolutePath		 CentralBody/Moon
+        END POINT
+    END
+    BEGIN ToViewCrdnPoint
+        BEGIN POINT
+            Type		 POINT_LINKTO
+            Name		 Center
+            AbsolutePath		 CentralBody/Moon
+        END POINT
+    END
+    fov		 0.7853981633974483
+    FarNearPlaneDistanceRatio		 1000
+    NearPlaneDistance		 1
+    FarPlaneDistance		 10000000000
+    PanOnCentralBodies		 Yes
+    UseArcBallRotateSpeedOpt		 No
+    ArcBallRotateSpeed		 0
+    ArcBallRadius		 0.9
+    ArcBallRotateMode		 From
+    ZoomSpeed		 0
+    ZoomUseDistanceToCb		 Yes
+    GlobeDetailLevel		 1
+    UseLayer		 Yes
+    FromName		 "Moon"
+    FromRegPosAttView		 "Point"
+    FromPosition		  9.5557000000000000e+06  0.0000000000000000e+00  0.0000000000000000e+00
+    FromOffset		  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00
+    FromOffsetLLR		  0.0000000000000000e+00  0.0000000000000000e+00  9.5557000000000000e+06
+    ToName		 "Moon"
+    ToRegPosAttView		 "Point"
+    ToPosition		  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00
+    ToOffset		  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00
+    ToOffsetLLR		  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00
+    ConstantDistanceType		 None
+    ConstantDistanceValue		 1
+    UpVector		  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00
+    ViewRad		  9.5557000000000000e+06
+    ViewQuat		  6.1232339957367660e-17  0.0000000000000000e+00  0.0000000000000000e+00 -1.0000000000000000e+00
+    ViewCoordSystem		 From
+    ViewFromToMode		 FromTo
+    ViewToCBIMtx		  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00
+    UseUpAxis		 Yes
+    UpAxisType		 Z
+    UserDefinedUpAxis		  0.0000000000000000e+00  0.0000000000000000e+00  1.0000000000000000e+00
+    OverUpAxis		 No
+    LockInViewDir		 No
+    NoZoom		 No
+    NoPan		 No
+    MinAngleToUpAxis		  8.7266462599716477e-03
+    InitUpAxisUp		 Yes
+    TempUpAxisUp		 Yes
+    CrossAxis		  1.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00
+    DefaultOffset		  9.5557000000000000e+06
+    BaseDefaultOffset		  1.7374000000000000e+06
 END View
