@@ -209,60 +209,6 @@ BEGIN SceneWindow
 
         BEGIN Globe
             AA		 Yes
-            BeginCentralBody "Moon"
-                Show		 Yes
-                Textured		 Yes
-                AltOffset		 0
-                Color		 #ffffff
-                SpecularColor		 #545454
-                Shininess		 40
-                ShowWater		 No
-                ShowUmbraCone		 No
-                ShowPenumbraCone		 No
-                ShowPenumbraLimit		 No
-                ShowSubsolarPoint		 No
-                _AGI_PIBEGINTERRAINIMAGECALLDATA "SRC"
-                    BlendMode		 Value
-                    BlendFactor		 1
-                    BlendAltitudeLowerFactor		 1
-                    BlendAltitudeUpperFactor		 0
-                    BlendAltitudeLowerAltitude		 500000
-                    BlendAltitudeUpperAltitude		 2500000
-                    TextureRole		 Day
-                    URI		 "file:///Moon.jp2"
-                    BeginImageSetDefOn
-                    END
-                    InBase		 Yes
-                    BaseOn		 Yes
-                END
-            EndCentralBody
-            BeginCentralBody "Sun"
-                Show		 Yes
-                Textured		 No
-                AltOffset		 0
-                Color		 #ffff00
-                SpecularColor		 #545454
-                Shininess		 40
-                ShowWater		 No
-                ShowUmbraCone		 No
-                ShowPenumbraCone		 No
-                ShowPenumbraLimit		 No
-                ShowSubsolarPoint		 No
-                _AGI_PIBEGINTERRAINIMAGECALLDATA "SRC"
-                    BlendMode		 Value
-                    BlendFactor		 1
-                    BlendAltitudeLowerFactor		 1
-                    BlendAltitudeUpperFactor		 0
-                    BlendAltitudeLowerAltitude		 500000
-                    BlendAltitudeUpperAltitude		 2500000
-                    TextureRole		 Day
-                    URI		 "file:///Sun.jp2"
-                    BeginImageSetDefOn
-                    END
-                    InBase		 Yes
-                    BaseOn		 Yes
-                END
-            EndCentralBody
             BeginCentralBody "Earth"
                 Show		 Yes
                 Textured		 Yes
@@ -320,6 +266,60 @@ BEGIN SceneWindow
                     BlendAltitudeLowerAltitude		 500000
                     BlendAltitudeUpperAltitude		 2500000
                     URI		 "virtual_earth://virtualearth.net/Aerial.ve"
+                    BeginImageSetDefOn
+                    END
+                    InBase		 Yes
+                    BaseOn		 Yes
+                END
+            EndCentralBody
+            BeginCentralBody "Sun"
+                Show		 Yes
+                Textured		 No
+                AltOffset		 0
+                Color		 #ffff00
+                SpecularColor		 #545454
+                Shininess		 40
+                ShowWater		 No
+                ShowUmbraCone		 No
+                ShowPenumbraCone		 No
+                ShowPenumbraLimit		 No
+                ShowSubsolarPoint		 No
+                _AGI_PIBEGINTERRAINIMAGECALLDATA "SRC"
+                    BlendMode		 Value
+                    BlendFactor		 1
+                    BlendAltitudeLowerFactor		 1
+                    BlendAltitudeUpperFactor		 0
+                    BlendAltitudeLowerAltitude		 500000
+                    BlendAltitudeUpperAltitude		 2500000
+                    TextureRole		 Day
+                    URI		 "file:///Sun.jp2"
+                    BeginImageSetDefOn
+                    END
+                    InBase		 Yes
+                    BaseOn		 Yes
+                END
+            EndCentralBody
+            BeginCentralBody "Moon"
+                Show		 Yes
+                Textured		 Yes
+                AltOffset		 0
+                Color		 #ffffff
+                SpecularColor		 #545454
+                Shininess		 40
+                ShowWater		 No
+                ShowUmbraCone		 No
+                ShowPenumbraCone		 No
+                ShowPenumbraLimit		 No
+                ShowSubsolarPoint		 No
+                _AGI_PIBEGINTERRAINIMAGECALLDATA "SRC"
+                    BlendMode		 Value
+                    BlendFactor		 1
+                    BlendAltitudeLowerFactor		 1
+                    BlendAltitudeUpperFactor		 0
+                    BlendAltitudeLowerAltitude		 500000
+                    BlendAltitudeUpperAltitude		 2500000
+                    TextureRole		 Day
+                    URI		 "file:///Moon.jp2"
                     BeginImageSetDefOn
                     END
                     InBase		 Yes
@@ -408,16 +408,16 @@ BEGIN SceneWindow
         END
         BEGIN CentralBodyOpts
             BeginCentralBody
-                Name		 "Moon"
-                ShowLabel		 Yes
+                Name		 "Earth"
+                ShowLabel		 No
             EndCentralBody
             BeginCentralBody
                 Name		 "Sun"
                 ShowLabel		 No
             EndCentralBody
             BeginCentralBody
-                Name		 "Earth"
-                ShowLabel		 No
+                Name		 "Moon"
+                ShowLabel		 Yes
             EndCentralBody
         END CentralBodyOpts
         isShowingOverlay		 Yes
@@ -742,22 +742,22 @@ BEGIN SceneWindow
             UseLayer		 Yes
             FromName		 "Place/BahenGS"
             FromRegPosAttView		 "Point"
-            FromPosition		  3.4362785603120863e+06 -3.1029432279361137e+06  4.3724126619649706e+06
-            FromOffset		  8.6929799509700388e+01  2.3539866149891168e+01  1.6445465836767107e+02
-            FromOffsetLLR		  9.1528501758892800e-01  2.4197063362150013e+00  1.8749999999994378e+02
+            FromPosition		 -5.7862381406524475e+05  4.5905257504238905e+06  4.3789166203374490e+06
+            FromOffset		 -4.8039201633455323e+03  5.8516430405775045e+03 -3.3047488356262684e+03
+            FromOffsetLLR		  2.8829410248814241e-01  5.3184256209058445e-01  8.2607953658658116e+03
             ToName		 "Place/BahenGS"
             ToRegPosAttView		 "Point"
-            ToPosition		  3.4361916305125766e+06 -3.1029667678022636e+06  4.3722482073066030e+06
-            ToOffset		  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00
-            ToOffsetLLR		  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00
+            ToPosition		 -5.7318492836839857e+05  4.5859695471601551e+06  4.3827195305377049e+06
+            ToOffset		  6.3496553350069973e+02  1.2954397768428830e+03  4.9816136463013612e+02
+            ToOffsetLLR		  9.2256532491180898e-01 -1.0353576985866182e+00  1.5262733010082845e+03
             ConstantDistanceType		 None
             ConstantDistanceValue		 1
-            UpVector		  2.7947315844682286e-01 -9.6009825221123501e-01 -1.0300476138964565e-02
-            ViewRad		  1.8749999999982728e+02
-            ViewQuat		  8.3929143391901517e-01  1.5603682598972843e-01  4.1336446477709227e-01 -3.1681574636492210e-01
+            UpVector		  5.2519116686912115e-03  6.4446707890447374e-01  7.6461402134159129e-01
+            ViewRad		  8.0500057015533575e+03
+            ViewQuat		  3.1743933801774565e-01  6.6822218319493767e-02  2.2431007585132067e-02 -9.4565527953712247e-01
             ViewCoordSystem		 From
             ViewFromToMode		 FromTo
-            ViewToCBIMtx		  5.0977241491733649e-01 -4.6356070205958433e-01 -7.2473689053019286e-01  6.7142134294682465e-01  7.4107378494740750e-01 -1.7393962189607703e-03  5.3788982628864612e-01 -4.8571712011185009e-01  6.8902352209878959e-01
+            ViewToCBIMtx		 -8.9211152730728160e-02  6.8480280826414730e-01 -7.2324718044524183e-01 -9.9195539731355842e-01 -1.2656277834642499e-01  2.5204915660273497e-03 -8.9810132885746408e-02  7.1765380019252412e-01  6.9058465310219108e-01
             UseUpAxis		 Yes
             UpAxisType		 Z
             UserDefinedUpAxis		  0.0000000000000000e+00  0.0000000000000000e+00  1.0000000000000000e+00
@@ -768,7 +768,7 @@ BEGIN SceneWindow
             MinAngleToUpAxis		  8.7266462599716477e-03
             InitUpAxisUp		 Yes
             TempUpAxisUp		 Yes
-            CrossAxis		  6.6080164223099769e-01  7.5056058358057709e-01 -0.0000000000000000e+00
+            CrossAxis		  6.0337415123046056e-01 -7.9745823315514242e-01  0.0000000000000000e+00
             DefaultOffset		  1.8749999999999997e+02
             BaseDefaultOffset		  1.4999999999999997e+02
         END View

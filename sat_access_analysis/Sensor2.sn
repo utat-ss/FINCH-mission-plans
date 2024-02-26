@@ -66,12 +66,6 @@ BEGIN Sensor
         END ObjectCoverage
 
         BEGIN Desc
-            BEGIN ShortText
-
-            END ShortText
-            BEGIN LongText
-
-            END LongText
         END Desc
 
         BEGIN Refraction
@@ -97,7 +91,7 @@ BEGIN Sensor
 
             BEGIN Attributes
 
-                Inherit		 Yes
+                Inherit		 No
                 Show		 Yes
                 LineStyle		 0
                 LineWidth		 1
@@ -176,6 +170,18 @@ BEGIN Sensor
     END Extensions
 
     BEGIN SubObjects
+
+        Class Receiver
+
+            GS_Rx		
+
+        END Class
+
+        Class Transmitter
+
+            GS_Tx		
+
+        END Class
 
     END SubObjects
 

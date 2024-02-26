@@ -288,6 +288,78 @@ BEGIN Scenario
             WindowRectRight		 2215
             WindowRectBottom		 823
         END Report
+
+        BEGIN Report
+            Name		 New Graph
+            Type		 Graph
+            BaseDir		 User
+            Style		 New Graph
+            AGIViewer		 No
+            Instance		 Satellite/Finch/Transmitter/FINCH_Tx
+            BEGIN InstanceList
+                Instance		 Place/BahenGS/Sensor/Sensor2/Receiver/GS_Rx
+            END InstanceList
+            BEGIN TimeData
+                BEGIN Section
+                    SectionNumber		 1
+                    SectionType		 2
+                    ShowIntervals		 No
+                    BEGIN IntervalList
+
+                        DateUnitAbrv		 UTCG
+
+                        BEGIN Intervals
+
+"1 Jan 2026 00:00:00.000000000" "28 Mar 2026 00:00:00.000000000"
+                        END Intervals
+
+                    END IntervalList
+
+                    TimeType		 Availability
+                    SamplingType		 FixedStep
+                    Step		 60
+                    TimeBound		 0
+                END Section
+            END TimeData
+            DisplayOnLoad		 Yes
+            FrameType		 0
+            DockCircleID		 0
+            DockID		 0
+            WindowRectLeft		 359
+            WindowRectTop		 366
+            WindowRectRight		 1328
+            WindowRectBottom		 694
+        END Report
+
+        BEGIN Report
+            Name		 Link Budget
+            Type		 Report
+            BaseDir		 Install
+            Style		 Link Budget
+            AGIViewer		 Yes
+            Instance		 Satellite/Finch/Transmitter/FINCH_Tx
+            BEGIN InstanceList
+                Instance		 Place/BahenGS/Sensor/Sensor2/Receiver/GS_Rx
+            END InstanceList
+            BEGIN TimeData
+                BEGIN Section
+                    SectionNumber		 1
+                    SectionType		 2
+                    ShowIntervals		 No
+                    TimeType		 Availability
+                    SamplingType		 Default
+                    TimeBound		 0
+                END Section
+            END TimeData
+            DisplayOnLoad		 Yes
+            FrameType		 0
+            DockCircleID		 0
+            DockID		 0
+            WindowRectLeft		 229
+            WindowRectTop		 236
+            WindowRectRight		 1202
+            WindowRectBottom		 568
+        END Report
     END QuickReports
 
     BEGIN Extensions
@@ -472,6 +544,14 @@ BEGIN Scenario
         END ConnectReportUnits
 
         BEGIN ReportFavorites
+            BEGIN Class
+                Name		 Access
+                BEGIN Favorite
+                    Type		 Graph
+                    BaseDir		 User
+                    Style		 New Graph
+                END Favorite
+            END Class
         END ReportFavorites
 
         BEGIN ADFFileData
@@ -1684,11 +1764,12 @@ BEGIN Scenario
 
                 StartTime		 1 Jan 2026 00:00:00.000000000
                 EndTime		 28 Mar 2026 00:00:00.000000000
-                CurrentTime		 14 Feb 2026 16:51:20.000000000
+                CurrentTime		 1 Jan 2026 05:04:31.703002930
+                Mode		 XRealtime
                 Direction		 Forward
                 UpdateDelta		 10
                 RefreshDelta		 0.010000
-                XRealTimeMult		 1
+                XRealTimeMult		 32
                 RealTimeOffset		 0
                 XRtStartFromPause		                Yes		
                 TimeArrayIncrement		 1
@@ -1769,7 +1850,7 @@ BEGIN Scenario
                     BEGIN MapAttributes
                         PrimaryBody		 Earth
                         SecondaryBody		 Sun
-                        CenterLatitude		 46.95223655870517
+                        CenterLatitude		 37.3318941176469
                         CenterLongitude		 -75.70390744934269
                         ProjectionAltitude		 63621860
                         FieldOfView		 35
@@ -1793,7 +1874,7 @@ BEGIN Scenario
                         ShowImageNames		 Off
                         ImageNameFont		 0
                         Projection		 EquidistantCylindrical
-                        Resolution		 Medium
+                        Resolution		 VeryLow
                         CoordinateSys		 ECF
                         UseBackgroundImage		 On
                         UseBingForBackground		 On
@@ -1808,8 +1889,8 @@ BEGIN Scenario
                             BEGIN ZoomLocation
                                 CenterLat		 46.95223655870517
                                 CenterLon		 -75.70390744934269
-                                ZoomWidth		 67.37664037086101
-                                ZoomHeight		 76.79009837647087
+                                ZoomWidth		 9.786481212904778
+                                ZoomHeight		 105.3362117647062
                             END ZoomLocation
                         END ZoomLocations
                         UseVarAspectRatio		 No
@@ -2409,12 +2490,28 @@ BEGIN Scenario
         END Instance
         Instance Place/BahenGS/Sensor/Sensor2
             Place/BahenGS/Sensor/Sensor2		
+            Place/BahenGS/Sensor/Sensor2/Receiver/GS_Rx		
+            Place/BahenGS/Sensor/Sensor2/Transmitter/GS_Tx		
+        END Instance
+        Instance Place/BahenGS/Sensor/Sensor2/Receiver/GS_Rx
+            Place/BahenGS/Sensor/Sensor2/Receiver/GS_Rx		
+        END Instance
+        Instance Place/BahenGS/Sensor/Sensor2/Transmitter/GS_Tx
+            Place/BahenGS/Sensor/Sensor2/Transmitter/GS_Tx		
         END Instance
         Instance Place/Toronto_ON
             Place/Toronto_ON		
         END Instance
         Instance Satellite/Finch
             Satellite/Finch		
+            Satellite/Finch/Receiver/FINCH_Rx		
+            Satellite/Finch/Transmitter/FINCH_Tx		
+        END Instance
+        Instance Satellite/Finch/Receiver/FINCH_Rx
+            Satellite/Finch/Receiver/FINCH_Rx		
+        END Instance
+        Instance Satellite/Finch/Transmitter/FINCH_Tx
+            Satellite/Finch/Transmitter/FINCH_Tx		
         END Instance
     END References
 
