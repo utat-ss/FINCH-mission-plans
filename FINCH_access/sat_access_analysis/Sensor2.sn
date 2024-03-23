@@ -1,0 +1,630 @@
+stk.v.12.0
+WrittenBy    STK_v12.5.0
+
+BEGIN Sensor
+
+    Name		 Sensor2
+
+    BEGIN Pattern
+
+        BEGIN SimpleCone
+
+            ConeAngle		  6.5000000000000000e+00
+            AngularPatternResolution		  4.0000000000000000e+00
+
+        END SimpleCone
+
+        DetailedTerrainHorizon		 Yes
+
+
+    END Pattern
+
+    BEGIN Pointing
+
+        BEGIN Targeted
+
+            TargetMode		 Tracking
+            Sequence		 323
+            TrackingMode		 Both
+            AberrationType		 Annual
+            TimeDelayConvergence		 5e-05
+            MaxTimeStep		 360
+            MinTimeStep		 0.01
+            TimeConvergence		 0.005
+            AbsValueConvergence		 1e-14
+            RelValueConvergence		 1e-08
+            DetectEventsUsingSamplesOnly		 No
+
+            BEGIN AssignedTargets
+
+                Satellite/Finch/Receiver/FINCH_Rx
+                Satellite/Finch/Transmitter/FINCH_Tx
+
+            END AssignedTargets
+
+            BEGIN TargetInviews
+
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-01T03:21:52.418300000 2026-01-01T03:22:25.188700000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-01T03:21:52.418300000 2026-01-01T03:22:25.188700000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-01T03:22:34.438200000 2026-01-01T03:22:53.613400000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-01T03:22:34.438200000 2026-01-01T03:22:53.613400000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-01T03:23:03.461600000 2026-01-01T03:23:35.029464057
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-01T03:23:03.461600000 2026-01-01T03:23:35.029464057
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-01T04:54:31.198700000 2026-01-01T05:00:11.390099639
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-01T04:54:31.198700000 2026-01-01T05:00:11.390099639
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-01T06:29:16.780292173 2026-01-01T06:30:58.161870197
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-01T06:29:16.780292173 2026-01-01T06:30:58.161870197
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-01T16:23:06.712400000 2026-01-01T16:23:39.500700000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-01T16:23:06.712400000 2026-01-01T16:23:39.500700000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-01T16:23:48.788100000 2026-01-01T16:23:55.639500000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-01T16:23:48.788100000 2026-01-01T16:23:55.639500000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-01T17:53:32.589515555 2026-01-01T17:59:25.785900000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-01T17:53:32.589515555 2026-01-01T17:59:25.785900000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-01T19:30:01.539646019 2026-01-01T19:30:27.159500000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-01T19:30:01.539646019 2026-01-01T19:30:27.159500000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-01T19:31:47.432400000 2026-01-01T19:32:01.058466389
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-01T19:31:47.432400000 2026-01-01T19:32:01.058466389
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-02T04:35:48.794400000 2026-01-02T04:41:23.603857648
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-02T04:35:48.794400000 2026-01-02T04:41:23.603857648
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-02T06:09:27.683000000 2026-01-02T06:12:27.217500000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-02T06:09:27.683000000 2026-01-02T06:12:27.217500000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-02T06:13:50.395300000 2026-01-02T06:14:00.625829104
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-02T06:13:50.395300000 2026-01-02T06:14:00.625829104
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-02T17:34:52.387895038 2026-01-02T17:40:16.420800000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-02T17:34:52.387895038 2026-01-02T17:40:16.420800000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-02T19:09:53.363670487 2026-01-02T19:11:51.692500000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-02T19:09:53.363670487 2026-01-02T19:11:51.692500000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-02T19:12:57.523300000 2026-01-02T19:15:12.199539882
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-02T19:12:57.523300000 2026-01-02T19:15:12.199539882
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-03T04:15:45.494400000 2026-01-03T04:22:28.193446310
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-03T04:15:45.494400000 2026-01-03T04:22:28.193446310
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-03T05:50:46.058100000 2026-01-03T05:55:58.244106317
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-03T05:50:46.058100000 2026-01-03T05:55:58.244106317
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-03T17:16:29.643300000 2026-01-03T17:21:20.771059698
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-03T17:16:29.643300000 2026-01-03T17:21:20.771059698
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-03T18:50:33.287362096 2026-01-03T18:57:09.047300000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-03T18:50:33.287362096 2026-01-03T18:57:09.047300000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-04T03:56:29.444285850 2026-01-04T04:03:23.193592619
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-04T03:56:29.444285850 2026-01-04T04:03:23.193592619
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-04T05:32:05.416700000 2026-01-04T05:37:37.134179778
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-04T05:32:05.416700000 2026-01-04T05:37:37.134179778
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-04T16:58:17.060300000 2026-01-04T16:58:20.238800000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-04T16:58:17.060300000 2026-01-04T16:58:20.238800000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-04T16:58:35.868400000 2026-01-04T17:03:12.357800000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-04T16:58:35.868400000 2026-01-04T17:03:12.357800000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-04T18:31:28.582846189 2026-01-04T18:37:57.891800000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-04T18:31:28.582846189 2026-01-04T18:37:57.891800000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-05T03:38:46.974440632 2026-01-05T03:38:53.176200000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-05T03:38:46.974440632 2026-01-05T03:38:53.176200000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-05T03:39:31.772200000 2026-01-05T03:43:47.550600000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-05T03:39:31.772200000 2026-01-05T03:43:47.550600000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-05T05:13:25.003800000 2026-01-05T05:19:04.985990581
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-05T05:13:25.003800000 2026-01-05T05:19:04.985990581
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-05T16:39:58.047555893 2026-01-05T16:40:53.513000000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-05T16:39:58.047555893 2026-01-05T16:40:53.513000000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-05T16:41:02.492000000 2026-01-05T16:45:09.178100000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-05T16:41:02.492000000 2026-01-05T16:45:09.178100000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-05T18:12:33.386830776 2026-01-05T18:18:48.833500000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-05T18:12:33.386830776 2026-01-05T18:18:48.833500000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-06T03:22:05.715200000 2026-01-06T03:22:38.411700000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-06T03:22:05.715200000 2026-01-06T03:22:38.411700000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-06T03:22:47.642600000 2026-01-06T03:23:06.780400000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-06T03:22:47.642600000 2026-01-06T03:23:06.780400000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-06T03:23:16.604800000 2026-01-06T03:23:50.659232599
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-06T03:23:16.604800000 2026-01-06T03:23:50.659232599
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-06T04:54:44.353100000 2026-01-06T05:00:24.590552149
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-06T04:54:44.353100000 2026-01-06T05:00:24.590552149
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-06T06:29:33.623348923 2026-01-06T06:31:08.015598173
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-06T06:29:33.623348923 2026-01-06T06:31:08.015598173
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-06T16:23:07.284800000 2026-01-06T16:23:09.550100000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-06T16:23:07.284800000 2026-01-06T16:23:09.550100000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-06T16:23:19.952800000 2026-01-06T16:23:52.674100000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-06T16:23:19.952800000 2026-01-06T16:23:52.674100000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-06T16:24:01.935300000 2026-01-06T16:24:08.780500000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-06T16:24:01.935300000 2026-01-06T16:24:08.780500000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-06T17:53:45.786593420 2026-01-06T17:59:39.277200000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-06T17:53:45.786593420 2026-01-06T17:59:39.277200000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-06T19:30:16.929426125 2026-01-06T19:30:40.274900000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-06T19:30:16.929426125 2026-01-06T19:30:40.274900000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-06T19:32:00.718000000 2026-01-06T19:32:11.670527143
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-06T19:32:00.718000000 2026-01-06T19:32:11.670527143
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-07T04:36:02.842600000 2026-01-07T04:41:36.889047062
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-07T04:36:02.842600000 2026-01-07T04:41:36.889047062
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-07T06:09:40.862100000 2026-01-07T06:12:40.602700000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-07T06:09:40.862100000 2026-01-07T06:12:40.602700000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-07T06:14:03.959600000 2026-01-07T06:14:13.155329342
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-07T06:14:03.959600000 2026-01-07T06:14:13.155329342
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-07T17:35:05.498908331 2026-01-07T17:40:29.923600000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-07T17:35:05.498908331 2026-01-07T17:40:29.923600000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-07T19:10:07.138230036 2026-01-07T19:12:04.772500000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-07T19:10:07.138230036 2026-01-07T19:12:04.772500000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-07T19:13:10.774178573 2026-01-07T19:15:24.498681744
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-07T19:13:10.774178573 2026-01-07T19:15:24.498681744
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-08T04:15:59.710800000 2026-01-08T04:22:41.575383355
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-08T04:15:59.710800000 2026-01-08T04:22:41.575383355
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-08T05:50:59.224600000 2026-01-08T05:56:11.085888362
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-08T05:50:59.224600000 2026-01-08T05:56:11.085888362
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-08T17:16:42.447000000 2026-01-08T17:21:33.580800000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-08T17:16:42.447000000 2026-01-08T17:21:33.580800000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-08T18:50:46.802353241 2026-01-08T18:57:23.041800000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-08T18:50:46.802353241 2026-01-08T18:57:23.041800000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-09T03:56:42.070121117 2026-01-09T04:03:36.709998948
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-09T03:56:42.070121117 2026-01-09T04:03:36.709998948
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-09T05:32:18.573600000 2026-01-09T05:37:50.139920447
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-09T05:32:18.573600000 2026-01-09T05:37:50.139920447
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-09T16:58:30.142400000 2026-01-09T16:58:34.031000000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-09T16:58:30.142400000 2026-01-09T16:58:34.031000000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-09T16:58:48.993000000 2026-01-09T17:03:25.105800000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-09T16:58:48.993000000 2026-01-09T17:03:25.105800000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-09T18:31:41.964647056 2026-01-09T18:38:11.378200000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-09T18:31:41.964647056 2026-01-09T18:38:11.378200000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-10T03:38:59.269367573 2026-01-10T03:39:06.828900000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-10T03:38:59.269367573 2026-01-10T03:39:06.828900000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-10T03:39:45.296000000 2026-01-10T03:44:02.118000000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-10T03:39:45.296000000 2026-01-10T03:44:02.118000000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-10T05:13:38.171600000 2026-01-10T05:19:18.099120489
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-10T05:13:38.171600000 2026-01-10T05:19:18.099120489
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-10T16:40:10.566224938 2026-01-10T16:41:06.981800000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-10T16:40:10.566224938 2026-01-10T16:41:06.981800000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-10T16:41:15.942300000 2026-01-10T16:45:21.864700000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-10T16:41:15.942300000 2026-01-10T16:45:21.864700000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-10T18:12:46.671955469 2026-01-10T18:19:02.333700000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-10T18:12:46.671955469 2026-01-10T18:19:02.333700000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-11T03:22:19.012200000 2026-01-11T03:22:51.636200000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-11T03:22:19.012200000 2026-01-11T03:22:51.636200000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-11T03:23:00.843100000 2026-01-11T03:23:19.943500000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-11T03:23:00.843100000 2026-01-11T03:23:19.943500000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-11T03:23:29.748500000 2026-01-11T03:24:06.173518849
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-11T03:23:29.748500000 2026-01-11T03:24:06.173518849
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-11T04:54:57.506600000 2026-01-11T05:00:37.790924663
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-11T04:54:57.506600000 2026-01-11T05:00:37.790924663
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-11T06:29:50.765577690 2026-01-11T06:31:17.571487265
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-11T06:29:50.765577690 2026-01-11T06:31:17.571487265
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-11T16:23:20.554700000 2026-01-11T16:23:22.817500000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-11T16:23:20.554700000 2026-01-11T16:23:22.817500000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-11T16:23:33.192000000 2026-01-11T16:24:05.844900000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-11T16:23:33.192000000 2026-01-11T16:24:05.844900000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-11T16:24:15.075200000 2026-01-11T16:24:21.906900000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-11T16:24:15.075200000 2026-01-11T16:24:21.906900000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-11T17:53:58.986512566 2026-01-11T17:59:52.767100000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-11T17:53:58.986512566 2026-01-11T17:59:52.767100000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-11T19:30:32.421314527 2026-01-11T19:30:53.394600000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-11T19:30:32.421314527 2026-01-11T19:30:53.394600000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-11T19:32:14.003900000 2026-01-11T19:32:22.175494863
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-11T19:32:14.003900000 2026-01-11T19:32:22.175494863
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-12T04:36:16.888700000 2026-01-12T04:41:50.174107192
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-12T04:36:16.888700000 2026-01-12T04:41:50.174107192
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-12T06:09:54.040200000 2026-01-12T06:12:53.987200000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-12T06:09:54.040200000 2026-01-12T06:12:53.987200000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-12T06:14:17.528700000 2026-01-12T06:14:25.677690675
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-12T06:14:17.528700000 2026-01-12T06:14:25.677690675
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-12T17:35:18.608899690 2026-01-12T17:40:43.431300000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-12T17:35:18.608899690 2026-01-12T17:40:43.431300000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-12T19:10:20.914481350 2026-01-12T19:12:17.853900000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-12T19:10:20.914481350 2026-01-12T19:12:17.853900000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-12T19:13:24.027900000 2026-01-12T19:15:36.793804757
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-12T19:13:24.027900000 2026-01-12T19:15:36.793804757
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-13T04:16:13.922799999 2026-01-13T04:22:54.957952305
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-13T04:16:13.922799999 2026-01-13T04:22:54.957952305
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-13T05:51:12.392999995 2026-01-13T05:56:23.930950126
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-13T05:51:12.392999995 2026-01-13T05:56:23.930950126
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-13T17:16:55.257199999 2026-01-13T17:21:46.394500000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-13T17:16:55.257199999 2026-01-13T17:21:46.394500000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-13T18:51:00.321095117 2026-01-13T18:57:37.047699998
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-13T18:51:00.321095117 2026-01-13T18:57:37.047699998
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-14T03:56:54.699999393 2026-01-14T04:03:50.226648090
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-14T03:56:54.699999393 2026-01-14T04:03:50.226648090
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-14T05:32:31.726699999 2026-01-14T05:38:03.138717667
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-14T05:32:31.726699999 2026-01-14T05:38:03.138717667
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-14T16:58:43.228999995 2026-01-14T16:58:47.828899994
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-14T16:58:43.228999995 2026-01-14T16:58:47.828899994
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-14T16:59:02.120699998 2026-01-14T17:03:37.858199997
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-14T16:59:02.120699998 2026-01-14T17:03:37.858199997
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-14T18:31:55.349340810 2026-01-14T18:38:24.866599998
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-14T18:31:55.349340810 2026-01-14T18:38:24.866599998
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-15T03:39:11.571313132 2026-01-15T03:39:20.482199996
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-15T03:39:11.571313132 2026-01-15T03:39:20.482199996
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-15T03:39:58.815599996 2026-01-15T03:44:16.666599997
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-15T03:39:58.815599996 2026-01-15T03:44:16.666599997
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-15T05:13:51.335349424 2026-01-15T05:19:31.212932098
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-15T05:13:51.335349424 2026-01-15T05:19:31.212932098
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-15T16:40:23.091955178 2026-01-15T16:41:20.455499997
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-15T16:40:23.091955178 2026-01-15T16:41:20.455499997
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-15T16:41:29.249099998 2026-01-15T16:45:34.553899994
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-15T16:41:29.249099998 2026-01-15T16:45:34.553899994
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-15T18:12:59.959608330 2026-01-15T18:19:15.839899999
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-15T18:12:59.959608330 2026-01-15T18:19:15.839899999
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-16T03:22:23.070041531 2026-01-16T03:22:24.258399999
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-16T03:22:23.070041531 2026-01-16T03:22:24.258399999
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-16T03:22:32.307399997 2026-01-16T03:23:04.863299997
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-16T03:22:32.307399997 2026-01-16T03:23:04.863299997
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-16T03:23:14.046799996 2026-01-16T03:23:33.109799996
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-16T03:23:14.046799996 2026-01-16T03:23:33.109799996
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-16T03:23:42.896700000 2026-01-16T03:24:21.574160393
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-16T03:23:42.896700000 2026-01-16T03:24:21.574160393
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-16T04:55:10.664899999 2026-01-16T05:00:50.993295755
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-16T04:55:10.664899999 2026-01-16T05:00:50.993295755
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-16T06:30:08.285875061 2026-01-16T06:31:26.751493081
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-16T06:30:08.285875061 2026-01-16T06:31:26.751493081
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-16T16:23:33.829800000 2026-01-16T16:23:36.091199996
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-16T16:23:33.829800000 2026-01-16T16:23:36.091199996
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-16T16:23:46.439399997 2026-01-16T16:24:19.016099998
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-16T16:23:46.439399997 2026-01-16T16:24:19.016099998
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-16T16:24:28.220099998 2026-01-16T16:24:35.093300000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-16T16:24:28.220099998 2026-01-16T16:24:35.093300000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-16T17:54:12.189502697 2026-01-16T18:00:06.260599997
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-16T17:54:12.189502697 2026-01-16T18:00:06.260599997
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-16T19:30:48.041670505 2026-01-16T19:31:06.515399999
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-16T19:30:48.041670505 2026-01-16T19:31:06.515399999
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-16T19:32:27.294899995 2026-01-16T19:32:32.553989890
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-16T19:32:27.294899995 2026-01-16T19:32:32.553989890
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-17T04:36:30.734999999 2026-01-17T04:42:03.460477227
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-17T04:36:30.734999999 2026-01-17T04:42:03.460477227
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-17T06:10:07.222199996 2026-01-17T06:13:07.376799997
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-17T06:10:07.222199996 2026-01-17T06:13:07.376799997
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-17T06:14:31.095199994 2026-01-17T06:14:38.195533976
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-17T06:14:31.095199994 2026-01-17T06:14:38.195533976
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-17T17:35:31.722202920 2026-01-17T17:40:56.937199998
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-17T17:35:31.722202920 2026-01-17T17:40:56.937199998
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-17T19:10:34.698581612 2026-01-17T19:12:30.936499998
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-17T19:10:34.698581612 2026-01-17T19:12:30.936499998
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-17T19:13:37.282899999 2026-01-17T19:15:49.082934052
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-17T19:13:37.282899999 2026-01-17T19:15:49.082934052
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-18T04:16:28.136799999 2026-01-18T04:23:08.339233645
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-18T04:16:28.136799999 2026-01-18T04:23:08.339233645
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-18T05:51:25.557012459 2026-01-18T05:56:36.771938014
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-18T05:51:25.557012459 2026-01-18T05:56:36.771938014
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-18T17:17:08.069199994 2026-01-18T17:21:59.205700000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-18T17:17:08.069199994 2026-01-18T17:21:59.205700000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-18T18:51:13.842417264 2026-01-18T18:57:51.048599997
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-18T18:51:13.842417264 2026-01-18T18:57:51.048599997
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-19T03:57:07.332968617 2026-01-19T04:04:03.740453077
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-19T03:57:07.332968617 2026-01-19T04:04:03.740453077
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-19T05:32:44.884999999 2026-01-19T05:38:16.140926399
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-19T05:32:44.884999999 2026-01-19T05:38:16.140926399
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-19T16:58:56.313799999 2026-01-19T16:59:01.626299998
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-19T16:58:56.313799999 2026-01-19T16:59:01.626299998
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-19T16:59:15.252099993 2026-01-19T17:03:50.611899997
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-19T16:59:15.252099993 2026-01-19T17:03:50.611899997
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-19T18:32:08.735203371 2026-01-19T18:38:38.355899999
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-19T18:32:08.735203371 2026-01-19T18:38:38.355899999
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-20T03:39:23.878993112 2026-01-20T03:39:34.135099994
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-20T03:39:23.878993112 2026-01-20T03:39:34.135099994
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-20T03:40:12.341200000 2026-01-20T03:44:31.191599999
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-20T03:40:12.341200000 2026-01-20T03:44:31.191599999
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-20T05:14:04.500999999 2026-01-20T05:19:44.323205144
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-20T05:14:04.500999999 2026-01-20T05:19:44.323205144
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-20T16:40:35.621986962 2026-01-20T16:41:33.928099995
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-20T16:40:35.621986962 2026-01-20T16:41:33.928099995
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-20T16:41:41.636599998 2026-01-20T16:45:47.243500000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-20T16:41:41.636599998 2026-01-20T16:45:47.243500000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-20T18:13:13.247597846 2026-01-20T18:19:29.338299998
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-20T18:13:13.247597846 2026-01-20T18:19:29.338299998
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-21T03:22:34.048399996 2026-01-21T03:22:37.574099994
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-21T03:22:34.048399996 2026-01-21T03:22:37.574099994
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-21T03:22:45.604899998 2026-01-21T03:23:18.085099997
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-21T03:22:45.604899998 2026-01-21T03:23:18.085099997
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-21T03:23:27.254699997 2026-01-21T03:23:46.275399997
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-21T03:23:27.254699997 2026-01-21T03:23:46.275399997
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-21T03:23:56.038699995 2026-01-21T03:24:36.874237471
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-21T03:23:56.038699995 2026-01-21T03:24:36.874237471
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-21T04:55:23.821400000 2026-01-21T05:01:04.191963562
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-21T04:55:23.821400000 2026-01-21T05:01:04.191963562
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-21T06:30:26.314916155 2026-01-21T06:31:35.424735809
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-21T06:30:26.314916155 2026-01-21T06:31:35.424735809
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-21T16:23:47.103599997 2026-01-21T16:23:49.361400000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-21T16:23:47.103599997 2026-01-21T16:23:49.361400000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-21T16:23:59.677899995 2026-01-21T16:24:32.188699996
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-21T16:23:59.677899995 2026-01-21T16:24:32.188699996
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-21T16:24:41.366499997 2026-01-21T16:24:48.891499995
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-21T16:24:41.366499997 2026-01-21T16:24:48.891499995
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-21T17:54:25.391812697 2026-01-21T18:00:19.751299998
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-21T17:54:25.391812697 2026-01-21T18:00:19.751299998
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-21T19:31:03.804132089 2026-01-21T19:31:19.631500000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-21T19:31:03.804132089 2026-01-21T19:31:19.631500000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-21T19:32:40.582099995 2026-01-21T19:32:42.782525639
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-21T19:32:40.582099995 2026-01-21T19:32:42.782525639
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-22T04:36:43.884299999 2026-01-22T04:42:16.742330182
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-22T04:36:43.884299999 2026-01-22T04:42:16.742330182
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-22T06:10:20.398299999 2026-01-22T06:13:20.759299999
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-22T06:10:20.398299999 2026-01-22T06:13:20.759299999
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-22T06:14:44.664499997 2026-01-22T06:14:50.706519822
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-22T06:14:44.664499997 2026-01-22T06:14:50.706519822
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-22T17:35:44.835488173 2026-01-22T17:41:10.440399998
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-22T17:35:44.835488173 2026-01-22T17:41:10.440399998
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-22T19:10:48.490377784 2026-01-22T19:12:44.019399998
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-22T19:10:48.490377784 2026-01-22T19:12:44.019399998
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-22T19:13:50.532999998 2026-01-22T19:16:01.365578755
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-22T19:13:50.532999998 2026-01-22T19:16:01.365578755
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-23T04:16:42.343399998 2026-01-23T04:23:21.718560945
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-23T04:16:42.343399998 2026-01-23T04:23:21.718560945
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-23T05:51:38.726600000 2026-01-23T05:56:49.606777009
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-23T05:51:38.726600000 2026-01-23T05:56:49.606777009
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-23T17:17:20.882599998 2026-01-23T17:22:12.019600000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-23T17:17:20.882599998 2026-01-23T17:22:12.019600000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-23T18:51:27.364956114 2026-01-23T18:58:05.050899995
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-23T18:51:27.364956114 2026-01-23T18:58:05.050899995
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-24T03:57:19.967423230 2026-01-24T04:04:17.252004769
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-24T03:57:19.967423230 2026-01-24T04:04:17.252004769
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-24T05:32:58.038399998 2026-01-24T05:38:29.140382995
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-24T05:32:58.038399998 2026-01-24T05:38:29.140382995
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-24T16:59:09.395299994 2026-01-24T16:59:15.423999993
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-24T16:59:09.395299994 2026-01-24T16:59:15.423999993
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-24T16:59:28.380799996 2026-01-24T17:04:03.364099997
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-24T16:59:28.380799996 2026-01-24T17:04:03.364099997
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-24T18:32:22.121326404 2026-01-24T18:38:51.840799994
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-24T18:32:22.121326404 2026-01-24T18:38:51.840799994
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-25T03:39:36.190819552 2026-01-25T03:39:47.787399998
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-25T03:39:36.190819552 2026-01-25T03:39:47.787399998
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-25T03:40:25.861599998 2026-01-25T03:44:45.693799995
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-25T03:40:25.861599998 2026-01-25T03:44:45.693799995
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-25T05:14:17.666999999 2026-01-25T05:19:57.428078626
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-25T05:14:17.666999999 2026-01-25T05:19:57.428078626
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-25T16:40:48.159404909 2026-01-25T16:41:47.397099999
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-25T16:40:48.159404909 2026-01-25T16:41:47.397099999
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-25T16:41:53.243499998 2026-01-25T16:45:59.935599999
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-25T16:41:53.243499998 2026-01-25T16:45:59.935599999
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-25T18:13:26.536336365 2026-01-25T18:19:42.842699997
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-25T18:13:26.536336365 2026-01-25T18:19:42.842699997
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-26T03:22:47.372699999 2026-01-26T03:22:50.889899998
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-26T03:22:47.372699999 2026-01-26T03:22:50.889899998
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-26T03:22:58.904399994 2026-01-26T03:23:31.308799995
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-26T03:22:58.904399994 2026-01-26T03:23:31.308799995
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-26T03:23:40.453500000 2026-01-26T03:23:59.436742302
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-26T03:23:40.453500000 2026-01-26T03:23:59.436742302
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-26T03:24:09.182199998 2026-01-26T03:24:51.072999995
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-26T03:24:09.182199998 2026-01-26T03:24:51.072999995
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-26T04:55:36.978199997 2026-01-26T05:01:17.389915741
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-26T04:55:36.978199997 2026-01-26T05:01:17.389915741
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-26T06:30:45.111007404 2026-01-26T06:31:43.329208174
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-26T06:30:45.111007404 2026-01-26T06:31:43.329208174
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-26T16:24:00.376999994 2026-01-26T16:24:02.630299996
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-26T16:24:00.376999994 2026-01-26T16:24:02.630299996
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-26T16:24:12.924499998 2026-01-26T16:24:45.362299999
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-26T16:24:12.924499998 2026-01-26T16:24:45.362299999
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-26T16:24:54.509099999 2026-01-26T16:25:02.690200000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-26T16:24:54.509099999 2026-01-26T16:25:02.690200000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-26T16:25:37.124999995 2026-01-26T16:25:39.194726092
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-26T16:25:37.124999995 2026-01-26T16:25:39.194726092
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-26T17:54:38.595814167 2026-01-26T18:00:33.240600000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-26T17:54:38.595814167 2026-01-26T18:00:33.240600000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-26T19:31:19.729880773 2026-01-26T19:31:32.753399998
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-26T19:31:19.729880773 2026-01-26T19:31:32.753399998
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-27T04:36:57.031300000 2026-01-27T04:42:30.027786584
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-27T04:36:57.031300000 2026-01-27T04:42:30.027786584
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-27T06:10:33.577099995 2026-01-27T06:13:34.144699997
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-27T06:10:33.577099995 2026-01-27T06:13:34.144699997
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-27T06:14:58.230599994 2026-01-27T06:15:03.210406167
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-27T06:14:58.230599994 2026-01-27T06:15:03.210406167
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-27T17:35:57.951414912 2026-01-27T17:41:23.943899998
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-27T17:35:57.951414912 2026-01-27T17:41:23.943899998
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-27T19:11:02.282982018 2026-01-27T19:12:57.103199997
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-27T19:11:02.282982018 2026-01-27T19:12:57.103199997
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-27T19:14:03.788799998 2026-01-27T19:16:13.644819167
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-27T19:14:03.788799998 2026-01-27T19:16:13.644819167
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-28T04:16:56.553999998 2026-01-28T04:23:35.098310139
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-28T04:16:56.553999998 2026-01-28T04:23:35.098310139
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-28T05:51:51.893400000 2026-01-28T05:57:02.442245007
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-28T05:51:51.893400000 2026-01-28T05:57:02.442245007
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-28T17:17:33.699399993 2026-01-28T17:22:24.838200000
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-28T17:17:33.699399993 2026-01-28T17:22:24.838200000
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-28T18:51:40.890726099 2026-01-28T18:58:19.057199993
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-28T18:51:40.890726099 2026-01-28T18:58:19.057199993
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-29T03:57:32.606161229 2026-01-29T04:04:30.763962304
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-29T03:57:32.606161229 2026-01-29T04:04:30.763962304
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-29T05:33:11.197399998 2026-01-29T05:38:42.139930384
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-29T05:33:11.197399998 2026-01-29T05:38:42.139930384
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-29T16:59:22.484099998 2026-01-29T16:59:29.222599997
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-29T16:59:22.484099998 2026-01-29T16:59:29.222599997
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-29T16:59:41.514499999 2026-01-29T17:04:16.120499997
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-29T16:59:41.514499999 2026-01-29T17:04:16.120499997
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-29T18:32:35.510651140 2026-01-29T18:39:05.329199995
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-29T18:32:35.510651140 2026-01-29T18:39:05.329199995
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-30T03:39:48.509685923 2026-01-30T03:40:01.443199995
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-30T03:39:48.509685923 2026-01-30T03:40:01.443199995
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-30T03:40:39.382299996 2026-01-30T03:45:00.182199998
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-30T03:40:39.382299996 2026-01-30T03:45:00.182199998
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-30T05:14:30.835799999 2026-01-30T05:20:10.537373439
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-30T05:14:30.835799999 2026-01-30T05:20:10.537373439
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-30T16:41:00.703507101 2026-01-30T16:42:00.872299998
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-30T16:41:00.703507101 2026-01-30T16:42:00.872299998
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-30T16:42:04.998499996 2026-01-30T16:46:12.629399999
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-30T16:42:04.998499996 2026-01-30T16:46:12.629399999
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-30T18:13:39.827894946 2026-01-30T18:19:56.347399997
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-30T18:13:39.827894946 2026-01-30T18:19:56.347399997
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-31T03:23:00.696999997 2026-01-31T03:23:04.206699996
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-31T03:23:00.696999997 2026-01-31T03:23:04.206699996
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-31T03:23:12.200199999 2026-01-31T03:23:44.529299999
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-31T03:23:12.200199999 2026-01-31T03:23:44.529299999
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-31T03:23:53.661399999 2026-01-31T03:24:12.602199999
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-31T03:23:53.661399999 2026-01-31T03:24:12.602199999
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-31T03:24:22.329199997 2026-01-31T03:25:04.138499994
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-31T03:24:22.329199997 2026-01-31T03:25:04.138499994
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-31T04:55:50.138899997 2026-01-31T05:01:30.588363321
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-31T04:55:50.138899997 2026-01-31T05:01:30.588363321
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-31T06:31:05.216421762 2026-01-31T06:31:49.930502947
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-31T06:31:05.216421762 2026-01-31T06:31:49.930502947
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-31T16:24:13.653899995 2026-01-31T16:24:15.907299996
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-31T16:24:13.653899995 2026-01-31T16:24:15.907299996
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-31T16:24:26.169399998 2026-01-31T16:24:58.540199999
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-31T16:24:26.169399998 2026-01-31T16:24:58.540199999
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-31T16:25:07.655900000 2026-01-31T16:25:15.872999999
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-31T16:25:07.655900000 2026-01-31T16:25:15.872999999
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-31T16:25:50.170199996 2026-01-31T16:25:55.488782377
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-31T16:25:50.170199996 2026-01-31T16:25:55.488782377
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-31T17:54:51.801947914 2026-01-31T18:00:46.731399998
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-31T17:54:51.801947914 2026-01-31T18:00:46.731399998
+                Satellite/Finch/Receiver/FINCH_Rx 2026-01-31T19:31:35.864322168 2026-01-31T19:31:45.875699996
+                Satellite/Finch/Transmitter/FINCH_Tx 2026-01-31T19:31:35.864322168 2026-01-31T19:31:45.875699996
+
+            END TargetInviews
+
+            SaveTargetAccesses		 Yes
+
+            UseTargetSchedule		 No
+
+            BEGIN Stable
+                Use		 No
+                Mode		 NorthStable
+            END Stable
+            AdjustPointingToTargetsDuringAccessToTargets		 No
+            UseTrackControl		 No
+
+        END Targeted
+
+    END Pointing
+
+    BEGIN Optics
+
+        FocalLength		  1.0000000000000000e+02
+        DetectorPitch		  1.0000000000000000e-03
+        IQConstant		  0.0000000000000000e+00
+        GsdCoefficient		  0.0000000000000000e+00
+
+    END Optics
+
+    BEGIN Extensions
+
+        BEGIN ExternData
+        END ExternData
+
+        BEGIN ADFFileData
+        END ADFFileData
+
+        BEGIN AccessConstraints
+            TerrainMask IncludeIntervals
+            Range            Max		  2.0000000000000000e+06 IncludeIntervals
+            FieldOfView IncludeIntervals
+            LineOfSight IncludeIntervals
+            3DTilesMask IncludeIntervals
+
+            UsePreferredMaxStep No
+            PreferredMaxStep 360
+        END AccessConstraints
+
+        BEGIN ObjectCoverage
+        END ObjectCoverage
+
+        BEGIN Desc
+        END Desc
+
+        BEGIN Refraction
+            RefractionModel		 Effective Radius Method
+
+            UseRefractionInAccess		 No
+
+            BEGIN ModelData
+                RefractionCeiling		  5.0000000000000000e+03
+                MaxTargetAltitude		  1.0000000000000000e+04
+                EffectiveRadius		  1.3333333333333299e+00
+
+                UseExtrapolation		 Yes
+
+
+            END ModelData
+        END Refraction
+
+        BEGIN Crdn
+        END Crdn
+
+        BEGIN Graphics
+
+            BEGIN Attributes
+
+                Inherit		 No
+                Show		 Yes
+                LineStyle		 0
+                LineWidth		 1
+                PatternColor		 #0000ff
+
+            END Attributes
+
+            BEGIN Display
+
+                NumberOfPatterns		 1
+                PersistenceDuration		  0.0000000000000000e+00
+                PersistenceIgnoreDefChg		 No
+                UpdatesDefnOften		 No
+                MinDisplayAltitude		  0.0000000000000000e+00
+                MaxDisplayAltitude		  1.0000000000000000e+07
+                AltitudeIntersectSense		 InsideOut
+                ShowBothAltCrossings		 No
+                IntersectType		 CentralBody
+                ShowGround		 Yes
+                UseProjectionRadii		 Yes
+                ExcludeHorizonArcs		 No
+                ForwardPersist		 No
+                FillPersist		 No
+                DsplyTmHidesPersist		 No
+                SpaceLength		  5.0000000000000000e+07
+                TgtExtLength		  0.0000000000000000e+00
+                FOVHalfAngle		 No
+                HalfAngle		  0.0000000000000000e+00
+                ProjDisplay		 Sphere
+                DisplayType		 ConstantRadius
+                DisplayFOVWithConstraints		 No
+                ShowBoresight		 No
+                BoresightMarker		 4
+                BoresightColor		 #ffffff
+                ShowFill		 No
+                FillTranslucency		 0.5
+                ShowOn2DMap		 Yes
+
+            END Display
+
+            BEGIN Swath
+
+                MaxStep		  6.0000000000000000e+01
+                MinStep		  1.0000000000000001e-01
+                CloseSwath		 Yes
+                Tolerance		  4.0000000000000000e+00
+                MatchTolerance		  9.0000000000000000e+01
+                ShowSwath		 No
+                ComputationalMethod		 Numerical
+                Color		 #0000ff
+                LineStyle		 0
+                LineWidth		 1
+                SwathIntervalPtr		
+                BEGIN EVENTINTERVAL
+                    BEGIN Interval
+                        Start		 1 Jan 2026 00:00:00.000000000
+                        Stop		 1 Jan 2027 00:00:00.000000000
+                    END Interval
+                    IntervalState		 Explicit
+                END EVENTINTERVAL
+
+
+            END Swath
+
+            BEGIN DisplayTimes
+                DisplayType		 AlwaysOn
+            END DisplayTimes
+        END Graphics
+
+        BEGIN Swath
+        END Swath
+
+        BEGIN VO
+        END VO
+
+    END Extensions
+
+    BEGIN SubObjects
+
+        Class Receiver
+
+            GS_Rx		
+            GS_Rx_Data		
+
+        END Class
+
+        Class Transmitter
+
+            GS_Tx		
+
+        END Class
+
+    END SubObjects
+
+END Sensor
+
