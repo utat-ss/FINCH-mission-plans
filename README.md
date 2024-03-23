@@ -7,4 +7,5 @@ To run a simulation:
 2. Follow other readme instructions on the simulation you want to use.
 
 Just for data:
+
 The data you might want will be placed under the "Outputs" folder in the simulation folder you are interested in. 
