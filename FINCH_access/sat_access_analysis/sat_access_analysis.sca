@@ -1,8 +1,8 @@
 stk.v.12.0
 WrittenBy    STK_v12.5.0
 BEGIN Access
-    Scenario/sat_access_analysis/Place/BahenGS/Sensor/Sensor2/Transmitter/GS_Tx
-    Scenario/sat_access_analysis/Satellite/Finch/Receiver/FINCH_Rx
+    Scenario/sat_access_analysis/Place/BahenGS/Sensor/Sensor2/Receiver/GS_Rx
+    Scenario/sat_access_analysis/Satellite/Finch/Transmitter/FINCH_Tx
 
     IsComputed		 Yes
     SaveComputedData		 Yes
@@ -13,7 +13,7 @@ BEGIN Access
     UITimePeriod		 Object
     UseLightTimeDelay		 Yes
     ClockHost		 Base
-    TimeSense		 Transmit
+    TimeSense		 Receive
     AberrationType		 Annual
     TimeDelayConvergence		 5e-05
     SetMaxStepFromInsts		 Yes
@@ -909,8 +909,8 @@ BEGIN Access
 END Access
 
 BEGIN Access
-    Scenario/sat_access_analysis/Place/BahenGS/Sensor/Sensor2/Receiver/GS_Rx
-    Scenario/sat_access_analysis/Satellite/Finch/Transmitter/FINCH_Tx
+    Scenario/sat_access_analysis/Place/BahenGS/Sensor/Sensor2/Transmitter/GS_Tx
+    Scenario/sat_access_analysis/Satellite/Finch/Receiver/FINCH_Rx
 
     IsComputed		 Yes
     SaveComputedData		 Yes
@@ -921,7 +921,7 @@ BEGIN Access
     UITimePeriod		 Object
     UseLightTimeDelay		 Yes
     ClockHost		 Base
-    TimeSense		 Receive
+    TimeSense		 Transmit
     AberrationType		 Annual
     TimeDelayConvergence		 5e-05
     SetMaxStepFromInsts		 Yes

@@ -85,7 +85,6 @@ BEGIN Scenario
             BEGIN StreamingTerrain
                 UseCurrentStreamingTerrainServer		 Yes
                 CurrentStreamingTerrainServerName		 http://twsusecovacc01.agi.com/stk-terrain/
-                StreamingTerrainTilesetName		 world
                 StreamingTerrainServerName		 assets.agi.com/stk-terrain/
                 StreamingTerrainAzimuthElevationMaskEnabled		 No
                 StreamingTerrainObscurationEnabled		 No
@@ -381,7 +380,7 @@ BEGIN Scenario
                     TimeBound		 0
                 END Section
             END TimeData
-            DisplayOnLoad		 Yes
+            DisplayOnLoad		 No
             FrameType		 0
             DockCircleID		 0
             DockID		 0
@@ -411,14 +410,74 @@ BEGIN Scenario
                     TimeBound		 0
                 END Section
             END TimeData
+            DisplayOnLoad		 No
+            FrameType		 0
+            DockCircleID		 0
+            DockID		 0
+            WindowRectLeft		 382
+            WindowRectTop		 261
+            WindowRectRight		 1801
+            WindowRectBottom		 819
+        END Report
+
+        BEGIN Report
+            Name		 Access6
+            Type		 Report
+            BaseDir		 Install
+            Style		 Access
+            AGIViewer		 Yes
+            Instance		 Satellite/Finch/Transmitter/FINCH_Tx_Data
+            BEGIN InstanceList
+                Instance		 Place/BahenGS/Sensor/Sensor2/Receiver/GS_Rx_Data
+            END InstanceList
+            BEGIN TimeData
+                BEGIN Section
+                    SectionNumber		 1
+                    SectionType		 4
+                    ShowIntervals		 No
+                    TimeType		 Availability
+                    SamplingType		 Default
+                    TimeBound		 0
+                END Section
+            END TimeData
             DisplayOnLoad		 Yes
             FrameType		 0
             DockCircleID		 0
             DockID		 0
-            WindowRectLeft		 384
-            WindowRectTop		 263
-            WindowRectRight		 1803
-            WindowRectBottom		 821
+            WindowRectLeft		 488
+            WindowRectTop		 367
+            WindowRectRight		 1907
+            WindowRectBottom		 925
+        END Report
+
+        BEGIN Report
+            Name		 Link Budget3
+            Type		 Report
+            BaseDir		 Install
+            Style		 Link Budget
+            AGIViewer		 Yes
+            Instance		 Satellite/Finch/Transmitter/FINCH_Tx_Data
+            BEGIN InstanceList
+                Instance		 Place/BahenGS/Sensor/Sensor2/Receiver/GS_Rx_Data
+            END InstanceList
+            BEGIN TimeData
+                BEGIN Section
+                    SectionNumber		 1
+                    SectionType		 2
+                    ShowIntervals		 No
+                    TimeType		 Availability
+                    SamplingType		 Default
+                    TimeBound		 0
+                END Section
+            END TimeData
+            DisplayOnLoad		 Yes
+            FrameType		 0
+            DockCircleID		 0
+            DockID		 0
+            WindowRectLeft		 228
+            WindowRectTop		 107
+            WindowRectRight		 1647
+            WindowRectBottom		 665
         END Report
     END QuickReports
 
@@ -1951,6 +2010,223 @@ BEGIN Scenario
                                 CenterLon		 -75.70390744934269
                                 ZoomWidth		 9.786481212904778
                                 ZoomHeight		 105.3362117647062
+                            END ZoomLocation
+                        END ZoomLocations
+                        UseVarAspectRatio		 No
+                        SwapMapResolution		 Yes
+                        NoneToVLowSwapDist		 2000000
+                        VLowToLowSwapDist		 20000
+                        LowToMediumSwapDist		 10000
+                        MediumToHighSwapDist		 5000
+                        HighToVHighSwapDist		 1000
+                        VHighToSHighSwapDist		 100
+                        BEGIN Axes
+                            DisplayAxes		 no
+                            CoordSys		 CBI
+                            2aryCB		 Sun
+                            Display+x		 yes
+                            Label+x		 yes
+                            Color+x		 #ffffff
+                            Scale+x		 3
+                            Display-x		 yes
+                            Label-x		 yes
+                            Color-x		 #ffffff
+                            Scale-x		 3
+                            Display+y		 yes
+                            Label+y		 yes
+                            Color+y		 #ffffff
+                            Scale+y		 3
+                            Display-y		 yes
+                            Label-y		 yes
+                            Color-y		 #ffffff
+                            Scale-y		 3
+                            Display+z		 yes
+                            Label+z		 yes
+                            Color+z		 #ffffff
+                            Scale+z		 3
+                            Display-z		 yes
+                            Label-z		 yes
+                            Color-z		 #ffffff
+                            Scale-z		 3
+                        END Axes
+
+                    END MapAttributes
+
+                    BEGIN MapList
+                        BEGIN Detail
+                            Alias		 RWDB2_Coastlines
+                            Show		 Yes
+                            Color		 #8fbc8f
+                        END Detail
+                        BEGIN Detail
+                            Alias		 RWDB2_International_Borders
+                            Show		 No
+                            Color		 #8fbc8f
+                        END Detail
+                        BEGIN Detail
+                            Alias		 RWDB2_Islands
+                            Show		 No
+                            Color		 #8fbc8f
+                        END Detail
+                        BEGIN Detail
+                            Alias		 RWDB2_Lakes
+                            Show		 No
+                            Color		 #87cefa
+                        END Detail
+                        BEGIN Detail
+                            Alias		 RWDB2_Provincial_Borders
+                            Show		 No
+                            Color		 #8fbc8f
+                        END Detail
+                        BEGIN Detail
+                            Alias		 RWDB2_Rivers
+                            Show		 No
+                            Color		 #87cefa
+                        END Detail
+                    END MapList
+
+
+                    BEGIN MapAnnotations
+                    END MapAnnotations
+
+                    BEGIN DisplayFlags
+                        ShowLabels		 On
+                        ShowPassLabel		 Off
+                        ShowElsetNum		 Off
+                        ShowGndTracks		 On
+                        ShowGndMarkers		 On
+                        ShowOrbitMarkers		 On
+                        ShowPlanetOrbits		 Off
+                        ShowPlanetCBIPos		 On
+                        ShowPlanetCBILabel		 On
+                        ShowPlanetGndPos		 On
+                        ShowPlanetGndLabel		 On
+                        ShowSensors		 On
+                        ShowWayptMarkers		 Off
+                        ShowWayptTurnMarkers		 Off
+                        ShowOrbits		 On
+                        ShowDtedRegions		 Off
+                        ShowAreaTgtCentroids		 On
+                        ShowToolBar		 On
+                        ShowStatusBar		 On
+                        ShowScrollBars		 On
+                        AllowAnimUpdate		 Off
+                        AccShowLine		 On
+                        AccAnimHigh		 On
+                        AccStatHigh		 On
+                        AccAnimLineLineWidth		  1.0000000000000000e+00
+                        ShowPrintButton		 On
+                        ShowAnimButtons		 On
+                        ShowAnimModeButtons		 On
+                        ShowZoomMsrButtons		 On
+                        ShowMapCbButton		 Off
+                    END DisplayFlags
+
+                    BEGIN RecordMovie
+                        OutputFormat		 VIDEO
+                        SdfSelected		 No
+                        BaseName		 Frame
+                        Digits		 4
+                        Frame		 0
+                        LastAnimTime		 0
+                        OutputMode		 Normal
+                        HiResAssembly		 Assemble
+                        HRWidth		 6000
+                        HRHeight		 4500
+                        HRDPI		 600
+                        UseSnapInterval		 No
+                        SnapInterval		 0
+                        VideoCodec		 "H264"
+                        Framerate		 30
+                        Bitrate		 10000000
+                    END RecordMovie
+
+
+                    BEGIN TimeDisplay
+                        Show		 0
+                        TextColor		 #ffffff
+                        TextTranslucency		 0
+                        ShowBackground		 0
+                        BackColor		 #4d4d4d
+                        BackTranslucency		 0.4
+                        XPosition		 20
+                        YPosition		 -20
+                    END TimeDisplay
+
+                    BEGIN LightingData
+                        DisplayAltitude		 0
+                        SubsolarPoint		 Off
+                        SubsolarPointColor		 #ffff00
+                        SubsolarPointMarkerStyle		 2
+
+                        ShowUmbraLine		 Off
+                        UmbraLineColor		 #000000
+                        UmbraLineStyle		 0
+                        UmbraLineWidth		 2
+                        FillUmbra		 On
+                        UmbraFillColor		 #000000
+                        ShowSunlightLine		 Off
+                        SunlightLineColor		 #ffff00
+                        SunlightLineStyle		 0
+                        SunlightLineWidth		 2
+                        FillSunlight		 On
+                        SunlightFillColor		 #ffffff
+                        SunlightMinOpacity		 0
+                        SunlightMaxOpacity		 0.2
+                        UmbraMaxOpacity		 0.7
+                        UmbraMinOpacity		 0.4
+                    END LightingData
+                END Map
+                BEGIN Map
+                    MapNum		 2
+                    TrackingMode		 LatLon
+                    PickEnabled		 On
+                    PanEnabled		 On
+
+                    BEGIN MapAttributes
+                        PrimaryBody		 Earth
+                        SecondaryBody		 Sun
+                        CenterLatitude		 36.85590000000001
+                        CenterLongitude		 -45.8603858629441
+                        ProjectionAltitude		 63621860
+                        FieldOfView		 35
+                        OrthoDisplayDistance		 20000000
+                        TransformTrajectory		 On
+                        EquatorialRadius		 6378137
+                        BackgroundColor		 #000000
+                        LatLonLines		 On
+                        LatSpacing		 30
+                        LonSpacing		 30
+                        LatLonLineColor		 #999999
+                        LatLonLineStyle		 2
+                        ShowOrthoDistGrid		 Off
+                        OrthoGridXSpacing		 5
+                        OrthoGridYSpacing		 5
+                        OrthoGridColor		 #ffffff
+                        ShowImageExtents		 Off
+                        ImageExtentLineColor		 #ffffff
+                        ImageExtentLineStyle		 0
+                        ImageExtentLineWidth		 1
+                        ShowImageNames		 Off
+                        ImageNameFont		 0
+                        Projection		 EquidistantCylindrical
+                        Resolution		 Low
+                        CoordinateSys		 ECF
+                        UseBackgroundImage		 On
+                        UseBingForBackground		 On
+                        BingType		 Aerial
+                        BingLogoHorizAlign		 Right
+                        BingLogoVertAlign		 Bottom
+                        BackgroundImageFile		 Basic.bmp
+                        UseNightLights		 Off
+                        NightLightsFactor		 3.5
+                        UseCloudsFile		 Off
+                        BEGIN ZoomLocations
+                            BEGIN ZoomLocation
+                                CenterLat		 36.85590000000001
+                                CenterLon		 -45.8603858629441
+                                ZoomWidth		 225.929866751269
+                                ZoomHeight		 106.2882
                             END ZoomLocation
                         END ZoomLocations
                         UseVarAspectRatio		 No
