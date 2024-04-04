@@ -85,6 +85,7 @@ BEGIN Scenario
             BEGIN StreamingTerrain
                 UseCurrentStreamingTerrainServer		 Yes
                 CurrentStreamingTerrainServerName		 http://twsusecovacc01.agi.com/stk-terrain/
+                StreamingTerrainTilesetName		 world
                 StreamingTerrainServerName		 assets.agi.com/stk-terrain/
                 StreamingTerrainAzimuthElevationMaskEnabled		 No
                 StreamingTerrainObscurationEnabled		 No
@@ -384,10 +385,10 @@ BEGIN Scenario
             FrameType		 0
             DockCircleID		 0
             DockID		 0
-            WindowRectLeft		 410
-            WindowRectTop		 289
-            WindowRectRight		 1825
-            WindowRectBottom		 843
+            WindowRectLeft		 408
+            WindowRectTop		 287
+            WindowRectRight		 1823
+            WindowRectBottom		 841
         END Report
 
         BEGIN Report
@@ -414,10 +415,70 @@ BEGIN Scenario
             FrameType		 0
             DockCircleID		 0
             DockID		 0
-            WindowRectLeft		 436
-            WindowRectTop		 315
-            WindowRectRight		 1855
-            WindowRectBottom		 873
+            WindowRectLeft		 434
+            WindowRectTop		 313
+            WindowRectRight		 1853
+            WindowRectBottom		 871
+        END Report
+
+        BEGIN Report
+            Name		 Access6
+            Type		 Report
+            BaseDir		 Install
+            Style		 Access
+            AGIViewer		 Yes
+            Instance		 Place/BahenTop/Sensor/Sensor2/Receiver/GS_Rx
+            BEGIN InstanceList
+                Instance		 Satellite/Finch/Transmitter/FINCH_Tx
+            END InstanceList
+            BEGIN TimeData
+                BEGIN Section
+                    SectionNumber		 1
+                    SectionType		 4
+                    ShowIntervals		 No
+                    TimeType		 Availability
+                    SamplingType		 Default
+                    TimeBound		 0
+                END Section
+            END TimeData
+            DisplayOnLoad		 Yes
+            FrameType		 0
+            DockCircleID		 0
+            DockID		 0
+            WindowRectLeft		 538
+            WindowRectTop		 417
+            WindowRectRight		 2519
+            WindowRectBottom		 1137
+        END Report
+
+        BEGIN Report
+            Name		 Access7
+            Type		 Report
+            BaseDir		 Install
+            Style		 Access
+            AGIViewer		 Yes
+            Instance		 Place/BahenTop/Sensor/Sensor2
+            BEGIN InstanceList
+                Instance		 Satellite/Finch
+            END InstanceList
+            BEGIN TimeData
+                BEGIN Section
+                    SectionNumber		 1
+                    SectionType		 4
+                    ShowIntervals		 No
+                    TimeType		 Availability
+                    SamplingType		 Default
+                    TimeBound		 0
+                END Section
+            END TimeData
+            DisplayOnLoad		 Yes
+            FrameType		 0
+            DockCircleID		 0
+            DockID		 0
+            WindowRectLeft		 218
+            WindowRectTop		 74
+            WindowRectRight		 2553
+            WindowRectBottom		 1171
         END Report
     END QuickReports
 
@@ -824,12 +885,6 @@ BEGIN Scenario
         END ExportDataFile
 
         BEGIN Desc
-            BEGIN ShortText
-
-            END ShortText
-            BEGIN LongText
-
-            END LongText
         END Desc
 
         BEGIN RfEnv
@@ -2172,7 +2227,7 @@ BEGIN Scenario
                                 CenterLat		 43.97938329669847
                                 CenterLon		 -77.10851761803264
                                 ZoomWidth		 87.52985945648153
-                                ZoomHeight		 38.86855098110713
+                                ZoomHeight		 38.86855098110711
                             END ZoomLocation
                         END ZoomLocations
                         UseVarAspectRatio		 No

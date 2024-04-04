@@ -9,10 +9,10 @@ BEGIN Place
 
         CentralBody		 Earth
         DisplayCoords		 Geodetic
-        EcfLatitude		  4.3659720000000000e+01
-        EcfLongitude		 -7.9397080000000003e+01
-        EcfAltitude		  6.7706576321293227e+01
-        HeightAboveGround		  3.0000000000000000e+01
+        EcfLatitude		  4.3660000000000004e+01
+        EcfLongitude		 -7.9397199999999998e+01
+        EcfAltitude		  6.8441787850126957e+01
+        HeightAboveGround		  1.6500000000000000e+01
         ComputeTrnMaskAsNeeded		 Off
         SaveTrnMaskDataInBinary		 Off
         LightingGrazingType		 GroundModel
@@ -43,6 +43,12 @@ BEGIN Place
         END ObjectCoverage
 
         BEGIN Desc
+            BEGIN ShortText
+
+            END ShortText
+            BEGIN LongText
+
+            END LongText
         END Desc
 
         BEGIN Atmosphere
