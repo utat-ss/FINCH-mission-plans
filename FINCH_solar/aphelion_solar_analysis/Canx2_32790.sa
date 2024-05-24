@@ -1,0 +1,52 @@
+STK.V.9.0
+WrittenBy    StandardObjectCatalog
+BEGIN Satellite
+	Name		Canx2_32790
+BEGIN VehiclePath
+	CentralBody				Earth
+	BEGIN SGP4
+		VersionIndicator    20080918
+		SSCNumber           32790
+		TimeStep            60.0
+		IntlDesignator      2008-021H
+		CommonName          CanX-2
+	END SGP4
+END VehiclePath
+BEGIN Attitude
+	BEGIN Profile
+		BEGIN ECFVVLH
+		END ECFVVLH
+	END Profile
+END Attitude
+BEGIN Extensions
+	BEGIN Desc
+		ShortText 6
+CanX-2
+		LongText 802
+CanX-2
+CatalogNumber: 32790
+InternationalID: 2008-021H
+Civilian satellite
+Status             	: Active
+Classification Notes	: CAPE 1's project objective is for University of Louisiana students to 1) design, build, and launch a satellite; 2) gather data while orbiting in space; and 3) transmit the data to the ground station on Lafayette campus. CAPE 1 has an amateur radio payload.
+MISSION: 
+  Mission Class: TechnologyDevelopment
+   Mission Types: CubeSat
+
+
+ORBIT INFORMATION:
+
+Launch Date   	: 2008-04-28
+Launch notes  	: 
+
+PLATFORM NOTES:
+Shape: 
+ShapeType: ThreeUnitCubeSat
+   0.1 [Meters] {Width}
+   0.1 [Meters] {Length}
+   0.34 [Meters] {Height}
+
+https://sdf10.agi.com/content/files/STK Standard Objects/Spacecraft/CanX/AGI.Data.StandardObjectCatalog.Stk.StkObjectData.sa
+	END Desc
+END Extensions
+END Satellite
