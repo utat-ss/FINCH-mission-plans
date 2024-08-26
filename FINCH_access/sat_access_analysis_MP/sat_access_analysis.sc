@@ -23,12 +23,12 @@ BEGIN Scenario
     BEGIN Interval
 
         Start		 1 Jan 2026 00:00:00.000000000
-        Stop		 1 Oct 2026 00:00:00.000000000
+        Stop		 1 Feb 2026 00:00:00.000000000
         SmartInterval		
         BEGIN EVENTINTERVAL
             BEGIN Interval
                 Start		 1 Jan 2026 00:00:00.000000000
-                Stop		 1 Oct 2026 00:00:00.000000000
+                Stop		 1 Feb 2026 00:00:00.000000000
             END Interval
             IntervalState		 Explicit
         END EVENTINTERVAL
@@ -85,6 +85,7 @@ BEGIN Scenario
             BEGIN StreamingTerrain
                 UseCurrentStreamingTerrainServer		 Yes
                 CurrentStreamingTerrainServerName		 http://twsusecovacc01.agi.com/stk-terrain/
+                StreamingTerrainTilesetName		 world
                 StreamingTerrainServerName		 assets.agi.com/stk-terrain/
                 StreamingTerrainAzimuthElevationMaskEnabled		 No
                 StreamingTerrainObscurationEnabled		 No
@@ -380,14 +381,14 @@ BEGIN Scenario
                     TimeBound		 0
                 END Section
             END TimeData
-            DisplayOnLoad		 Yes
+            DisplayOnLoad		 No
             FrameType		 0
             DockCircleID		 0
             DockID		 0
-            WindowRectLeft		 408
-            WindowRectTop		 287
-            WindowRectRight		 2385
-            WindowRectBottom		 1003
+            WindowRectLeft		 410
+            WindowRectTop		 289
+            WindowRectRight		 2387
+            WindowRectBottom		 1005
         END Report
 
         BEGIN Report
@@ -410,14 +411,14 @@ BEGIN Scenario
                     TimeBound		 0
                 END Section
             END TimeData
-            DisplayOnLoad		 Yes
+            DisplayOnLoad		 No
             FrameType		 0
             DockCircleID		 0
             DockID		 0
-            WindowRectLeft		 434
-            WindowRectTop		 313
-            WindowRectRight		 2415
-            WindowRectBottom		 1033
+            WindowRectLeft		 436
+            WindowRectTop		 315
+            WindowRectRight		 2417
+            WindowRectBottom		 1035
         END Report
 
         BEGIN Report
@@ -440,14 +441,14 @@ BEGIN Scenario
                     TimeBound		 0
                 END Section
             END TimeData
-            DisplayOnLoad		 Yes
+            DisplayOnLoad		 No
             FrameType		 0
             DockCircleID		 0
             DockID		 0
-            WindowRectLeft		 512
-            WindowRectTop		 391
-            WindowRectRight		 2493
-            WindowRectBottom		 1111
+            WindowRectLeft		 462
+            WindowRectTop		 341
+            WindowRectRight		 2443
+            WindowRectBottom		 1061
         END Report
 
         BEGIN Report
@@ -459,6 +460,36 @@ BEGIN Scenario
             Instance		 Place/BahenTop/Sensor/Sensor2
             BEGIN InstanceList
                 Instance		 Satellite/Finch
+            END InstanceList
+            BEGIN TimeData
+                BEGIN Section
+                    SectionNumber		 1
+                    SectionType		 4
+                    ShowIntervals		 No
+                    TimeType		 Availability
+                    SamplingType		 Default
+                    TimeBound		 0
+                END Section
+            END TimeData
+            DisplayOnLoad		 Yes
+            FrameType		 0
+            DockCircleID		 0
+            DockID		 0
+            WindowRectLeft		 486
+            WindowRectTop		 365
+            WindowRectRight		 2467
+            WindowRectBottom		 1085
+        END Report
+
+        BEGIN Report
+            Name		 Access8
+            Type		 Report
+            BaseDir		 Install
+            Style		 Access
+            AGIViewer		 Yes
+            Instance		 Satellite/Finch
+            BEGIN InstanceList
+                Instance		 Place/BahenTop/Sensor/Sensor2
             END InstanceList
             BEGIN TimeData
                 BEGIN Section
@@ -884,6 +915,12 @@ BEGIN Scenario
         END ExportDataFile
 
         BEGIN Desc
+            BEGIN ShortText
+
+            END ShortText
+            BEGIN LongText
+
+            END LongText
         END Desc
 
         BEGIN RfEnv
@@ -1882,8 +1919,8 @@ BEGIN Scenario
             BEGIN Animation
 
                 StartTime		 1 Jan 2026 00:00:00.000000000
-                EndTime		 1 Oct 2026 00:00:00.000000000
-                CurrentTime		 1 Jan 2026 04:53:52.558715869
+                EndTime		 1 Feb 2026 00:00:00.000000000
+                CurrentTime		 30 Jan 2026 05:14:20.267699999
                 Mode		 XRealtime
                 Direction		 Reverse
                 UpdateDelta		 10
@@ -2225,8 +2262,8 @@ BEGIN Scenario
                             BEGIN ZoomLocation
                                 CenterLat		 42.85643002418982
                                 CenterLon		 -74.18203333210096
-                                ZoomWidth		 97.25539939609058
-                                ZoomHeight		 43.18727886789681
+                                ZoomWidth		 164.7028728616752
+                                ZoomHeight		 73.1380359834998
                             END ZoomLocation
                         END ZoomLocations
                         UseVarAspectRatio		 No

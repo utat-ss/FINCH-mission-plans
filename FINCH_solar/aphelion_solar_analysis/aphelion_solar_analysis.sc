@@ -69,6 +69,7 @@ BEGIN Scenario
             BEGIN StreamingTerrain
                 UseCurrentStreamingTerrainServer		 Yes
                 CurrentStreamingTerrainServerName		 http://twsusecovacc01.agi.com/stk-terrain/
+                StreamingTerrainTilesetName		 world
                 StreamingTerrainServerName		 assets.agi.com/stk-terrain/
                 StreamingTerrainAzimuthElevationMaskEnabled		 No
                 StreamingTerrainObscurationEnabled		 No
@@ -433,14 +434,14 @@ BEGIN Scenario
                     TimeBound		 0
                 END Section
             END TimeData
-            DisplayOnLoad		 Yes
+            DisplayOnLoad		 No
             FrameType		 0
             DockCircleID		 0
             DockID		 0
-            WindowRectLeft		 488
-            WindowRectTop		 367
-            WindowRectRight		 2475
-            WindowRectBottom		 1083
+            WindowRectLeft		 1311
+            WindowRectTop		 105
+            WindowRectRight		 1672
+            WindowRectBottom		 437
         END Report
 
         BEGIN Report
@@ -487,14 +488,14 @@ BEGIN Scenario
                     TimeBound		 0
                 END Section
             END TimeData
-            DisplayOnLoad		 Yes
+            DisplayOnLoad		 No
             FrameType		 0
             DockCircleID		 0
             DockID		 0
-            WindowRectLeft		 514
-            WindowRectTop		 393
-            WindowRectRight		 2505
-            WindowRectBottom		 1113
+            WindowRectLeft		 950
+            WindowRectTop		 437
+            WindowRectRight		 1311
+            WindowRectBottom		 769
         END Report
 
         BEGIN Report
@@ -514,14 +515,14 @@ BEGIN Scenario
                     TimeBound		 0
                 END Section
             END TimeData
-            DisplayOnLoad		 Yes
+            DisplayOnLoad		 No
             FrameType		 0
             DockCircleID		 0
             DockID		 0
-            WindowRectLeft		 540
-            WindowRectTop		 419
-            WindowRectRight		 2531
-            WindowRectBottom		 1139
+            WindowRectLeft		 950
+            WindowRectTop		 105
+            WindowRectRight		 1311
+            WindowRectBottom		 437
         END Report
 
         BEGIN Report
@@ -541,14 +542,14 @@ BEGIN Scenario
                     TimeBound		 0
                 END Section
             END TimeData
-            DisplayOnLoad		 Yes
+            DisplayOnLoad		 No
             FrameType		 0
             DockCircleID		 0
             DockID		 0
-            WindowRectLeft		 566
-            WindowRectTop		 445
-            WindowRectRight		 2557
-            WindowRectBottom		 1165
+            WindowRectLeft		 589
+            WindowRectTop		 437
+            WindowRectRight		 950
+            WindowRectBottom		 769
         END Report
 
         BEGIN Report
@@ -568,14 +569,14 @@ BEGIN Scenario
                     TimeBound		 0
                 END Section
             END TimeData
-            DisplayOnLoad		 Yes
+            DisplayOnLoad		 No
             FrameType		 0
             DockCircleID		 0
             DockID		 0
-            WindowRectLeft		 228
-            WindowRectTop		 107
-            WindowRectRight		 2219
-            WindowRectBottom		 827
+            WindowRectLeft		 589
+            WindowRectTop		 105
+            WindowRectRight		 950
+            WindowRectBottom		 437
         END Report
 
         BEGIN Report
@@ -595,14 +596,14 @@ BEGIN Scenario
                     TimeBound		 0
                 END Section
             END TimeData
-            DisplayOnLoad		 Yes
+            DisplayOnLoad		 No
             FrameType		 0
             DockCircleID		 0
             DockID		 0
-            WindowRectLeft		 254
-            WindowRectTop		 133
-            WindowRectRight		 2245
-            WindowRectBottom		 853
+            WindowRectLeft		 228
+            WindowRectTop		 437
+            WindowRectRight		 589
+            WindowRectBottom		 769
         END Report
     END QuickReports
 

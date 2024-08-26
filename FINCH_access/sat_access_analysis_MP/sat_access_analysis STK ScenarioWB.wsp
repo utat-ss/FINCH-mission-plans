@@ -12,7 +12,7 @@ ptn_Child1=MainFrame
 ptn_Child2=ChildFrames
 [WorkState_v1_2.Frames.MainFrame]
 WindowPlacement=MCAAAAAACAAAAAAADAAAAAAAAAAAAAAAAAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPIPPPPPPPFIHAAAAANIEAAAAA
-Title=sat_access_analysis - STK 12 - [Report:  Place-BahenTop-Sensor-Sensor2-To-Satellite-Finch - Access]
+Title=sat_access_analysis - STK 12 - [Report:  Satellite-Finch-To-Place-BahenTop-Sensor-Sensor2 - Access]
 [WorkState_v1_2.Frames.ChildFrames]
 ptn_Child1=Document-0
 ptn_Child2=Document-1
@@ -25,9 +25,6 @@ ptn_Child8=Document-7
 ptn_Child9=Document-8
 ptn_Child10=Document-9
 ptn_Child11=Document-10
-ptn_Child12=Document-11
-ptn_Child13=Document-12
-ptn_Child14=Document-13
 [WorkState_v1_2.Frames.ChildFrames.Document-0]
 ptn_Child1=ViewFrame-0
 [WorkState_v1_2.Frames.ChildFrames.Document-0.ViewFrame-0]
@@ -101,9 +98,9 @@ objectExpandedState6=/Application/STK/Scenario/sat_access_analysis/Place/Toronto
 objectExpandedState7=/Application/STK/Scenario/sat_access_analysis/Satellite/Finch:TRUE
 objectExpandedState8=/Application/STK/Scenario/sat_access_analysis/Satellite/Finch/Receiver/FINCH_Rx:TRUE
 objectExpandedState9=/Application/STK/Scenario/sat_access_analysis/Satellite/Finch/Transmitter/FINCH_Tx:TRUE
-[WorkState_v1_2.Frames.ChildFrames.Document-10]
+[WorkState_v1_2.Frames.ChildFrames.Document-8]
 ptn_Child1=ViewFrame-0
-[WorkState_v1_2.Frames.ChildFrames.Document-10.ViewFrame-0]
+[WorkState_v1_2.Frames.ChildFrames.Document-8.ViewFrame-0]
 DocPathName=C:\Program Files\AGI\STK 12\bin\AgUi3DGxToolPlugins12.AgUi3dGlobeManager.1
 DocumentString=AgUi3DGxToolPlugins.AgUi3dGlobeManager.1
 DocTemplateIndex=0
@@ -112,11 +109,11 @@ IsActiveChildFrame=False
 IsFrameVisible=True
 ProfUISBarID=63002
 ptn_Child1=AGI Custom Node Data
-[WorkState_v1_2.Frames.ChildFrames.Document-10.ViewFrame-0.AGI Custom Node Data]
+[WorkState_v1_2.Frames.ChildFrames.Document-8.ViewFrame-0.AGI Custom Node Data]
 ActiveSceneID=1
-[WorkState_v1_2.Frames.ChildFrames.Document-11]
+[WorkState_v1_2.Frames.ChildFrames.Document-9]
 ptn_Child1=ViewFrame-0
-[WorkState_v1_2.Frames.ChildFrames.Document-11.ViewFrame-0]
+[WorkState_v1_2.Frames.ChildFrames.Document-9.ViewFrame-0]
 DocPathName=C:\Program Files\AGI\STK 12\bin\AgUiTimelineView12.AgUiPiTimelineView.1
 DocumentString=AgUiTimelineView.AgUiPiTimelineView.1
 DocTemplateIndex=0
@@ -125,7 +122,7 @@ IsActiveChildFrame=False
 IsFrameVisible=True
 ProfUISBarID=63001
 ptn_Child1=AGI Custom Node Data
-[WorkState_v1_2.Frames.ChildFrames.Document-11.ViewFrame-0.AGI Custom Node Data]
+[WorkState_v1_2.Frames.ChildFrames.Document-9.ViewFrame-0.AGI Custom Node Data]
 ComponentWellWidth=200.000000000000
 CurrentContentView=Scenario Availability
 CurrentTimeView=Scenario Analysis Period
